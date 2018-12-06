@@ -1,3 +1,5 @@
 .o-bodyContent {
-  
+  @extend %container-shared;
+  display: flex;
+  width: 100%;
 }

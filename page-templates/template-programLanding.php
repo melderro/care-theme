@@ -37,6 +37,9 @@
       <section id="bodyContent" class="programLanding__bodyContent">
         <?php get_partial('content', 'program'); ?>
       </section>
+      <section id="bodyContent" class="programLanding__resourceLinks">
+        <?php get_partial('links', 'program-resources'); ?>
+      </section>
     </main>
 
     <?php
