@@ -7,9 +7,7 @@
 // aside {}
 // footer {}
 // #{$all-headers} {}
-// h1 {}
 // h2 {}
-// h3 {}
 // h4 {}
 // h5 {}
 // h6 {}
@@ -22,4 +20,29 @@ section {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+h1 {
+  @extend %main-heading;
+  font-size: 3.3rem;
+  margin: 25px 0px;
+}
+
+h2 {
+  @extend %main-heading;
+  font-size: 3rem;
+  line-height: 2.5rem;
+  margin: 20px 0px;
+}
+
+h3 {
+  @extend %sub-heading;
+}
+
+h3.o-introContent__subtitle {
+  font-size: 2.2rem;
+}
+
+h3.m-bodyContent__subtitle {
+  font-size: 1.8rem;
 }

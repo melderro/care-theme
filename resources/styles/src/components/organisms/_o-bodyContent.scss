@@ -1,5 +1,6 @@
 .o-bodyContent {
   @extend %container-shared;
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }

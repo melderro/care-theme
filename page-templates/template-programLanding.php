@@ -40,12 +40,24 @@
       <section id="bodyContent" class="programLanding__resourceLinks">
         <?php get_partial('links', 'program-resources'); ?>
       </section>
+      <section id="bodyContent" class="programLanding__relatedTopics">
+        <?php get_partial('links', 'program-related-topics'); ?>
+      </section>
     </main>
 
     <?php
     // Footer content
     ?>
-    <footer>
+    <footer id="footer">
+      <section id="supplementalLinks" class="programLanding__footerLinks">
+          <?php get_partial('links', 'supplement-links'); ?>
+        </section>
+      <section id="newsletterSignup" class="programLanding__callToAction">
+        <?php get_partial('media', 'newsletterSignup'); ?>
+      </section>
+      <section id="footerContent" class="programLanding__footerContent">
+        <?php get_partial('content', 'footer'); ?>
+      </section>
     </footer>
 
     <?php

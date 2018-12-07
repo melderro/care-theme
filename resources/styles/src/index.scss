@@ -96,11 +96,18 @@
  // Atoms
 
  // Molecules
+@import './components/molecules/m-bodyContent';
+@import './components/molecules/m-programRelatedTopics';
+@import './components/molecules/m-programResourcesGroup';
+
 
  // Organisms
 @import './components/organisms/o-bodyContent';
 @import './components/organisms/o-introContent';
+@import './components/organisms/o-footerSupplementLinks';
 @import './components/organisms/o-navigationMenu';
+@import './components/organisms/o-programRelatedTopics';
+@import './components/organisms/o-programResources';
 
 /**
  * Vendor-specific overrides and settings
