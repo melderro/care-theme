@@ -1,10 +1,18 @@
 .m-bodyContent__contentimage {
   flex: 0 1 45%;
   padding-right: 3rem;
+
+  &.o-homeProgramsBlock {
+    order: 2;
+  }
 }
 
 .m-bodyContent__content {
   flex: 0 1 55%;
+
+  &.o-homeProgramsBlock {
+    order: 1;
+  }
 
   .m-bodyContent__subtitle {
     color: $color-yellow;

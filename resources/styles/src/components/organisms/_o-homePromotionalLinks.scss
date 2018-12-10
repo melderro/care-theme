@@ -1,0 +1,10 @@
+.o-homePromotionalLinks {
+  @extend %container-shared;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .o-homePromotionalLinks__Block  {
+    flex: 0 1 50%;
+  }
+}

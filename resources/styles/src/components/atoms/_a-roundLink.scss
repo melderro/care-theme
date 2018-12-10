@@ -6,10 +6,21 @@
   font-family: $link-font-family;
   font-size: 1.1rem;
   letter-spacing: .2rem;
+  margin-top: 1rem;
   padding: .7rem 1rem;
   text-transform: uppercase;
 
-  &.o-introLink {
+  &.o-homeintrolink {
+    border-color: $color-purple;
+    color: $color-purple;
+  }
+
+  &.o-homepeerrecoverylink {
+    border-color: $color-brown;
+    color: $color-brown;
+  }
+
+  &.o-introlink {
     border-color: $color-yellow;
     color: $color-yellow;
   }

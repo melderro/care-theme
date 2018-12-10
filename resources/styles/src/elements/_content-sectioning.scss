@@ -26,7 +26,7 @@ h1 {
   @extend %main-heading;
   font-size: 3.3rem;
   line-height: 3.3rem;
-  margin: 25px 0px;
+  margin: 10px 0px;
 }
 
 h2,
@@ -34,7 +34,7 @@ h3.m-footerSupplementLinks__title {
   @extend %main-heading;
   font-size: 3rem;
   line-height: 2.5rem;
-  margin: 20px 0px;
+  margin: 10px 0px;
 }
 
 h2.m-programResources__title,
@@ -50,6 +50,8 @@ h3.o-introContent__subtitle {
   font-size: 2.2rem;
 }
 
+h3.o-homeintroContent__subtitle,
+h3.o-homePeerRecovery__subtitle,
 h3.m-bodyContent__subtitle,
 h3.m-footerContent__contactLinksTitle,
 h3.m-footerContent__socialLinksTitle {

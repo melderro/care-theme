@@ -1,0 +1,27 @@
+.o-homePeerRecovery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .o-homePeerRecovery__block {
+    background-color: $color-yellow;
+    flex: 0 1 50%;
+    padding: 2rem 3rem;
+
+    .o-homePeerRecovery__subtitle {
+      color: $color-brown;
+    }
+
+    .o-homePeerRecovery__title {
+      color: $color-white;
+    }
+
+    .o-homePeerRecovery__text {
+      color: $color-white;
+    }
+
+    &.homepeerrecoveryList {
+      background-color: $color-brown;
+    }
+  }
+}
