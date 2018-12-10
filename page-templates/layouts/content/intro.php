@@ -13,5 +13,11 @@
     <div class="o-introContent__paragraph">
       <?php the_field('intro_text'); ?>      
     </div>
+    <div class="o-introContent__link">
+      <a class="a-roundLink o-introlink">
+      <img class="o-introContent__linkimage" src="<?php echo get_acf_image( get_field('intro_image'), '540w', 'http://via.placeholder.com/588x216?text=logo'); ?> "/>
+      <span>Contact Us</span>
+      </a>  
+    </div>
   </div>
 </div>

@@ -5,6 +5,10 @@
 
 .m-bodyContent__content {
   flex: 0 1 55%;
+
+  .m-bodyContent__subtitle {
+    color: $color-yellow;
+  }
 }
 
 .m-bodyContent__contentcallout {
@@ -13,6 +17,7 @@
   max-width: 800px;
 
   .m-bodyContent__callouttext {
+    color: $color-yellow;
     font-family: $script-font-family;
     font-size: 2.5rem;
     line-height: 3rem;

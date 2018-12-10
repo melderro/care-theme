@@ -14,6 +14,14 @@
 
   .m-programResources__content {
 
+    .m-programResources__title {
+      color: $color-green;
+
+      &.o-programResources--events {
+        color: $color-brown;
+      }
+    }
+
     .o-programResources__list {
       list-style: none;
       margin: 0px;

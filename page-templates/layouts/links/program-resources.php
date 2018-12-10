@@ -5,7 +5,7 @@
       <img class="m-programResources__image" src="<?php echo get_acf_image( get_field('program_content_image'), '540w', 'http://via.placeholder.com/588x216?text=logo'); ?> "/>
     </div>
     <div class="m-programResources__content">
-      <h2 class="m-programResources__title">
+      <h2 class="m-programResources__title o-programResources--events">
         <?php the_field('program_resources_title'); ?>
         Events & Classes
       </h2>

@@ -1,3 +1,37 @@
 .o-navigationMenu {
- width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  margin: 0 auto;
+  max-width: 1300px;
+  position: fixed;
+  transition: all .5s ease-in;
+  width: 95%;
+  z-index: 4;
+}
+
+.o-navigationMenu__link {
+  display: flex;
+}
+
+.o-navigationMenu__topRow {
+  order: 2;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0px;
+  }
+}
+
+.o-navigationMenu__bottomRow {
+  order: 1;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0px;
+  }
 }

@@ -11,7 +11,7 @@
   get_partial('meta', 'head');
   ?>
 
-  <body <?php body_class(); ?> ?>
+  <body <?php body_class('homepage'); ?> >
 
     <?php
     // Included for the sake of plugins and child themes that rely on it.
@@ -22,6 +22,9 @@
     // Website header area
     ?>
     <header>
+      <section id="navigationMenu" class="programLanding__nav">
+        <?php get_partial('navigation', 'menu'); ?>
+      </section>
     </header>
 
     <?php
