@@ -1,3 +1,15 @@
 .m-homePromotionalLinks__Block  {
-    flex: 0 1 50%;
+  flex: 0 1 50%;
+
+  &.homePromotionalCaseStudy {
+    margin-bottom: 2rem;
+    position: relative;
+
+    .m-homePromotionalLinks__ContentContainer {
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+    }
+  }
 }

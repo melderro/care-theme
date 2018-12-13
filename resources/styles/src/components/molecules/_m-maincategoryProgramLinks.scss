@@ -1,0 +1,18 @@
+.m-maincategoryProgramLinks {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+
+  li {
+    flex: 0 1 25%;
+
+    a {
+      display: block;
+      text-align: center;
+
+      span {
+        width: 100%;
+      }
+    }
+  }
+}

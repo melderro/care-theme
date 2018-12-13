@@ -1,3 +1,17 @@
 .o-pageBanner {
-  height: 400px;
+  line-height: 0px;
+  position: relative;
+  width: 100%;
+
+  .o-pageBanner__titlecontent {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+
+  .o-pageBanner__image {
+    width: 100%;
+  }
 }

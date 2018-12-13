@@ -9,10 +9,12 @@
     </div>
   </div>
   <div class="m-homePromotionalLinks__Block homePromotionalCaseStudy">
-    <img class="m-homePromotionalLinks__image" src="<?php echo get_acf_image( get_field('intro_image'), '540w', 'http://via.placeholder.com/588x216?text=logo'); ?> "/>
-    <h3 class="m-homePromotionalLinks__imagetitle">Amy's Story</h3>  
-    <div class="m-homePromotionalLinks__imagetext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tristique tincidunt velit, at fermentum diam. </div>  
-    <a class="a-roundLink o-CaseStudyLinks">Learn More</a>
+      <img class="m-homePromotionalLinks__image" src="<?php echo get_acf_image( get_field('intro_image'), '540w', 'http://via.placeholder.com/588x216?text=logo'); ?> "/>
+    <div class="m-homePromotionalLinks__ContentContainer">
+      <h3 class="m-homePromotionalLinks__imagetitle">Amy's Story</h3>  
+      <div class="m-homePromotionalLinks__imagetext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tristique tincidunt velit, at fermentum diam. </div>  
+      <a class="a-roundLink o-CaseStudyLinks">Learn More</a>
+    </div>
 </div>
   
   <div class="m-homePromotionalLinks__Block homePromotionalImage">

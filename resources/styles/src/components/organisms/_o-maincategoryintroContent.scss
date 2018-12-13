@@ -1,0 +1,18 @@
+.o-maincategoryintroContent {
+  @extend %container-shared;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 0rem;
+
+  .o-maincategoryintroContent__contenttitle {
+    flex: 0 1 40%;
+
+    .o-maincategoryintroContent__title {
+      font-family: $script-font-family;
+    }
+  }
+
+  .o-maincategoryintroContent__content {
+    flex: 0 1 60%;
+  }
+}

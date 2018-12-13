@@ -22,18 +22,33 @@
     // Website header area
     ?>
     <header>
+      <section id="navigationMenu" class="newsLanding__nav">
+        <?php get_partial('navigation', 'menu'); ?>
+      </section>
     </header>
 
     <?php
     // Main content area
     ?>
     <main>
+      <section id="introContent" class="newsLanding__intro">
+        <?php get_partial('content', 'intro'); ?>
+      </section>
     </main>
 
     <?php
     // Footer content
     ?>
-    <footer>
+    <footer id="footer">
+      <section id="DonateSignup" class="newsLanding__DonateLink">
+        <?php get_partial('links', 'donateLink'); ?>
+      </section>
+      <section id="newsletterSignup" class="newsLanding__callToAction">
+        <?php get_partial('media', 'newsletterSignup'); ?>
+      </section>
+      <section id="footerContent" class="newsLanding__footerContent">
+        <?php get_partial('content', 'footer'); ?>
+      </section>
     </footer>
 
     <?php

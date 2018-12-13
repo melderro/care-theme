@@ -23,11 +23,10 @@
     <div class="m-bodyContent__calloutauthor">
       <img class="m-bodyContent__calloutimage" src="<?php echo get_acf_image( get_field('program_content_image'), '540w', 'http://via.placeholder.com/588x216?text=logo'); ?> "/>
       <span class="m-bodyContent__calloutname">
-      Callout Name
-      </span>
-      <div class="m-bodyContent__calloutsource">
+      Callout Name,</span>
+      <span class="m-bodyContent__calloutsource">
       Callout Source
-      </div>
+      </span>
     </div>
   </div>  
 </div>

@@ -37,8 +37,14 @@
       <section id="maincategoryintroContent" class="maincategory__intro">
         <?php get_partial('content', 'maincategory-intro'); ?>
       </section>
+      <section id="maincategoryProgramLinks" class="maincategory__programlinks">
+        <?php get_partial('links', 'maincategory-programlinks'); ?>
+      </section>
       <section id="maincategorybodyContent" class="maincategory__bodyContent">
         <?php get_partial('content', 'maincategory'); ?>
+      </section>
+      <section id="maincategoryCaseStudy" class="maincategory__caseStudy">
+        <?php get_partial('links', 'maincategory-casestudy'); ?>
       </section>
     </main>
 
