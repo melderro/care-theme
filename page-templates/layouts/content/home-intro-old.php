@@ -6,7 +6,7 @@
         while(have_rows('data_and_statistics_blocks')): the_row();
     ?>
     <div class="m-home__datablocks datablocks-left ">
-      <img class="m-home__datablocks__image" src="<?php echo get_acf_image( get_sub_field('data_and_statistics_image'), '540w', 'http://via.placeholder.com/588x216?text=logo'); ?> "/> 
+      <img class="m-home__datablocks__image" src="<?php echo get_acf_image( get_field('data_and_statistics_image'), '540w', 'http://via.placeholder.com/588x216?text=logo'); ?> "/> 
       <div class="m-home__datablocks__text">
         <?php the_sub_field('data_and_statistics_text'); ?>
       </div>
@@ -15,8 +15,13 @@
       endwhile;
     endif;
     ?>
+    <div class="m-home__datablocks datablocks-right ">
+      <img class="m-home__datablocks__image" src="<?php echo get_acf_image( get_field('intro_image'), '540w', 'http://via.placeholder.com/588x216?text=logo'); ?> "/> 
+      <div class="m-home__datablocks__text">
+        724 Adults & Youth Served Through Behavioral Health Assessments & Counseling
+      </div>
+    </div>
   </div>
-
   <div class="o-homeintroContent__maincontent">
     <h3 class="o-homeintroContent__subtitle">
       Who we are

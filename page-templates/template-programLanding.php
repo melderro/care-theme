@@ -1,7 +1,7 @@
 <?php
 /**
- * Template Name: Program Landing Page
- * Description: General content page
+ * Template Name: Program Landing Content
+ * Description: Program Landing content page
  */
 ?>
 <!doctype html>

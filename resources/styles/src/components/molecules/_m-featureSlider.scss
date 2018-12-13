@@ -1,0 +1,30 @@
+.m-featureSlider__slide {
+  height: 100%;
+  position: relative;
+}
+
+.m-featureSlider {
+  line-height: 0px;
+
+  .m-featureSlider__image {
+    width: 100%;
+  }
+
+  .m-featureSlider__content {
+    bottom: 5rem;
+    left: 2rem;
+    position: absolute;
+    width: 60%;
+
+    .m-featureSlider__title {
+      color: $color-white;
+      font-weight: $font-semibold;
+      font-size: 5rem;
+      line-height: 1;
+
+      p {
+        margin: 0px;
+      }
+    }
+  }
+}

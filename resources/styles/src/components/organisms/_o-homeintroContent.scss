@@ -2,7 +2,7 @@
   display: flex;
 
   .o-homeintroContent__datablocks {
-    flex: 0 1 35%;
+    flex: 0 1 30%;
 
     .m-home__datablocks {
       line-height: 0;
@@ -22,7 +22,10 @@
 
   .o-homeintroContent__maincontent {
     background-color: $color-yellow;
-    flex: 0 1 65%;
+    display: flex;
+    flex: 0 1 70%;
+    flex-direction: column;
+    justify-content: center;
     padding: 2rem 3rem;
 
     .o-homeintroContent__subtitle {
