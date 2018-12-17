@@ -2,7 +2,7 @@
 <div class="o-maincategoryCaseStudy">
   <div class="m-bodyContent__content m-maincategoryCaseStudy__content">
     <h3 class="m-bodyContent__subtitle m-maincategoryCaseStudy__subtitle">
-      <?php the_sub_field('main_category_case_study_subtitle'); ?>
+      <?php the_field('main_category_case_study_subtitle'); ?>
     </h3>
     <h2 class="m-bodyContent__title m-maincategoryCaseStudy__title">
       <?php the_field('main_category_case_study_title'); ?>

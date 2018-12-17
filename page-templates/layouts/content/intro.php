@@ -15,7 +15,7 @@
     </div>
     <div class="o-introContent__link">
       <a class="a-roundLink o-introlink" href="<?php the_field('intro_link'); ?>">
-      <img class="o-introContent__linkimage" src="<?php echo get_acf_image( get_field('intro_image_link'), '540w', 'http://via.placeholder.com/588x216?text=logo'); ?> "/>
+      <img class="o-introContent__linkimage" src="<?php echo get_acf_image( get_field('intro_link_image'), '540w', 'http://via.placeholder.com/588x216?text=logo'); ?> "/>
       <span><?php the_field('intro_link_title'); ?></span>
       </a>  
     </div>

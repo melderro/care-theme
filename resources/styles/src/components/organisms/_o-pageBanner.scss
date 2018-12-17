@@ -19,6 +19,16 @@
       color: $color-white;
       font-weight: $font-semibold;
     }
+
+    .o-pageBanner__link {
+      display: flex;
+      justify-content: center;
+    }
+
+    .o-pageBanner__text {
+      color: $color-white;
+      line-height: 1.5rem;
+    }
   }
 
   .o-pageBanner__image {
