@@ -1,14 +1,32 @@
 .m-bodyContent__contentimage {
-  flex: 0 1 45%;
-  padding-right: 3rem;
+  display: flex;
+  flex: 0 1 40%;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 0px;
 
-  &.o-homeProgramsBlock {
-    order: 2;
+  &.m-maincategorybodyContent__contentimage {
+
+    .m-bodyContent__image {
+      @extend %square-image;
+      box-shadow: -20px 20px $color-green;
+    }
+  }
+
+  &.m-programbodyImage {
+
+    .m-bodyContent__image {
+      @extend %square-image;
+      box-shadow: -20px 20px $color-green;
+    }
   }
 }
 
 .m-bodyContent__content {
+  display: flex;
   flex: 0 1 55%;
+  flex-direction: column;
+  justify-content: center;
 
   &.o-homeProgramsBlock {
     order: 1;

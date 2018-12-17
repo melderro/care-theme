@@ -1,15 +1,106 @@
 .m-homePromotionalLinks__Block  {
-  flex: 0 1 50%;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-  &.homePromotionalCaseStudy {
-    margin-bottom: 2rem;
+  .m-homePromotionalLinks__image {
+    display: block;
     position: relative;
+    width: 100%;
+  }
+
+  &.homePromotionalData {
+    flex: 0 1 60%;
+
+    &.homePromotionalCaseStudy {
+      @extend %main-body-padding-right;
+
+      .m-homePromotionalLinks__text {
+        color: $color-yellow;
+        font-family: $script-font-family;
+        font-size: 3.8rem;
+        line-height: 3.8rem;
+        text-transform: uppercase;
+      }
+    }
+
+    &.homePromotionalEvent {
+      @extend %main-body-padding-left;
+
+      .m-homePromotionalLinks__text {
+
+        p {
+          margin: 0px;
+        }
+      }
+    }
+
+    .m-homePromotionalLinks__source {
+      color: #000;
+      font-family: $link-font-family;
+      text-transform: uppercase;
+      letter-spacing: .12rem;
+    }
+  }
+
+  &.homePromotionalImage {
+    align-items: flex-end;
+    display: flex;
+    flex: 0 1 40%;
+    justify-content: flex-end;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      background: $color-teal;
+      opacity: .7;
+      z-index: 1;
+    }
+
+    &.homePromotionalCaseStudy {
+
+      &::before {
+        background: $color-teal;
+      }
+    }
+
+    &.homePromotionalEvent {
+
+      &::before {
+        background: $color-purple;
+      }
+    }
+
+    .m-homePromotionalLinks__image {
+      @extend %square-image;
+      box-shadow: -20px 20px $color-darkgray;
+    }
 
     .m-homePromotionalLinks__ContentContainer {
       left: 50%;
       position: absolute;
       transform: translate(-50%, -50%);
       top: 50%;
+      width: 80%;
+      z-index: 5;
+
+      .m-homePromotionalLinks__imagetitle {
+        color: $color-white;
+        font-family: $base-font-family;
+        font-size: 3rem;
+        margin: 2rem 0rem;
+      }
+
+      .m-homePromotionalLinks__imagetext {
+        color: $color-white;
+      }
     }
   }
 }

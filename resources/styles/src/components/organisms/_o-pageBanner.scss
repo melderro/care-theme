@@ -9,6 +9,16 @@
     top: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
+
+    .o-pageBanner__subtitle {
+      color: $color-white;
+      margin: 2rem;
+    }
+
+    .o-pageBanner__title {
+      color: $color-white;
+      font-weight: $font-semibold;
+    }
   }
 
   .o-pageBanner__image {

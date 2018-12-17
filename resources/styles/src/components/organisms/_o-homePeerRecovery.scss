@@ -5,8 +5,16 @@
 
   .o-homePeerRecovery__block {
     background-color: $color-yellow;
-    flex: 0 1 50%;
+    display: flex;
+    flex: 0 1 60%;
+    flex-direction: column;
+    justify-content: center;
     padding: 2rem 3rem;
+
+    &.homepeerrecoveryList {
+      flex: 0 1 40%;
+      background-color: $color-brown;
+    }
 
     .o-homePeerRecovery__subtitle {
       color: $color-brown;
@@ -18,10 +26,6 @@
 
     .o-homePeerRecovery__text {
       color: $color-white;
-    }
-
-    &.homepeerrecoveryList {
-      background-color: $color-brown;
     }
   }
 }

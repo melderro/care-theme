@@ -10,10 +10,13 @@
 
       .m-home__datablocks__text {
         color: $color-white;
+        font-family: $script-font-family;
+        font-size: 2rem;
         left: 50%;
-        line-height: 1.45rem;
+        line-height: 2rem;
         position: absolute;
         top: 50%;
+        text-transform: uppercase;
         transform: translate(-50%, -50%);
         width: 80%;
       }

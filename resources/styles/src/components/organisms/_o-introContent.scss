@@ -10,13 +10,7 @@
     color: $color-yellow;
   }
 
-  .o-introContent__contentimage {
-    flex: 0 1 40%;
-    padding: 0 6rem 0 0;
-  }
-
   .o-introContent__content {
-    flex: 0 1 60%;
-    padding-right: 3rem;
+    @extend %main-body-padding-left;
   }
 }

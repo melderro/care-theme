@@ -5,7 +5,10 @@
   padding: 3rem 0rem;
 
   .o-maincategoryintroContent__contenttitle {
+    align-items: center;
+    display: flex;
     flex: 0 1 40%;
+    justify-content: center;
 
     .o-maincategoryintroContent__title {
       font-family: $script-font-family;

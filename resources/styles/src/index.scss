@@ -108,11 +108,15 @@
 @import './components/molecules/m-generalbodyContent';
 @import './components/molecules/m-homePeerRecovery';
 @import './components/molecules/m-homePromotionalLinks';
+@import './components/molecules/m-maincategorybodyContent';
 @import './components/molecules/m-maincategoryCaseStudy';
 @import './components/molecules/m-maincategoryProgramLinks';
 @import './components/molecules/m-navigationRow';
+@import './components/molecules/m-programbodyContent';
 @import './components/molecules/m-programRelatedTopics';
 @import './components/molecules/m-programResourcesGroup';
+
+
 
  // Organisms
 @import './components/organisms/o-bodyContent';
@@ -128,6 +132,7 @@
 @import './components/organisms/o-footerSupplementLinks';
 @import './components/organisms/o-generalbodyContent';
 @import './components/organisms/o-generalbodySecondaryContent';
+@import './components/organisms/o-homeProgramsBlock';
 @import './components/organisms/o-maincategorybodyContent';
 @import './components/organisms/o-maincategoryCaseStudy';
 @import './components/organisms/o-maincategoryintroContent';
@@ -136,6 +141,7 @@
 @import './components/organisms/o-pageBanner';
 @import './components/organisms/o-programRelatedTopics';
 @import './components/organisms/o-programResources';
+
 
 // Pages
 @import './components/pages/generalLanding';
