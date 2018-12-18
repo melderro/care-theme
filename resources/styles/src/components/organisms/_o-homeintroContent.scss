@@ -42,5 +42,10 @@
     .o-homeintroContent__paragraph {
       color: $color-white;
     }
+
+    .o-homeintroContent__link {
+      display: flex;
+      justify-content: flex-start;
+    }
   }
 }

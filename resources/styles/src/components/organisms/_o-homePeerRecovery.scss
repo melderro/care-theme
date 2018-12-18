@@ -27,5 +27,10 @@
     .o-homePeerRecovery__text {
       color: $color-white;
     }
+
+    .o-homePeerRecovery__link {
+      display: flex;
+      justify-content: flex-start;
+    }
   }
 }

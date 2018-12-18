@@ -12,10 +12,10 @@
 
   .o-introContent__content {
     @extend %main-body-padding-left;
-
-    .o-introContent__link {
-      display: flex;
-      justify-content: flex-start;
-    }
   }
+}
+
+.o-introContent__link {
+  display: flex;
+  justify-content: flex-start;
 }

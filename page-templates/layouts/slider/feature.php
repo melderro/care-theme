@@ -13,8 +13,9 @@
           <h2 class="m-featureSlider__title">
             <?php the_sub_field('featured_slide_title'); ?>
           </h2>
+          <div class="m-featureSlider__link">
           <span class="a-roundLink o-featureSliderlink"><?php the_sub_field('featured_slide_link'); ?></span>
-        </div>
+        </div></div>
       </div>
     </a>
   </div>

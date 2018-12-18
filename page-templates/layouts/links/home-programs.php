@@ -15,3 +15,16 @@
     </div>
   </div>  
 </div>
+
+<div class="o-homePrograms__Links">
+  <ul class="m-homeProgramLinks">
+  <?php if ( have_rows('home_program_links') ) : ?>      
+        <?php while( have_rows('home_program_links') ) : the_row(); ?> 
+    <li><a href="<?php the_sub_field('home_program_links_link'); ?>">
+      <img class="m-homeProgramLinks__image" src="<?php echo get_acf_image( get_sub_field('home_program_links_icon'), '540w', 'http://via.placeholder.com/588x216?text=logo'); ?> "/>
+      <span><?php the_sub_field('home_program_links_title'); ?></span>
+    </a></li>    
+  <?php endwhile; ?>      
+      <?php endif; ?>
+      </ul>
+</div>

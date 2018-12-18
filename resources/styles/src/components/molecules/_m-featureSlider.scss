@@ -26,5 +26,10 @@
         margin: 0px;
       }
     }
+
+    .m-featureSlider__link {
+      display: flex;
+      justify-content: flex-start;
+    }
   }
 }

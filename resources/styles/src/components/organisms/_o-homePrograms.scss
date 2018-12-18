@@ -4,3 +4,7 @@
   justify-content: space-between;
   padding: 3rem 0rem;
 }
+
+.o-homePrograms__Links {
+  @extend %container-shared;
+}
