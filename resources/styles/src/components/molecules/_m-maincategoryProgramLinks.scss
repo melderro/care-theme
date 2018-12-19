@@ -14,8 +14,24 @@
       color: $color-bodycopy;
       display: flex;
       flex-direction: column;
+      position: relative;
       text-align: center;
       text-decoration: none;
+
+      &:hover {
+
+        span {
+
+          &:after {
+            @extend %border-source;
+            content: "";
+            display: block;
+            position: absolute;
+            transform: translate(50%,50%);
+            width: 50%;
+          }
+        }
+      }
 
       img {
         flex: 01 100%;

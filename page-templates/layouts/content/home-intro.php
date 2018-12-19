@@ -5,8 +5,7 @@
       if(have_rows('data_and_statistics_blocks')):
         while(have_rows('data_and_statistics_blocks')): the_row();
     ?>
-    <div class="m-home__datablocks">
-      <img class="m-home__datablocks__image" src="<?php echo get_acf_image( get_sub_field('data_and_statistics_image'), '540w', 'http://via.placeholder.com/588x216?text=logo'); ?> "/> 
+    <div class="m-home__datablocks" style="background-image: url(<?php echo get_acf_image( get_sub_field('data_and_statistics_image'), '540w', 'http://via.placeholder.com/588x216?text=logo'); ?>)">
       <div class="m-home__datablocks__text">
         <?php the_sub_field('data_and_statistics_text'); ?>
       </div>

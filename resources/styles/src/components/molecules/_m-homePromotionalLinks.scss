@@ -22,6 +22,10 @@
         font-size: 3.8rem;
         line-height: 3.8rem;
         text-transform: uppercase;
+
+        p {
+          margin: 0px;
+        }
       }
     }
 
@@ -37,10 +41,20 @@
     }
 
     .m-homePromotionalLinks__source {
-      color: #000;
+      color: $color-purple;
       font-family: $link-font-family;
       text-transform: uppercase;
       letter-spacing: .12rem;
+      margin-top: 2rem;
+      position: relative;
+
+      &:after {
+        @extend %border-source;
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+      }
     }
   }
 

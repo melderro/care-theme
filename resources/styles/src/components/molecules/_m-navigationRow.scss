@@ -84,8 +84,23 @@
 
     ul {
 
-      a {
-        width: 100%;
+      li {
+        flex-direction: column-reverse;
+
+        ul {
+          flex-direction: column;
+
+          li {
+
+            a{
+              text-transform: capitalize;
+            }
+          }
+        }
+
+        a {
+          width: 100%;
+        }
       }
     }
   }
@@ -107,22 +122,4 @@
       transition: all 0.2s ease-in;
     }
   }
-}
-
-#menu-primary li ul {
-
-  li {
-    flex-direction: column-reverse;
-
-    ul {
-      flex-direction: column;
-
-      li {
-
-        a{
-          text-transform: capitalize;
-        }
-      }
-    }
-  } 
 }
