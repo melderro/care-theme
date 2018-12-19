@@ -18,7 +18,7 @@
       font-weight: $font-semibold;
       letter-spacing: .06rem;
       line-height: 1rem;
-      padding: .75rem .5rem;
+      padding: .75rem .8rem;
       text-decoration: none;
       text-transform: uppercase;
       -webkit-transition: all 0.2s ease-in;
@@ -84,18 +84,22 @@
 
     ul {
 
-      a {
-        width: 100%;
-      }
       li {
         flex-direction: column-reverse;
+
         ul {
           flex-direction: column;
+
           li {
+
             a{
               text-transform: capitalize;
             }
           }
+        }
+
+        a {
+          width: 100%;
         }
       }
     }

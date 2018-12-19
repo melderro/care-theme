@@ -33,7 +33,7 @@
     <div class="m-programResources__content">
       <h2 class="m-programResources__title">
         <?php the_field('program_resources_title'); ?>
-        Events & Classes
+        Resources
       </h2>
     <ul class="o-programResources__list">
       <li>

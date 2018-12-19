@@ -42,6 +42,8 @@
  */
 // Container specs
 @import './tools/placeholders/container-specs';
+// Element specs
+@import './tools/placeholders/element-specs';
 // Input resets
 @import './tools/placeholders/input-reset';
 // List style resets
@@ -50,7 +52,6 @@
 @import './tools/placeholders/overlay';
 // Preloader
 @import './tools/placeholders/preload';
-
 
 /**
  * Mixins

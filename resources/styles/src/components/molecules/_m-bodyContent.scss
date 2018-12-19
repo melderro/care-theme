@@ -75,11 +75,11 @@
   text-transform: uppercase;
 
   &:after {
-    border-bottom: 5px solid $color-yellow;
+    @extend %border-source;
     content: "";
     display: block;
     position: absolute;
-    width: 85%;
+    width: 100%;
   }
 }
 

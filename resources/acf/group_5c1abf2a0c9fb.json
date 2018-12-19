@@ -1,10 +1,10 @@
 {
-    "key": "group_5c19bc196b942",
-    "title": "Blog Category",
+    "key": "group_5c1abf2a0c9fb",
+    "title": "Blog Landing",
     "fields": [
         {
-            "key": "field_5c19bc311bea8",
-            "label": "Top Banner",
+            "key": "field_5c1abf3e8d0be",
+            "label": "Introduction",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -19,9 +19,9 @@
             "endpoint": 0
         },
         {
-            "key": "field_5c19bc4c1bea9",
+            "key": "field_5c1ac032466dc",
             "label": "Image",
-            "name": "general_top_banner_image",
+            "name": "intro_image",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -43,9 +43,9 @@
             "mime_types": ""
         },
         {
-            "key": "field_5c19bc6f1beaa",
+            "key": "field_5c1ac041466dd",
             "label": "Title",
-            "name": "general_top_banner_title",
+            "name": "intro_title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -62,28 +62,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_5c19bc7c1beab",
-            "label": "Subtitle",
-            "name": "general_top_banner_subtitle",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5c19bc8b1beac",
+            "key": "field_5c1ac073466de",
             "label": "Text",
-            "name": "general_top_banner_text",
+            "name": "intro_text",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -100,9 +81,82 @@
             "delay": 0
         },
         {
-            "key": "field_5c1a9fdf98376",
-            "label": "Blog Image",
-            "name": "blog_image",
+            "key": "field_5c1ac182b78f1",
+            "label": "Callout",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5c1ac1a8b78f2",
+            "label": "Text",
+            "name": "program_content_callout_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c1ac1bab78f3",
+            "label": "Source Name",
+            "name": "program_content_callout_source_name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c1ac1ceb78f4",
+            "label": "Source",
+            "name": "program_content_callout_source",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c1ac1dcb78f5",
+            "label": "Source Image",
+            "name": "program_content_callout_source_image",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -127,9 +181,16 @@
     "location": [
         [
             {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
                 "param": "post_template",
                 "operator": "==",
-                "value": "page-templates\/template-newsCategory.php"
+                "value": "page-templates\/template-newsLanding.php"
             }
         ]
     ],
@@ -141,5 +202,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1545248762
+    "modified": 1545257461
 }

@@ -5,7 +5,7 @@
   height: 80px;
   justify-content: space-evenly;
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 1100px;
   position: fixed;
   -webkit-transition: all 0.5s ease-in;
   -moz-transition: all 0.5s ease-in;
@@ -58,6 +58,7 @@
   .o-navigationMenu__bottomRow {
     flex: 0 1 auto;
     order: 1;
+
     a {
       order: 2;
     }
@@ -86,7 +87,7 @@
     .o-navigationMenu__link {
 
       .o-navigationMenu__image {
-        max-width: 180px;
+        max-width: 140px;
         -webkit-transition: all 0.5s ease-in;
         -moz-transition: all 0.5s ease-in;
         -o-transition: all 0.5s ease-in;
@@ -95,3 +96,4 @@
     }
   }
 }
+
