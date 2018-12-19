@@ -37,7 +37,7 @@
       <section id="newsFilter" class="newsCategory__filter">
         <?php get_partial('links', 'newsfilter'); ?>
       </section>
-      <section id="newsFilter" class="newsCategory__articleGrid">
+      <section id="newsArticleGrid" class="newsCategory__articleGrid">
         <?php get_partial('content', 'article-grid'); ?>
       </section>
     </main>

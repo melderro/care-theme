@@ -31,7 +31,7 @@
     // Main content area
     ?>
     <main>
-      <section id="introContent" class="newsLanding__intro">
+      <section id="newslandingIntroContent" class="newsLanding__intro">
         <?php get_partial('content', 'intro'); ?>
       </section>
     </main>

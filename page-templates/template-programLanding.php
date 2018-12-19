@@ -31,16 +31,16 @@
     // Main content area
     ?>
     <main>
-      <section id="introContent" class="programLanding__intro">
+      <section id="programIntroContent" class="programLanding__intro">
         <?php get_partial('content', 'intro'); ?>
       </section>
-      <section id="bodyContent" class="programLanding__bodyContent">
+      <section id="programBodyContent" class="programLanding__bodyContent">
         <?php get_partial('content', 'program'); ?>
       </section>
-      <section id="bodyContent" class="programLanding__resourceLinks">
+      <section id="programResourceLinks" class="programLanding__resourceLinks">
         <?php get_partial('links', 'program-resource-links'); ?>
       </section>
-      <section id="bodyContent" class="programLanding__relatedTopics">
+      <section id="programRelatedTopics" class="programLanding__relatedTopics">
         <?php get_partial('links', 'program-related-topic-links'); ?>
       </section>
     </main>

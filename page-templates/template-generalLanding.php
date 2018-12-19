@@ -34,23 +34,23 @@
     // Main content area
     ?>
     <main>
-      <section id="bodyContent" class="generalLanding__bodyContent">
+      <section id="generalContent" class="generalLanding__bodyContent">
         <?php get_partial('content', 'general'); ?>
       </section>
-      <section id="bodyContent" class="generalLanding__photoSlider">
+      <section id="generalPhotos" class="generalLanding__photoSlider">
         <?php get_partial('slider', 'general-photos'); ?>
       </section>
-      <section id="bodyContent" class="generalLanding__photoSlider">
+      <section id="generalSecondary" class="generalLanding__Secondary">
         <?php get_partial('content', 'general-secondary'); ?>
       </section>
-      <section id="bodyContent" class="generalLanding__relatedTopics">
+      <section id="generalRelatedTopics" class="generalLanding__relatedTopics">
         <?php get_partial('links', 'program-related-topic-links'); ?>
       </section>
-      <section id="maincategoryCaseStudy" class="generalLanding__caseStudy">
+      <section id="generalCaseStudy" class="generalLanding__caseStudy">
         <?php get_partial('links', 'maincategory-casestudy'); ?>
       </section>
-      <section id="homepagePromotionlinks" class="generalLanding__promotionlinks">
-        <?php get_partial('links', 'home-promotionlinks'); ?>
+      <section id="generalPromotionlinks" class="generalLanding__promotionlinks">
+        <?php get_partial('links', 'general-promotionlinks'); ?>
       </section>
     </main>
 

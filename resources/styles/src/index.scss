@@ -106,6 +106,7 @@
 @import './components/molecules/m-footerNewsletterSignup';
 @import './components/molecules/m-footerSupplementLinks';
 @import './components/molecules/m-generalbodyContent';
+@import './components/molecules/m-generalbodyPhotos';
 @import './components/molecules/m-homePeerRecovery';
 @import './components/molecules/m-homeProgramLinks';
 @import './components/molecules/m-homePromotionalLinks';
@@ -116,8 +117,6 @@
 @import './components/molecules/m-programbodyContent';
 @import './components/molecules/m-programRelatedTopics';
 @import './components/molecules/m-programResourcesGroup';
-
-
 
 
  // Organisms
@@ -133,6 +132,7 @@
 @import './components/organisms/o-footerNewsletterSignup';
 @import './components/organisms/o-footerSupplementLinks';
 @import './components/organisms/o-generalbodyContent';
+@import './components/organisms/o-generalbodyPhotos';
 @import './components/organisms/o-generalbodySecondaryContent';
 @import './components/organisms/o-homeProgramsBlock';
 @import './components/organisms/o-maincategorybodyContent';

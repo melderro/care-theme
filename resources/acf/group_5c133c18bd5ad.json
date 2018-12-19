@@ -405,9 +405,9 @@
             "endpoint": 0
         },
         {
-            "key": "field_5c13d1dac859b",
-            "label": "Subtitle",
-            "name": "main_category_case_study_subtitle",
+            "key": "field_5c13d1f8c859c",
+            "label": "Title",
+            "name": "main_category_case_study_title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -424,9 +424,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_5c13d1f8c859c",
-            "label": "Title",
-            "name": "main_category_case_study_title",
+            "key": "field_5c13d1dac859b",
+            "label": "Subtitle",
+            "name": "main_category_case_study_subtitle",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -541,5 +541,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1545085827
+    "modified": 1545189102
 }
