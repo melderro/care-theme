@@ -34,8 +34,14 @@
       <section id="programIntroContent" class="programLanding__intro">
         <?php get_partial('content', 'intro'); ?>
       </section>
-      <section id="programBodyContent" class="programLanding__bodyContent">
-        <?php get_partial('content', 'program'); ?>
+      <section id="programBodyContent" class="programLanding__bodyContenttop">
+        <?php get_partial('content', 'program-top'); ?>
+      </section>
+      <section id="programBodyContent" class="programLanding__bodyContentcallout">
+        <?php get_partial('content', 'program-callout'); ?>
+      </section>
+      <section id="programBodyContent" class="programLanding__bodyContentbottom">
+        <?php get_partial('content', 'program-bottom'); ?>
       </section>
       <section id="programResourceLinks" class="programLanding__resourceLinks">
         <?php get_partial('links', 'program-resource-links'); ?>

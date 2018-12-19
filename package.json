@@ -33,10 +33,7 @@
   },
   "dependencies": {
     "dialog-polyfill": "^0.4.10",
-<<<<<<< HEAD
-=======
     "jquery": "^3.3.1",
->>>>>>> js and responsive top banner image
     "lazysizes": "^4.1.4",
     "smoothscroll-polyfill": "^0.4.3"
   },

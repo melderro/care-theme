@@ -10,13 +10,9 @@ require('../../styles/src/index.scss');
  */
 require('./vendor/dialog-polyfill');
 require('./vendor/lazysizes');
-<<<<<<< HEAD
-require('./vendor/smoothscroll-polyfill');
-=======
 require('./vendor/smoothscroll-polyfill');
 
 /**
  * modules libraries and plugin settings
  */
 require('./modules/site-wide');
->>>>>>> js and responsive top banner image
