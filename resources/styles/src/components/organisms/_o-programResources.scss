@@ -22,3 +22,24 @@
     height: 100%;
   }
 }
+
+.o-programResources__list {
+
+  li {
+
+    a {
+      position: relative;
+
+      &:hover {
+
+        &:after {
+          @extend %border-source;
+          content: "";
+          display: block;
+          position: absolute;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -22,12 +22,7 @@
       <div class="m-generalbodyContent__calloutcontent">
       <?php the_field('general_content_callout_text'); ?>
         <div class="m-generalbodyContent__calloutnamecontainer">   
-          <span class="m-bodyContent__calloutname m-generalbodyContent__calloutname">
-          <?php the_field('general_content_callout_source_name'); ?>,
-          </span>
-          <span class="m-bodyContent__calloutsource m-generalbodyContent__calloutsource">
-          <?php the_field('general_content_callout_source'); ?>
-          </span>
+          <span class="m-bodyContent__calloutname m-generalbodyContent__calloutname"><?php the_field('general_content_callout_source_name'); ?></span><span class="m-bodyContent__calloutsource m-generalbodyContent__calloutsource"><?php the_field('general_content_callout_source'); ?></span>
         </div>
       </div>
     </div>

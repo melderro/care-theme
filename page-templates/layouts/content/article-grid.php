@@ -3,7 +3,7 @@
   <ul class="m-articleGridBlock">
     <li><a>
       <div class="m-articleGridBlock__imageContainer">
-        <img class="m-articleGridBlock__image" src="<?php echo get_acf_image( get_field('program_content_image'), '540w', 'http://via.placeholder.com/588x216?text=logo'); ?> "/>
+        <img class="m-articleGridBlock__image" src="<?php echo get_acf_image( get_field('blog_image'), '540w', 'http://via.placeholder.com/588x216?text=logo'); ?> "/>
       </div>
       <div class="m-articleGridBlock__titleContainer">
         <h3 class="o-introContent__subtitle">
