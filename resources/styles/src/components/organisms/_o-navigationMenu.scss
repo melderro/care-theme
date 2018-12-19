@@ -63,7 +63,6 @@
       order: 2;
     }
   }
-}
 
 #menu-primary {
 
@@ -75,23 +74,24 @@
   }
 }
 
-.condensed {
+  .condensed {
 
-  .o-navigationMenu {
-    height: 50px;
-    -webkit-transition: all 0.5s ease-in;
-    -moz-transition: all 0.5s ease-in;
-    -o-transition: all 0.5s ease-in;
-    transition: all 0.5s ease-in;
+    .o-navigationMenu {
+      height: 50px;
+      -webkit-transition: all 0.5s ease-in;
+      -moz-transition: all 0.5s ease-in;
+      -o-transition: all 0.5s ease-in;
+      transition: all 0.5s ease-in;
 
-    .o-navigationMenu__link {
+      .o-navigationMenu__link {
 
-      .o-navigationMenu__image {
-        max-width: 180px;
-        -webkit-transition: all 0.5s ease-in;
-        -moz-transition: all 0.5s ease-in;
-        -o-transition: all 0.5s ease-in;
-        transition: all 0.5s ease-in;
+        .o-navigationMenu__image {
+          max-width: 180px;
+          -webkit-transition: all 0.5s ease-in;
+          -moz-transition: all 0.5s ease-in;
+          -o-transition: all 0.5s ease-in;
+          transition: all 0.5s ease-in;
+        }
       }
     }
   }
