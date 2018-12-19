@@ -38,7 +38,7 @@
         <?php get_partial('content', 'program-callout'); ?>
       </section>
       <section id="programBodyContent" class="newsLanding__bodyContentbottom">
-        <?php get_partial('content', 'program-bottom'); ?>
+        <?php get_partial('content', 'news-bottom'); ?>
       </section>
     </main>
 

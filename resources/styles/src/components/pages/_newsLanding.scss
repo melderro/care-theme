@@ -1,5 +1,20 @@
+.newsLanding__intro {
+
+  .o-introContent {
+    padding-bottom: 0rem;
+  }
+}
+
+.newsLanding__bodyContentcallout {
+
+  .m-bodyContent__calloutauthor {
+    margin-top: 2rem;
+  }
+}
+
 .newsLanding__DonateLink {
   background-color: $color-lightgray;
+  margin-top: 3rem;
 }
 
 .newsLanding__callToAction {
