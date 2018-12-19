@@ -1,0 +1,6 @@
+.o-articleFilter {
+  @extend %container-shared;
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+}

@@ -69,12 +69,17 @@
 
     &:hover ul {
       background: rgba(255,255,255,.7);
-      display: block;
+      display: flex;
       left: 0px;
       padding: 0px;
       position: absolute;
       top: 40px;
-      width: 250px;
+    }
+
+    &:hover ul ul {
+      background: transparent;
+      position: relative;
+      top: 0px;
     }
 
     ul {
@@ -102,4 +107,22 @@
       transition: all 0.2s ease-in;
     }
   }
+}
+
+#menu-primary li ul {
+
+  li {
+    flex-direction: column-reverse;
+
+    ul {
+      flex-direction: column;
+
+      li {
+
+        a{
+          text-transform: capitalize;
+        }
+      }
+    }
+  } 
 }

@@ -1,9 +1,9 @@
 .o-navigationMenu {
   align-items: center;
   display: flex;
-  background-color: $color-white;
   flex-direction: row;
   height: 80px;
+  justify-content: space-evenly;
   margin: 0 auto;
   max-width: 1300px;
   position: fixed;
@@ -21,10 +21,10 @@
   }
 
   .o-navigationMenu__link {
-    align-self: flex-start;
     display: flex;
+    flex: 0 1 auto;
     height: 100%;
-    position: absolute;
+    order: 1;
 
     .o-navigationMenu__image {
       align-self: center;
@@ -48,10 +48,15 @@
     flex-direction: row;
     height: 50%;
     justify-content: flex-end;
-    width: 100%;
   }
 
   .o-navigationMenu__topRow {
+    flex: 0 1 auto;
+    order: 3;
+  }
+
+  .o-navigationMenu__bottomRow {
+    flex: 0 1 auto;
     order: 1;
   }
 

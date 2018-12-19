@@ -26,7 +26,7 @@
         <?php get_partial('navigation', 'menu'); ?>
       </section>
       <section id="topBanner" class="newsCategory__topBanner">
-        <?php get_partial('media', 'topbanner'); ?>
+        <?php get_partial('media', 'general-topbanner'); ?>
       </section>
     </header>
 
