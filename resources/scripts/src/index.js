@@ -16,3 +16,4 @@ require('./vendor/smoothscroll-polyfill');
  * modules libraries and plugin settings
  */
 require('./modules/site-wide');
+require('./modules/programLanding');
