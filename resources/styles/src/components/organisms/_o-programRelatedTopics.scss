@@ -1,0 +1,19 @@
+.o-programRelatedTopics {
+  @extend %container-shared-small;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &:before {
+    border-bottom: 1px solid #f5f5f4;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+  }
+
+  h2 {
+    margin-top: 3rem;
+  }
+}

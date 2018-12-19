@@ -19,6 +19,9 @@ html {
 
 body {
   @include size(100%);
+  color: $color-bodycopy;
+  font-family: $base-font-family;
+  line-height: 1.45rem;
 }
 
 // ::selection {}

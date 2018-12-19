@@ -1,0 +1,12 @@
+.o-homeProgramsBlock {
+  order: 2;
+
+  &.m-bodyContent__content {
+    @extend %main-body-padding-right;
+  }
+
+  .m-bodyContent__image {
+    @extend %square-image;
+    box-shadow: 20px 20px $color-green;
+  }
+}

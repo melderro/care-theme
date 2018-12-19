@@ -1,0 +1,10 @@
+.o-featureSlider {
+  background-color: $color-lightgray;
+  width: 100%;
+
+  .o-featureSliderlink {
+    border-color: $color-yellow;
+    color: $color-yellow;
+    line-height: 1.15;
+  }
+}

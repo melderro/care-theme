@@ -1,0 +1,26 @@
+.m-articleGridBlock {
+  border-bottom: 1px solid #e7e7e8;
+  list-style: none;
+  margin: 0;
+  padding: 3rem 4rem;
+
+  li {
+
+    a {
+      display: flex;
+      flex-direction: row;
+
+      .m-articleGridBlock__imageContainer {
+        flex: 0 1 30%;
+      }
+
+      .m-articleGridBlock__titleContainer {
+        flex: 0 1 30%;
+      }
+
+      .m-articleGridBlock__contentContainer {
+        flex: 0 1 30%;
+      }
+    }
+  }
+}

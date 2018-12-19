@@ -1,0 +1,32 @@
+.m-maincategoryProgramLinks {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px;
+
+  li {
+    flex: 0 1 25%;
+    padding-bottom: 1rem;
+
+    a {
+      align-items: center;
+      color: $color-bodycopy;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      text-decoration: none;
+
+      img {
+        flex: 01 100%;
+        max-width: 160px;
+      }
+
+      span {
+        flex: 01 100%;
+        padding-top: .5rem;
+        width: 100%;
+      }
+    }
+  }
+}

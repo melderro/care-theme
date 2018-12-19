@@ -13,4 +13,20 @@ $font-black: 900;
 
 // Font declarations for the theme
 
-$base-font-family: 'ff-market-web-pro-condensed', sans-serif;
+$base-font-family: 'p22-mackinac-pro', serif;
+
+$script-font-family: 'ff-market-web-pro-condensed', sans-serif;
+
+$link-font-family: 'omnes-cond', sans-serif;
+
+%main-heading {
+  color: $color-bodycopy;
+  font-weight: $font-regular;
+  margin: 0px;
+}
+
+%sub-heading {
+  font-family: $script-font-family;
+  font-weight: $font-regular;
+  margin: 0px;
+}

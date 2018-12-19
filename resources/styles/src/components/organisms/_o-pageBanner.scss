@@ -1,0 +1,37 @@
+.o-pageBanner {
+  line-height: 0px;
+  position: relative;
+  width: 100%;
+
+  .o-pageBanner__titlecontent {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+
+    .o-pageBanner__subtitle {
+      color: $color-yellow;
+      margin: 2rem;
+    }
+
+    .o-pageBanner__title {
+      color: $color-white;
+      font-weight: $font-semibold;
+    }
+
+    .o-pageBanner__link {
+      display: flex;
+      justify-content: center;
+    }
+
+    .o-pageBanner__text {
+      color: $color-white;
+      line-height: 1.5rem;
+    }
+  }
+
+  .o-pageBanner__image {
+    width: 100%;
+  }
+}

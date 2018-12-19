@@ -7,9 +7,7 @@
 // aside {}
 // footer {}
 // #{$all-headers} {}
-// h1 {}
 // h2 {}
-// h3 {}
 // h4 {}
 // h5 {}
 // h6 {}
@@ -22,4 +20,47 @@ section {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+h1 {
+  @extend %main-heading;
+  font-size: 3.3rem;
+  line-height: 3.3rem;
+  margin: 10px 0px;
+}
+
+h2,
+h3.m-footerSupplementLinks__title {
+  @extend %main-heading;
+  font-size: 3rem;
+  line-height: 2.8rem;
+  margin: 10px 0px;
+}
+
+h2.m-programResources__title,
+.programLanding__relatedTopics h2 {
+  font-size: 2.6rem;
+}
+
+h3 {
+  @extend %sub-heading;
+}
+
+h3.o-introContent__subtitle,
+h3.o-pageBanner__subtitle,
+h3.m-footerSupplementLinks__subtitle {
+  font-size: 2.2rem;
+}
+
+h3.o-homeintroContent__subtitle,
+h3.o-homePeerRecovery__subtitle,
+h3.m-bodyContent__subtitle,
+h3.m-footerContent__contactLinksTitle,
+h3.m-footerContent__socialLinksTitle,
+h3.m-generalbodyContent__subtitle {
+  font-size: 1.8rem;
+}
+
+h3.m-footerSupplementLinks__title {
+  font-family: $base-font-family;
 }

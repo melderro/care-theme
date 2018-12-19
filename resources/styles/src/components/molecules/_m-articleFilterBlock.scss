@@ -1,0 +1,24 @@
+.m-articleFilterBlock {
+  align-items: center;
+  display: flex;
+  flex: 0 1 30%;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+
+  .m-articleFilterBlock__title {
+    color: $color-white;
+    font-family: $base-font-family;
+    padding-bottom: 1rem;
+  }
+
+  .m-articleFilterBlock__dropdown {
+    width: 100%;
+
+    select {
+      border-radius: 3rem;
+      padding: 1rem;
+      width: 100%;
+    }
+  }
+}

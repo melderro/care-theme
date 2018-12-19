@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: General Content
+ * Template Name: General Content Content
  * Description: General content page
  */
 ?>

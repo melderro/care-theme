@@ -1,0 +1,17 @@
+.o-footerContent {
+  @extend %container-shared;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 4rem 0;
+
+  .o-footerContentBlock {
+    flex: 0 1 33.33%;
+
+    &.o-footerContent__socialLinks {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+  }
+}
