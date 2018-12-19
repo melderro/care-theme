@@ -15,14 +15,22 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  padding: 3rem 0rem 3rem 15rem;
+  padding: 0rem 0rem 3rem 12rem;
 
   .m-generalbodyContent__calloutcontainer {
+    align-items: center;
     display: flex;
     flex-direction: row;
 
     .m-generalbodyContent__calloutimagecontainer {
       flex: 0 1 20%;
+      margin-right: 3rem;
+
+      .m-generalbodyContent__calloutimage {
+        clip-path: circle(70px at 70px 70px);
+        max-width: 140px;
+        width: 100%;
+      }
     }
 
     .m-generalbodyContent__calloutcontent {

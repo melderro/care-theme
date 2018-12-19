@@ -38,10 +38,10 @@
         <?php get_partial('content', 'program'); ?>
       </section>
       <section id="bodyContent" class="programLanding__resourceLinks">
-        <?php get_partial('links', 'program-resources'); ?>
+        <?php get_partial('links', 'program-resource-links'); ?>
       </section>
       <section id="bodyContent" class="programLanding__relatedTopics">
-        <?php get_partial('links', 'program-related-topics'); ?>
+        <?php get_partial('links', 'program-related-topic-links'); ?>
       </section>
     </main>
 

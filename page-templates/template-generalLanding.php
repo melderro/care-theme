@@ -44,7 +44,7 @@
         <?php get_partial('content', 'general-secondary'); ?>
       </section>
       <section id="bodyContent" class="generalLanding__relatedTopics">
-        <?php get_partial('links', 'program-related-topics'); ?>
+        <?php get_partial('links', 'program-related-topic-links'); ?>
       </section>
       <section id="maincategoryCaseStudy" class="generalLanding__caseStudy">
         <?php get_partial('links', 'maincategory-casestudy'); ?>

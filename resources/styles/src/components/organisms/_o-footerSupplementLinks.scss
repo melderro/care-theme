@@ -1,4 +1,6 @@
 .o-footerSupplementLinks {
   @extend %container-shared-full;
+  border-top: 1px solid $color-lightgray;
+
   display: flex;
 }
