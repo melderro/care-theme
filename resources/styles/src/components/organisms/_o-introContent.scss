@@ -21,6 +21,16 @@
 }
 
 .o-introContent__link {
+  -webkit-transition: all 0.8s ease-in;
+  -moz-transition: all 0.8s ease-in;
+  -o-transition: all 0.8s ease-in;
   display: flex;
   justify-content: flex-start;
+  position: relative;
+
+  &.reveal {
+    -webkit-transition: all 0.8s ease-in;
+    -moz-transition: all 0.8s ease-in;
+    -o-transition: all 0.8s ease-in;
+  }
 }
