@@ -8,5 +8,9 @@
   .m-bodyContent__image {
     @extend %square-image;
     box-shadow: 20px 20px $color-green;
+
+    @media(max-width: 900px) {
+      box-shadow: 15px 15px $color-green;
+    }
   }
 }
