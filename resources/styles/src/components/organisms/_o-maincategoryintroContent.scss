@@ -10,13 +10,27 @@
     flex: 0 1 40%;
     justify-content: flex-start;
 
+    @media(max-width: 980px) {
+      flex: 0 1 100%;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
     .o-maincategoryintroContent__title {
       font-family: $script-font-family;
       font-size: 5rem;
+
+      @media(max-width: 980px) {
+        font-size: 4rem;
+      }
     }
   }
 
   .o-maincategoryintroContent__content {
     flex: 0 1 60%;
+
+    @media(max-width: 980px) {
+      flex: 0 1 100%;
+    }
   }
 }
