@@ -65,6 +65,13 @@
       order: 1;
     }
   }
+
+  &.o-introContent__contentimage {
+    
+    @media(max-width: 900px) {
+      flex: 0 1 30%;
+    }
+  }
 }
 
 .m-bodyContent__content {
