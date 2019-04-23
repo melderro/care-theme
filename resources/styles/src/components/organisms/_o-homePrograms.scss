@@ -2,7 +2,11 @@
   @extend %container-shared;
   display: flex;
   justify-content: space-between;
-  padding: 3rem 0rem;
+  padding: 3rem 0;
+
+  @media(max-width: 800px) {
+    padding: 3rem 0 0;
+  }
 }
 
 .o-homePrograms__Links {

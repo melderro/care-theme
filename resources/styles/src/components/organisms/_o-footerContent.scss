@@ -8,6 +8,15 @@
   .o-footerContentBlock {
     flex: 0 1 33.33%;
 
+    &.o-footerContent__logo {
+
+      @media(max-width: 900px) {
+        flex: 0 1 100%;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+   }
+
     &.o-footerContent__socialLinks {
        display: flex;
        flex-wrap: wrap;

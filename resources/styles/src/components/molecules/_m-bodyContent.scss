@@ -6,11 +6,36 @@
   justify-content: center;
   line-height: 0px;
 
+  &.o-homeProgramsBlock {
+
+    @media(max-width: 700px) {
+      flex: 0 1 30%;
+    }
+
+    @media(max-width: 600px) {
+      display: none;
+    }
+  }
+
   &.m-maincategorybodyContent__contentimage {
+
+    @media(max-width: 700px) {
+      flex: 0 1 30%;
+    }
+
+    @media(max-width: 600px) {
+      flex: 0 1 100%;
+      padding: 0 20%;
+      margin-bottom: 4rem;
+    }
 
     .m-bodyContent__image {
       @extend %square-image;
       box-shadow: -20px 20px $color-green;
+
+      @media(max-width: 900px) {
+        box-shadow: -15px 15px $color-green;
+      }
     }
   }
 
@@ -19,6 +44,32 @@
     .m-bodyContent__image {
       @extend %square-image;
       box-shadow: -20px 20px $color-green;
+
+      @media(max-width: 900px) {
+        box-shadow: -15px 15px $color-green;
+      }
+    }
+  }
+
+  &.m-maincategoryCaseStudy__contentimage {
+    order: 2;
+
+    @media(max-width: 700px) {
+      flex: 0 1 30%;
+    }
+
+    @media(max-width: 500px) {
+      flex: 0 1 100%;
+      padding: 0 20%;
+      margin-bottom: 2rem;
+      order: 1;
+    }
+  }
+
+  &.o-introContent__contentimage {
+    
+    @media(max-width: 900px) {
+      flex: 0 1 30%;
     }
   }
 }
@@ -29,12 +80,48 @@
   flex-direction: column;
   justify-content: center;
 
+  &.m-maincategorybodyContent__content {
+
+    @media(max-width: 700px) {
+      flex: 0 1 70%;
+    }
+
+    @media(max-width: 600px) {
+      flex: 0 1 100%;
+      padding-left: 0;
+    }
+  }
+
   &.o-homeProgramsBlock {
     order: 1;
+
+    @media(max-width: 700px) {
+      flex: 0 1 70%;
+    }
+
+    @media(max-width: 600px) {
+      flex: 0 1 100%;
+      padding-right: 0;
+    }
   }
 
   .m-bodyContent__subtitle {
     color: $color-yellow;
+  }
+
+  &.m-maincategoryCaseStudy__content {
+    order: 1;
+
+    @media(max-width: 700px) {
+      flex: 0 1 70%;
+      padding-right: 2rem;
+    }
+
+    @media(max-width: 500px) {
+      flex: 0 1 100%;
+      padding-right: 0;
+      order: 2;
+    }
   }
 }
 

@@ -26,12 +26,24 @@
         padding-left: 5rem;
 
         .o-introContent__subtitle {
+          color: $color-purple;
           font-size: 1.8rem;
         }
 
         .o-introContent__title {
+          color: $color-purple;
           font-size: 2.4rem;
           line-height: 2.8rem;
+          position: relative;
+
+          &:after {
+            border-bottom: 4px solid $color-lightgray;
+            bottom: -12px;
+            content: '';
+            left: 0;
+            position: absolute;
+            width: 100px;
+          }
         }
       }
 

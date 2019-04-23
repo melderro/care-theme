@@ -13,8 +13,21 @@
   &.homePromotionalData {
     flex: 0 1 60%;
 
+    @media(max-width: 920px) {
+      padding-bottom: 4rem;
+    }
+
     &.homePromotionalCaseStudy {
       @extend %main-body-padding-right;
+
+      @media(max-width: 840px) {
+        flex: 0 1 55%;
+      }
+
+      @media(max-width: 770px) {
+        flex: 0 1 100%;
+        padding-right: 0;
+      }
 
       .m-homePromotionalLinks__text {
         color: $color-yellow;
@@ -22,6 +35,11 @@
         font-size: 3.8rem;
         line-height: 3.8rem;
         text-transform: uppercase;
+
+        @media(max-width: 920px) {
+          font-size: 3rem;
+          line-height: 3.2rem;
+        }
 
         p {
           margin: 0px;
@@ -31,6 +49,17 @@
 
     &.homePromotionalEvent {
       @extend %main-body-padding-left;
+
+      @media(max-width: 770px) {
+        flex: 0 1 70%;
+        padding-left: 1.5rem;
+        padding-bottom: 0;
+      }
+
+      @media(max-width: 620px) {
+        flex: 0 1 100%;
+        padding-left: 0;
+      }
 
       .m-homePromotionalLinks__text {
 
@@ -48,6 +77,10 @@
       margin-top: 2rem;
       position: relative;
 
+      @media(max-width: 770px) {
+        margin-top: 1rem;
+      }
+
       &:after {
         @extend %border-source;
         content: "";
@@ -62,7 +95,6 @@
     align-items: flex-end;
     display: flex;
     flex: 0 1 40%;
-    justify-content: flex-end;
     position: relative;
 
     &::before {
@@ -80,12 +112,39 @@
 
     &.homePromotionalCaseStudy {
 
+      @media(max-width: 840px) {
+        flex: 0 1 45%;
+      }
+
+      @media(max-width: 770px) {
+        flex: 0 1 50%;
+        margin: 0 25% 6rem;
+      }
+
+      @media(max-width: 640px) {
+        flex: 0 1 60%;
+        margin: 0 20% 4rem;
+      }
+
+      @media(max-width: 500px) {
+        flex: 0 1 80%;
+        margin: 0 10% 4rem;
+      }
+
       &::before {
         background: $color-teal;
       }
     }
 
     &.homePromotionalEvent {
+
+      @media(max-width: 770px) {
+        flex: 0 1 30%;
+      }
+
+      @media(max-width: 620px) {
+        display: none;
+      }
 
       &::before {
         background: $color-purple;
@@ -95,6 +154,10 @@
     .m-homePromotionalLinks__image {
       @extend %square-image;
       box-shadow: -20px 20px $color-darkgray;
+
+      @media(max-width: 900px) {
+        box-shadow: -15px 15px $color-darkgray;
+      }
     }
 
     .m-homePromotionalLinks__ContentContainer {
@@ -105,10 +168,13 @@
       width: 80%;
       z-index: 5;
 
+      @media(max-width: 840px) {
+        width: 90%;
+      }
+
       .m-homePromotionalLinks__imagetitle {
         color: $color-white;
         font-family: $base-font-family;
-        font-size: 3rem;
         margin: 2rem 0rem;
       }
 

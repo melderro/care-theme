@@ -9,10 +9,19 @@
     top: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
+    width: 80%;
+
+    @media(max-width: 600px) {
+      width: 90%;
+    }
 
     .o-pageBanner__subtitle {
       color: $color-yellow;
       margin: 2rem;
+
+      @media(max-width: 600px) {
+        margin: .5rem 0;
+      }
     }
 
     .o-pageBanner__title {
