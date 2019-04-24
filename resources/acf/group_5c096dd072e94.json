@@ -256,10 +256,10 @@
             "endpoint": 0
         },
         {
-            "key": "field_5c097bba6ddd0",
-            "label": "Text",
-            "name": "program_content_callout_text",
-            "type": "wysiwyg",
+            "key": "field_5cc09cdfd0b1c",
+            "label": "Testimonial",
+            "name": "program_content_callout_testimonial",
+            "type": "post_object",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -268,73 +268,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
-            "key": "field_5c1417f46a08f",
-            "label": "Source Name",
-            "name": "program_content_callout_source_name",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5c140fc2590b4",
-            "label": "Source",
-            "name": "program_content_callout_source",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5c140fd3590b5",
-            "label": "Source Image",
-            "name": "program_content_callout_source_image",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "id",
-            "preview_size": "thumbnail",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
+            "post_type": [
+                "testimonial"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
         },
         {
             "key": "field_5c14191d29e08",
@@ -557,5 +498,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1556050754
+    "modified": 1556128047
 }

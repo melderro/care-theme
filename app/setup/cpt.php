@@ -13,6 +13,7 @@ function cptui_register_my_cpts_testimonial()
         "singular_name" => __("Testimonial", "fwd"),
         "menu_name" => __("Testimonials", "fwd"),
         "all_items" => __("All Testimonials", "fwd"),
+        "add_new_item" => __("Add New Testimonial", "fwd"),
     );
 
     $args = array(
