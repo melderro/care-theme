@@ -1,5 +1,5 @@
 <?php // Feature slider for use at the top of a page ?>
-<div class="o-featureSlider">
+<div class="o-featureSlider preload">
   <?php
   if(have_rows('featured_slides')) :
       while(have_rows('featured_slides')): the_row();

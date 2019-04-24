@@ -15,6 +15,8 @@ require 'helpers/get-svg.php';
 require 'helpers/image-helpers.php';
 require 'helpers/picsum-img-url.php';
 require 'helpers/placeholder-img-url.php';
+require 'helpers/get-events.php';
+
 
 
 /**
@@ -26,6 +28,8 @@ require 'setup/asset-loader.php';
 require 'setup/image-sizes.php';
 require 'setup/theme-settings-page.php';
 require 'setup/theme-supports.php';
+require 'setup/cpt.php';
+
 
 /**
  * Theme menus

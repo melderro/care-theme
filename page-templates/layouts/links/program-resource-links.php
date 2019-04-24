@@ -10,18 +10,7 @@
         Events & Classes
       </h2>
     <ul class="o-programResources__list">
-      <li>
-        <a>list item</a>
-      </li>
-      <li>
-        <a>list item</a>
-      </li>
-      <li>
-        <a>list item</a>
-      </li>
-      <li>
-        <a>list item</a>
-      </li>
+      <?php get_related_events(); ?>
     </ul>
     </div>
   </div>
@@ -36,18 +25,24 @@
         Resources
       </h2>
     <ul class="o-programResources__list">
+    <?php
+      if(have_rows('program_related_resources')) :
+        while(have_rows('program_related_resources')) : the_row();
+          $file = get_sub_field('program_related_resources_file');
+    ?>
       <li>
-        <a>list item</a>
+        <a href="<?php echo $file['value'];?>" target="_blank">
+          <?php echo $file['label']; ?>
+        </a>
       </li>
+      <?php 
+        endwhile;
+      else:
+      ?>
       <li>
-        <a>list item</a>
+        <a>There are currently no related topics.</a>
       </li>
-      <li>
-        <a>list item</a>
-      </li>
-      <li>
-        <a>list item</a>
-      </li>
+      <?php endif; ?>
     </ul>
     </div>
   </div>

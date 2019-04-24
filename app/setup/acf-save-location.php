@@ -13,3 +13,35 @@ function fwd_acf_json_load_point( $paths ) {
   $paths[] = get_stylesheet_directory() . '/resources/acf';
   return $paths;
 }
+
+//load resources from options page
+function acf_load_program_related_resources_field_choices($field){
+
+    // reset choices
+    $field['choices'] = array();
+
+    // if has rows
+    if (have_rows('uploads', 'option')) {
+
+        // while has rows
+        while (have_rows('uploads', 'option')) {
+            the_row();
+
+            // vars
+            $file = get_sub_field('uploads_file');
+            $url = $file['url'];
+            $label = $file['title'];
+
+            // append to choices
+            $field['choices'][$url] = $label;
+
+        }
+
+    }
+
+    // return the field
+    return $field;
+
+}
+
+add_filter('acf/load_field/name=program_related_resources_file', 'acf_load_program_related_resources_field_choices');
