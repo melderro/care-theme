@@ -171,3 +171,8 @@
 @import './vendor/lazysizes';
 // WordPress editor styles
 @import './vendor/wp-core';
+
+.preload{
+  position: absolute;
+  left: -10000000px;
+}

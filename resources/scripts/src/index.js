@@ -17,3 +17,4 @@ require('./vendor/smoothscroll-polyfill');
  */
 require('./modules/site-wide');
 require('./modules/programLanding');
+require('./modules/homepage');
