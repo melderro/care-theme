@@ -8,7 +8,6 @@
  */
 
 function process_news_letter_form(){
-  var_dump ($_POST);
   $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
 
   if(filter_var($email, FILTER_VALIDATE_EMAIL)) :
@@ -43,35 +42,13 @@ function process_news_letter_form(){
 
       //add entry to gravity forms
       $form_id = 1;
-      $entry = array(
-          "form_id" => $form_id,
-          "1" => $email,
-      );
-      
-      $entry_id = GFAPI::add_entry($entry);
-      $form = RGFormsModel::get_form_meta($form_id);
-      $entry = RGFormsModel::get_lead($entry_id);
-      $notification_ids = array();
-      foreach ($form['notifications'] as $id => $info) {
-
-          array_push($notification_ids, $id);
-
-      }
-
-      // Send the notifications
-      // var_dump ($notification_ids);
-      // var_dump($form);
-
-      GFCommon::send_notifications($notification_ids, $form, $entry);
-      die();
+      $input_values['input_1'] = $email;
+      $result = GFAPI::submit_form($form_id, $input_values);
+      var_dump ($result);
     endif;
   else :
     echo ("no good");
   endif;
-
-
-  die();
-
 }
 
 add_filter('wp_mail_content_type', function ($content_type) {
