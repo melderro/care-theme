@@ -69,3 +69,13 @@ LI;
   endif;
   echo ($li_html);
 }
+
+function admin_current_registration_count( $field){
+  $value = $field['value'];
+  if(!$value)
+    $value = 0;
+  $field['message'] = $value . ' guests currently registered';
+  $field['value'] = $value;
+  return $field;
+}
+add_filter('acf/load_field/key=field_5cd04db5d02b1', 'admin_current_registration_count');
