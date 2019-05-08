@@ -61,3 +61,15 @@
     ));
   ?>
 </div>
+<div class="o-footerCopyright">
+  <p class="o-footerCopyright__content">
+    © Copyright <?php echo date('Y'); ?> Care of Southeastern Michigan. All rights reserved.
+  </p>
+  <p class="o-footerCopyright__content">
+            <a class="a-footerLink a-footerLink--copyright" href="/site-map/" target="_blank">Sitemap</a>
+              <a class="a-footerLink a-footerLink--copyright" href="/terms-of-service/" target="_blank">Terms</a>
+          <span class="o-footerCopyright__fwd">
+      Website Design by <a class="o-footerCopyright__link" href="https://www.designfwd.com/" target="_blnak">FWD</a>
+    </span>
+  </p>
+</div>
