@@ -81,6 +81,5 @@ wp-content/plugins/hello.php
 
 # Dist folders
 resources/fonts/dist/
-resources/images/dist/
 resources/scripts/dist/
 resources/styles/dist/
