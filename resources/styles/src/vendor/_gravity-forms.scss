@@ -25,8 +25,50 @@
   .large {
     width: 100%;
   }
+
+  input {
+    background-color: $color-lightgray;
+    padding: .75rem !important;
+  }
 }
 
 .gform_validation_container {
   display: none;
 }
+
+.gform_wrapper  {
+
+  .gsection {
+    border-bottom: none;
+  }
+
+  .gf_progressbar {
+    background-color: $color-yellow;
+  }
+}
+
+// Form Footer
+
+.gform_page_footer {
+
+  .gform_next_button {
+    align-items: center;
+    border-color: $color-yellow;
+    border-radius: 3rem;
+    border-style: solid;
+    border-width: 2px;
+    color: $color-yellow;
+    cursor: pointer;
+    display: flex;
+    font-family: $link-font-family;
+    font-size: 1.1rem;
+    justify-content: center;
+    letter-spacing: .2rem;
+    margin-top: 1rem;
+    padding: .7rem 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+
