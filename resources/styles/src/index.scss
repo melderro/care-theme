@@ -105,6 +105,7 @@
 @import './components/molecules/m-featureSlider';
 @import './components/molecules/m-footerContent';
 @import './components/molecules/m-footerContentLinks';
+@import './components/molecules/m-footerLinks';
 @import './components/molecules/m-footerNewsletterSignup';
 @import './components/molecules/m-footerSupplementLinks';
 @import './components/molecules/m-generalbodyContent';
@@ -121,6 +122,8 @@
 @import './components/molecules/m-programResourcesGroup';
 
 
+
+
  // Organisms
 @import './components/organisms/o-articleFilter';
 @import './components/organisms/o-bodyContent';
@@ -132,6 +135,7 @@
 @import './components/organisms/o-introContent';
 @import './components/organisms/o-featureSlider';
 @import './components/organisms/o-footerContent';
+@import './components/organisms/o-footerCopyright';
 @import './components/organisms/o-footerNewsletterSignup';
 @import './components/organisms/o-footerSupplementLinks';
 @import './components/organisms/o-generalbodyContent';

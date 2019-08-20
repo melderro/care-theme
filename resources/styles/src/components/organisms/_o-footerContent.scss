@@ -8,6 +8,10 @@
   .o-footerContentBlock {
     flex: 0 1 33.33%;
 
+    @media(max-width: 500px) {
+      flex: 0 1 100%;
+    }
+
     &.o-footerContent__logo {
 
       @media(max-width: 900px) {

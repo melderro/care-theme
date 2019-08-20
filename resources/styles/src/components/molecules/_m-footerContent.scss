@@ -5,22 +5,25 @@
   padding: 0px;
   margin: 0px;
 
+  @media(max-width: 500px) {
+    align-items: center;
+    padding-bottom: 1.5rem;
+  }
+
   li {
     display: flex;
     flex-direction: column;
+    padding-bottom: .5rem;
 
     a {
       color: $color-white;
       display: flex;
       flex-direction: row;
+      text-decoration: none;
 
       img {
-        flex: 0 1 50%;
-        max-width: 60px;
-      }
-
-      span {
-        flex: 0 1 50%;
+        padding-right: 1rem;
+        max-width: 40px;
       }
     }
   }
@@ -28,6 +31,11 @@
 
 .m-footerContent__contactLinksTitle {
   color: $color-white;
+  padding-bottom: 1rem;
+
+  @media(max-width: 500px) {
+    text-align: center;
+  }
 }
 
 .m-footerContent__socialLinksTitle {

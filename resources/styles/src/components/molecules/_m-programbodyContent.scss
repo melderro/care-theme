@@ -1,7 +1,16 @@
 .m-programbodyContent_contenttop {
   @extend %main-body-padding-right;
+
+  @media(max-width: 640px) {
+    padding-right: 0;
+  }
 }
 
 .m-programbodyContent_contentbottom {
   @extend %main-body-padding-left;
+
+  @media(max-width: 640px) {
+    padding-left: 0;
+    padding-top: 3rem;
+  }
 }

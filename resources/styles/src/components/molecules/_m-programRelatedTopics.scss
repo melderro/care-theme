@@ -13,11 +13,41 @@
     padding-bottom: 1rem;
     text-align: center;
 
+    @media(max-width: 840px) {
+      flex: 0 1 75%;
+    }
+
     a {
       align-items: flex-start;
       display: flex;
       flex-direction: column;
-      font-size: 1.5rem;
+      font-size: 1.25rem;
+      position: relative;
+      text-align: left;
+      text-decoration: none;
+
+      &:after {
+        background: $color-purple;
+        bottom: -9px;
+        content: '';
+        height: 6px;
+        left: 0;
+        position: absolute;
+        width: 6rem;
+        -o-transition: .5s;
+  		  -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+      }
+
+      &:hover {
+
+        &:after {
+          width: 80%;
+		      background: $color-yellow;
+        }
+      }
 
       .m-programRelatedTopics__Category {
         color: $color-yellow;

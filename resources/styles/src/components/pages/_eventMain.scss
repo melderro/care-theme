@@ -29,15 +29,30 @@
 
   #tribe-bar-form {
     @extend %container-shared;
-    background-color: transparent;
+    background-color: $color-light-yellow;
     color: #fff;
-    padding: 2rem 0rem;
+    padding: 0;
+
+    #tribe-bar-filters-wrap {
+      background-color: $color-yellow;
+      padding: 1.5rem 0;
+    }
+
+    label {
+      text-align: center;
+    }
+
+    ::placeholder {
+      color: $white;
+      font-style: normal;
+    }
 
     .tribe-bar-filters-inner {
 
       input[type="text"] {
         border: 1px solid #fff;
         border-radius: 3rem;
+        padding: .75rem;
       }
 
       .tribe-bar-submit {
@@ -50,10 +65,14 @@
       }
     }
 
+    .tribe-bar-submit {
+      margin-top: .75rem;
+    }
+
     #tribe-bar-views {
 
       .tribe-bar-views-inner {
-        background: $color-yellow;
+        background: $color-light-yellow;
       }
     }
   }
