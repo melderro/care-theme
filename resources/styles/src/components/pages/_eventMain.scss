@@ -21,6 +21,12 @@
 
 #tribe-events-content {
   @extend %container-shared;
+
+  .tribe-events-single-event-description {
+    a {
+      color: $color-yellow;
+    }
+  }
 }
 
 #tribe-events-bar {
@@ -105,6 +111,7 @@
   justify-content: center;
   margin: 2rem 0;
   text-shadow: none;
+  width: 100%;
 }
 
 .tribe-events-loop {
