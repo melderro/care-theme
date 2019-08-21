@@ -4,7 +4,7 @@
  */
 
  function get_related_events(){
-  $category = get_term_by('slug', get_field('program_event_category'),'tribe_events_cat');
+  $category = get_term_by('term_taxonomy_id', get_field('program_event_category'),'tribe_events_cat');
   //check current category
   $events = tribe_get_events(array(
       'posts_per_page' => 4,
