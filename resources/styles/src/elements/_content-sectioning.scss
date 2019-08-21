@@ -59,7 +59,10 @@ h2.m-homePromotionalLinks__title,
 .programLanding__relatedTopics h2,
 .tribe-events-list-separator-month,
 h3.m-homePromotionalLinks__imagetitle,
-.tribe-events-meta-group .tribe-events-single-section-title {
+.tribe-events-meta-group .tribe-events-single-section-title,
+#tribe-events-pg-template .tribe-events-content h1,
+.tribe-events-after-html h1,
+.tribe-events-before-html h1 {
   font-size: 2.6rem;
   line-height: 2.6rem;
 }
@@ -73,7 +76,7 @@ h3.o-pageBanner__subtitle,
 h3.m-footerSupplementLinks__subtitle,
 h3.o-donateLink__subtitle {
   font-size: 2.2rem;
-  line-height: 2.1rem;
+  line-height: 2.6rem;
 
   @media(max-width: 600px) {
     font-size: 2rem;
@@ -91,10 +94,17 @@ h3.o-homePeerRecovery__subtitle,
 h3.m-bodyContent__subtitle,
 h3.m-footerContent__contactLinksTitle,
 h3.m-footerContent__socialLinksTitle,
-h3.m-generalbodyContent__subtitle {
+h3.m-generalbodyContent__subtitle,
+#tribe-events-pg-template .tribe-events-content h3,
+.tribe-events-after-html h3,
+.tribe-events-before-html h3 {
   font-size: 1.8rem;
+  line-height: 2rem;
 }
 
-h3.m-footerSupplementLinks__title {
+h3.m-footerSupplementLinks__title,
+#tribe-events-pg-template .tribe-events-content h3,
+.tribe-events-after-html h3,
+.tribe-events-before-html h3 {
   font-family: $base-font-family;
 }

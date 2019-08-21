@@ -1,7 +1,12 @@
 .single-tribe_events {
 
+  .tribe-events-notices {
+    margin-top: 6rem;
+  }
+
   #tribe-events-content {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .tribe-events-top-container {
