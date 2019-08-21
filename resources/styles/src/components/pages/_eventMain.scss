@@ -29,18 +29,34 @@
 
   #tribe-bar-form {
     @extend %container-shared;
-    background-color: transparent;
+    background-color: $color-light-yellow;
     color: #fff;
-    padding: 2rem 0rem;
+    padding: 0;
+
+    #tribe-bar-filters-wrap {
+      background-color: $color-yellow;
+      padding: 1.5rem 0;
+    }
+
+    label {
+      text-align: center;
+    }
+
+    ::placeholder {
+      color: $white;
+      font-style: normal;
+    }
 
     .tribe-bar-filters-inner {
 
       input[type="text"] {
         border: 1px solid #fff;
         border-radius: 3rem;
+        padding: .75rem;
       }
 
       .tribe-bar-submit {
+        margin-left: 0;
 
         input[type="submit"] {
           background-color: #fff;
@@ -50,10 +66,15 @@
       }
     }
 
+    .tribe-bar-submit {
+      margin-top: .75rem;
+    }
+
     #tribe-bar-views {
 
       .tribe-bar-views-inner {
-        background: $color-yellow;
+        background: $color-light-yellow;
+        padding: 3rem 0 1rem;
       }
     }
   }
@@ -94,7 +115,7 @@
     font-weight: $font-regular;
 
     &:after {
-        border-bottom: 4px solid $color-lightgray;
+      border-bottom: 4px solid $color-lightgray;
     }
   }
 }
@@ -116,12 +137,22 @@
     position: relative;
 
     &:after {
-      border-bottom: 4px solid $color-lightgray;
-      bottom: -12px;
-      content: '';
+      background: $color-lightgray;
+      bottom: -9px;
+      content: "";
+      height: 6px;
       left: 0;
       position: absolute;
-      width: 100px;
+      width: 6rem;
+      transition: .5s;
+    }
+
+    &:hover {
+
+      &:after {
+        width: 40%;
+        background: #fab040;
+      }
     }
 
     a {
@@ -132,6 +163,7 @@
   .tribe-events-event-meta {
     color: $color-purple;
     flex: 0 1 100%;
+    margin-bottom: 0;
 
     .tribe-event-schedule-details {
       font-weight: $font-regular;
@@ -145,6 +177,15 @@
       .tribe-events-gmap {
         color: $color-yellow;
       }
+    }
+  }
+
+  .tribe-events-event-cost {
+    flex: 0 1 100%;
+
+    .ticket-cost {
+      border: none;
+      color: $color-purple;
     }
   }
 
@@ -237,4 +278,60 @@
       text-transform: uppercase;
     }
   }
+}
+
+.events-list #tribe-events-footer,
+.single-tribe_events #tribe-events-footer,
+.tribe-events-day #tribe-events-footer,
+.tribe-events-map #tribe-events-footer,
+.tribe-events-photo #tribe-events-footer {
+  border-top: none;
+}
+
+// Date Picker
+
+.datepicker.dropdown-menu {
+  background-color: $color-yellow;
+  color: $white;
+  font-weight: 500;
+}
+
+.datepicker-dropdown.datepicker-orient-top:after {
+  border-top: $color-yellow;
+}
+
+.datepicker table tr td span.active.active,
+.datepicker table tr td span.focused,
+.datepicker table tr td span:hover,
+.datepicker .datepicker-switch:hover,
+.datepicker .next:hover,
+.datepicker .prev:hover,
+.datepicker tfoot tr th:hover {
+  background-color: $color-green;
+}
+
+// View Drop Down
+
+#tribe-bar-views .tribe-bar-views-list {
+  background-color: $color-light-yellow;
+}
+
+#tribe-bar-views .tribe-bar-views-option.tribe-bar-active,
+#tribe-bar-views .tribe-bar-views-option:hover,
+#tribe-bar-views-toggle:focus,
+#tribe-bar-views-toggle:hover {
+  background: $white;
+}
+
+// Events buttons bkgd
+
+#tribe-events .tribe-events-button,
+#tribe-events .tribe-events-button:hover,
+#tribe_events_filters_wrapper input[type="submit"],
+.tribe-events-button, .tribe-events-button.tribe-active:hover,
+.tribe-events-button.tribe-inactive, .tribe-events-button:hover,
+.tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"],
+.tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"] > a {
+  background-color: $color-yellow;
+  margin-bottom: 2rem;
 }

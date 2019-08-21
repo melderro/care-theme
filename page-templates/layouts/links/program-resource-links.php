@@ -40,7 +40,7 @@
       else:
       ?>
       <li>
-        <a>There are currently no related topics.</a>
+        <a>There are currently no resources.</a>
       </li>
       <?php endif; ?>
     </ul>

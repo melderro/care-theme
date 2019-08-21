@@ -22,7 +22,8 @@ section {
   width: 100%;
 }
 
-h1 {
+h1,
+.single-tribe_events .tribe-events-single-event-title {
   @extend %main-heading;
   font-size: 3.3rem;
   line-height: 3.3rem;
@@ -57,7 +58,8 @@ h2.m-programResources__title,
 h2.m-homePromotionalLinks__title,
 .programLanding__relatedTopics h2,
 .tribe-events-list-separator-month,
-h3.m-homePromotionalLinks__imagetitle {
+h3.m-homePromotionalLinks__imagetitle,
+.tribe-events-meta-group .tribe-events-single-section-title {
   font-size: 2.6rem;
   line-height: 2.6rem;
 }
