@@ -738,7 +738,7 @@
         },
         {
             "key": "field_5c12dcf5f609f",
-            "label": "Case Study",
+            "label": "Testimonial",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -753,10 +753,10 @@
             "endpoint": 0
         },
         {
-            "key": "field_5c12dd0df60a0",
-            "label": "Title",
-            "name": "home_case_study_title",
-            "type": "text",
+            "key": "field_5d5ec7c3d1ce5",
+            "label": "Testimonial",
+            "name": "home_case_study_testimonial",
+            "type": "post_object",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -765,92 +765,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5c12dd3af60a1",
-            "label": "Text",
-            "name": "home_case_study_text",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
-            "key": "field_5c12de2bff4dd",
-            "label": "Image",
-            "name": "home_case_study_image",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "id",
-            "preview_size": "thumbnail",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_5c12dd45f60a2",
-            "label": "Link Title",
-            "name": "home_case_study_link_title",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5c12dd56f60a3",
-            "label": "Link",
-            "name": "home_case_study_link",
-            "type": "page_link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "post_type": "",
+            "post_type": [
+                "testimonial"
+            ],
             "taxonomy": "",
             "allow_null": 0,
-            "allow_archives": 1,
-            "multiple": 0
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
         },
         {
             "key": "field_5c1334d8f8553",
@@ -869,91 +791,10 @@
             "endpoint": 0
         },
         {
-            "key": "field_5c1334eef8554",
-            "label": "Image",
-            "name": "home_event_image",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "id",
-            "preview_size": "thumbnail",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_5c133585f8555",
-            "label": "Title",
-            "name": "home_event_title",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5c13358ef8556",
-            "label": "Text",
-            "name": "home_event_text",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
-            "key": "field_5c133598f8557",
-            "label": "Link Title",
-            "name": "home_event_link_title",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_5c1335a0f8558",
-            "label": "Link (copy)",
+            "label": "Event",
             "name": "home_event_link",
-            "type": "page_link",
+            "type": "post_object",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -962,11 +803,14 @@
                 "class": "",
                 "id": ""
             },
-            "post_type": "",
+            "post_type": [
+                "tribe_events"
+            ],
             "taxonomy": "",
             "allow_null": 0,
-            "allow_archives": 1,
-            "multiple": 0
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
         }
     ],
     "location": [
@@ -986,5 +830,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1545242752
+    "modified": 1566496132
 }
