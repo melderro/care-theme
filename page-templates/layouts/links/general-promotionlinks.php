@@ -3,10 +3,10 @@
   
   <div class="m-homePromotionalLinks__Block homePromotionalData homePromotionalCaseStudy">
     <div class="m-homePromotionalLinks__text">  
-      <?php the_field('general_promotion_links_text'); ?>
+      <?php the_field('data_statistic_content', 'option'); ?>
     </div>
     <div class="m-homePromotionalLinks__source">  
-      <?php the_field('general_promotion_links_source'); ?>
+      <?php the_field('data_statistic_content_source', 'option'); ?>
     </div>
   </div>
   <a class="m-homePromotionalLinks__Block homePromotionalImage homePromotionalCaseStudy" href="<?php the_field('home_case_study_link'); ?>">
