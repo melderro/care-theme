@@ -59,7 +59,6 @@ h2.m-homePromotionalLinks__title,
 .programLanding__relatedTopics h2,
 .tribe-events-list-separator-month,
 h3.m-homePromotionalLinks__imagetitle,
-.tribe-events-meta-group .tribe-events-single-section-title,
 #tribe-events-pg-template .tribe-events-content h1,
 .tribe-events-after-html h1,
 .tribe-events-before-html h1 {
@@ -74,7 +73,8 @@ h3 {
 h3.o-introContent__subtitle,
 h3.o-pageBanner__subtitle,
 h3.m-footerSupplementLinks__subtitle,
-h3.o-donateLink__subtitle {
+h3.o-donateLink__subtitle,
+.tribe-events-meta-group .tribe-events-single-section-title {
   font-size: 2.2rem;
   line-height: 2.6rem;
 
@@ -107,4 +107,8 @@ h3.m-footerSupplementLinks__title,
 .tribe-events-after-html h3,
 .tribe-events-before-html h3 {
   font-family: $base-font-family;
+}
+
+.tribe-events-meta-group .tribe-events-single-section-title {
+  font-weight: 400;
 }
