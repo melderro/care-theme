@@ -82,8 +82,11 @@
     max-width: 800px;
   }
 
-  .tribe-events-single-section-title {
-    color: $white;
+  .tribe-events-single-section {
+
+    .tribe-events-single-section-title {
+      color: $white;
+    }
   }
 
   .tribe-events-event-meta {
