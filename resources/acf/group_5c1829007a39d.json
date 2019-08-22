@@ -189,10 +189,10 @@
             "endpoint": 0
         },
         {
-            "key": "field_5c1963593fa1a",
-            "label": "Text",
-            "name": "general_content_callout_text",
-            "type": "wysiwyg",
+            "key": "field_5d5ee1bfb1642",
+            "label": "Testimonial",
+            "name": "general_content_callout_testimonial",
+            "type": "post_object",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -201,73 +201,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
-            "key": "field_5c1963733fa1b",
-            "label": "Source Name",
-            "name": "general_content_callout_source_name",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5c1963833fa1c",
-            "label": "Source",
-            "name": "general_content_callout_source",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5c1963903fa1d",
-            "label": "Source Image",
-            "name": "general_content_callout_source_image",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "id",
-            "preview_size": "thumbnail",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
+            "post_type": [
+                "testimonial"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
         },
         {
             "key": "field_5c19aff6a40c8",
@@ -386,7 +327,7 @@
         },
         {
             "key": "field_5c1967b09c1ab",
-            "label": "Case Study",
+            "label": "Testimonial",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -401,10 +342,10 @@
             "endpoint": 0
         },
         {
-            "key": "field_5c19af5a9c1ac",
-            "label": "Title",
-            "name": "main_category_case_study_title",
-            "type": "text",
+            "key": "field_5d5d9cbb13567",
+            "label": "Testimonial",
+            "name": "main_category_case_study_testimonial",
+            "type": "post_object",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -413,165 +354,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5c19af819c1ad",
-            "label": "Subtitle",
-            "name": "main_category_case_study_subtitle",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5c19af919c1ae",
-            "label": "Text",
-            "name": "main_category_case_study_text",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
-            "key": "field_5c19afb19c1af",
-            "label": "Link Title",
-            "name": "main_category_case_study_link_title",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5c19afc19c1b0",
-            "label": "Link",
-            "name": "main_category_case_study_link",
-            "type": "page_link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "post_type": "",
+            "post_type": [
+                "testimonial"
+            ],
             "taxonomy": "",
             "allow_null": 0,
-            "allow_archives": 1,
-            "multiple": 0
-        },
-        {
-            "key": "field_5c19afd29c1b1",
-            "label": "Image",
-            "name": "main_category_case_study_image",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "id",
-            "preview_size": "thumbnail",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_5c19b9a09ff49",
-            "label": "Promotion",
-            "name": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
-            "key": "field_5c19b9b69ff4a",
-            "label": "Text",
-            "name": "general_promotion_links_text",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
-            "key": "field_5c19b9d09ff4b",
-            "label": "Source",
-            "name": "general_promotion_links_source",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
         },
         {
             "key": "field_5c19badaf2651",
@@ -631,5 +421,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1545190159
+    "modified": 1566501187
 }

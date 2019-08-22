@@ -1,22 +1,22 @@
-<?php // Main Category Case Study content ?>
+<?php // Main Category Case Study content
+$universal_testimonial = get_field('testimonial', 'option');
+?>
 <div class="o-maincategoryCaseStudy">
   <div class="m-bodyContent__content m-maincategoryCaseStudy__content">
-    <h3 class="m-bodyContent__subtitle m-maincategoryCaseStudy__subtitle">
-      <?php the_field('main_category_case_study_subtitle'); ?>
-    </h3>
     <h2 class="m-bodyContent__title m-maincategoryCaseStudy__title">
-      <?php the_field('main_category_case_study_title'); ?>
+      <?php echo $universal_testimonial->post_title; ?>
     </h2>
     <div class="m-bodyContent__paragraph m-maincategoryCaseStudy__paragraph">
-      <?php the_field('main_category_case_study_text'); ?>  
+      <?php echo $universal_testimonial->post_excerpt; ?>  
     </div>
     <div class="o-introContent__link m-maincategoryCaseStudy__link">
-      <a class="a-roundLink o-maincategoryCaseStudylink" href="<?php the_field('main_category_case_study_link'); ?>">
-      <span><?php the_field('main_category_case_study_link_title'); ?></span>
+      <a class="a-roundLink o-maincategoryCaseStudylink" href="<?php echo get_the_permalink($universal_testimonial->ID); ?>">
+      <span>Read More</span>
       </a>  
     </div>
   </div>
   <div class="m-bodyContent__contentimage m-maincategoryCaseStudy__contentimage ">
-    <img class="m-bodyContent__image m-maincategoryCaseStudy__image" src="<?php echo get_acf_image( get_field('main_category_case_study_image'), '540w', 'http://via.placeholder.com/588x216?text=logo'); ?> "/>
+
+  <?php echo get_acf_image_srcset( get_field('testimonial_image', $universal_testimonial->ID), 'lazyload m-bodyContent__image m-maincategoryCaseStudy__image'); ?>
   </div>
 </div>

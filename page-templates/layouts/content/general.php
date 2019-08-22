@@ -1,4 +1,7 @@
-<?php // Genearl Body paragraph content ?>
+<?php // Genearl Body paragraph content 
+$callout_testimonial = get_field('general_content_callout_testimonial');
+
+?>
 <div class="o-generalbodyContent">
   
   <div class="m-generalbodyContent__content">
@@ -17,12 +20,12 @@
   <div class="m-generalbodyContent__contentcallout">
     <div class="m-generalbodyContent__calloutcontainer">
       <div class="m-generalbodyContent__calloutimagecontainer">
-        <img class="m-generalbodyContent__calloutimage" src="<?php echo get_acf_image( get_field('general_content_callout_source_image'), '540w', 'http://via.placeholder.com/588x216?text=logo'); ?> "/>
+        <?php echo get_acf_image_srcset( get_field('testimonial_image', $callout_testimonial->ID), 'lazyload m-generalbodyContent__calloutimage'); ?>
       </div>
       <div class="m-generalbodyContent__calloutcontent">
-      <?php the_field('general_content_callout_text'); ?>
+      <?php echo apply_filters('the_content', $callout_testimonial->post_excerpt); ?>
         <div class="m-generalbodyContent__calloutnamecontainer">   
-          <span class="m-bodyContent__calloutname m-generalbodyContent__calloutname"><?php the_field('general_content_callout_source_name'); ?></span><span class="m-bodyContent__calloutsource m-generalbodyContent__calloutsource"><?php the_field('general_content_callout_source'); ?></span>
+          <span class="m-bodyContent__calloutname m-generalbodyContent__calloutname"><?php the_field('testimonial_source_name', $callout_testimonial->ID); ?></span><span class="m-bodyContent__calloutsource m-generalbodyContent__calloutsource"><?php the_field('testimonial_source', $callout_testimonial->ID); ?></span>
         </div>
       </div>
     </div>
