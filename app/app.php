@@ -17,6 +17,7 @@ require 'helpers/picsum-img-url.php';
 require 'helpers/placeholder-img-url.php';
 require 'helpers/get-events.php';
 require 'helpers/newsletter-form.php';
+require 'helpers/filters.php';
 
 /**
  * Theme setup and supports
