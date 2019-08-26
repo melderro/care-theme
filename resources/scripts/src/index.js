@@ -19,3 +19,4 @@ require('./vendor/pushbar');
 require('./modules/site-wide');
 require('./modules/programLanding');
 require('./modules/homepage');
+require('./modules/blog');

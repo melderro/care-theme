@@ -28,6 +28,7 @@ require 'setup/image-sizes.php';
 require 'setup/theme-settings-page.php';
 require 'setup/theme-supports.php';
 require 'setup/cpt.php';
+require 'setup/search-functions.php';
 
 
 /**
