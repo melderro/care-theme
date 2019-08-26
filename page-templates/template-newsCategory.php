@@ -3,6 +3,8 @@
  * Template Name: News Category Content
  * Description: News content page
  */
+
+add_filter('pre_get_posts','search_posts');
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>

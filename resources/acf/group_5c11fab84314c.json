@@ -683,60 +683,6 @@
             ]
         },
         {
-            "key": "field_5c12dc91f609c",
-            "label": "Promotion",
-            "name": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "left",
-            "endpoint": 0
-        },
-        {
-            "key": "field_5c12dca1f609d",
-            "label": "Text",
-            "name": "home_promotion_links_text",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
-            "key": "field_5c12dcd9f609e",
-            "label": "Source",
-            "name": "home_promotion_links_source",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_5c12dcf5f609f",
             "label": "Testimonial",
             "name": "",
@@ -830,5 +776,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1566496132
+    "modified": 1566827802
 }
