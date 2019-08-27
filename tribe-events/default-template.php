@@ -32,9 +32,15 @@ do_action('get_header');
       <section id="navigationMenu" class="generalLanding__nav">
         <?php get_partial('navigation', 'menu');?>
       </section>
-      <section id="topBanner" class="generalLanding__topBanner">
-          <?php get_partial('media', 'general-topbanner');?>
+      <?php
+        if(!is_single()):
+      ?>
+      <section id="topBanner" class="calendar__topBanner">
+          <?php get_partial('slider', 'calendar-featured');?>
       </section>
+      <?php 
+        endif;
+      ?>
     </header>
 
 

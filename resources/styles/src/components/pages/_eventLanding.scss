@@ -7,6 +7,10 @@
   #tribe-events-content {
     display: flex;
     flex-wrap: wrap;
+    .tribe-events-content {
+      height: 10em;
+      overflow: hidden;
+    }
   }
 
   .tribe-events-top-container {
