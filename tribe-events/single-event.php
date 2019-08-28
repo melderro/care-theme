@@ -99,15 +99,16 @@ $event_id = get_the_ID();
       </div>
       <!-- Event content -->
       <?php do_action( 'tribe_events_single_event_before_the_content' ) ?>
-      <div class="tribe-events-single-event-description tribe-events-content">
+      <div class="tribe-events-single-event-description tribe-events-content closed">
         <?php the_content(); ?>
         <?php
           $formId = get_field('events_registration_form');
-          gravity_form($formId, false, false, false, '', false);
+          if($formId)
+            gravity_form($formId, false, false, false, '', false);
 
         ?>
       </div>
-      <div class="tribe-events-read-more-button closed">Read More</div>
+      <div class="tribe-events-read-more-button">Read More</div>
       <!-- .tribe-events-single-event-description -->
       <?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
 
