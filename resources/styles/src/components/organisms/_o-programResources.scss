@@ -4,6 +4,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 1200px;
   position: relative;
 
   &:before {
@@ -62,6 +63,7 @@
   }
 
   li {
+    margin-bottom: 1rem;
     position: relative;
 
     @media(max-width: 840px) {
@@ -69,7 +71,9 @@
     }
 
     a {
+      color: $color-bodycopy;
       font-size: 1.25rem;
+      text-decoration: none;
 
       &:after {
         background: $color-purple;
