@@ -1,3 +1,9 @@
+.m-bodyContent__paragraph {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .m-bodyContent__contentimage {
   align-items: center;
   display: flex;
@@ -80,6 +86,11 @@
 
   @media(max-width: 640px) {
     flex: 0 1 100%;
+  }
+
+  a {
+    color: $color-yellow;
+    text-decoration: none;
   }
 
   &.m-maincategorybodyContent__content {

@@ -16,6 +16,11 @@
       margin-bottom: 2rem;
     }
 
+    a {
+      color: $color-yellow;
+      text-decoration: none;
+    }
+
     .o-maincategoryintroContent__title {
       font-family: $script-font-family;
       font-size: 5rem;
