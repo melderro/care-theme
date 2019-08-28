@@ -1,15 +1,24 @@
-.programLanding__resourceLinks {
-  margin: 3rem 0;
-}
+.page-template-template-programLanding {
 
-.programLanding__relatedTopics {
-  margin: 0 0 3rem;
-}
+  .programLanding__resourceLinks {
+    margin: 3rem 0;
+  }
 
-.programLanding__callToAction {
-  background-color: $color-purple;
-}
+  .programLanding__relatedTopics {
+    margin: 0 0 3rem;
+ }
 
-.programLanding__footerContent {
-  background-color: $color-yellow;
+  .programLanding__callToAction {
+    background-color: $color-purple;
+  }
+
+  .programLanding__footerContent {
+    background-color: $color-yellow;
+  }
+  
+  .m-generalbodyContent__calloutimage {
+    border-radius: 100%;
+    max-width: 140px;
+    width: 100%;
+  }
 }
