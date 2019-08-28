@@ -80,6 +80,12 @@
   .tribe-events-single-event-description {
     margin: 0 auto;
     max-width: 800px;
+    max-height: 200px;
+    overflow: hidden;
+    transition: max-height .8s linear;
+    &.open{
+      max-height: 1500px;
+    }
   }
 
   .tribe-events-single-section {

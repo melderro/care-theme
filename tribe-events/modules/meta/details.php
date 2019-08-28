@@ -110,5 +110,9 @@ $time_title = apply_filters( 'tribe_events_single_event_time_title', __( 'Time:'
 		<?php endif ?>
 
 
-	</ul>
+	</ul><div class="tribe-events-schedule tribe-clearfix">
+    <?php if ( tribe_get_cost() ) : ?>
+      <span class="tribe-events-cost"><?php echo tribe_get_cost( null, true ) ?></span>
+    <?php endif; ?>
+  </div>
 </div>

@@ -60,11 +60,6 @@ $event_id = get_the_ID();
   <!-- Notices -->
   <?php tribe_the_notices() ?>
 
-  <div class="tribe-events-schedule tribe-clearfix">
-    <?php if ( tribe_get_cost() ) : ?>
-      <span class="tribe-events-cost"><?php echo tribe_get_cost( null, true ) ?></span>
-    <?php endif; ?>
-  </div>
 
   <!-- Event header -->
   <div id="tribe-events-header" <?php tribe_events_the_header_attributes() ?>>
@@ -86,6 +81,15 @@ $event_id = get_the_ID();
         <?php echo tribe_event_featured_image( $event_id, 'full', false ); ?>
 
         <div class="tribe-events-top-content">
+          <div class="tribe-events-category-list">
+            <?php 
+              $categories = get_the_terms(get_the_ID(), 'tribe_events_cat');
+              foreach ($categories as $category ) :
+                $category_list .= $category->name . ", ";
+              endforeach;
+              echo substr($category_list, 0, -2);
+            ?>
+          </div>
 	        <?php the_title('<h1 class="tribe-events-single-event-title">', '</h1>');?>
           <div class="tribe-events-detials-container">
             <?php tribe_get_template_part('modules/meta/details');?>
@@ -95,14 +99,16 @@ $event_id = get_the_ID();
       </div>
       <!-- Event content -->
       <?php do_action( 'tribe_events_single_event_before_the_content' ) ?>
-      <div class="tribe-events-single-event-description tribe-events-content">
+      <div class="tribe-events-single-event-description tribe-events-content closed">
         <?php the_content(); ?>
         <?php
           $formId = get_field('events_registration_form');
-          gravity_form($formId, false, false, false, '', false);
+          if($formId)
+            gravity_form($formId, false, false, false, '', false);
 
         ?>
       </div>
+      <div class="tribe-events-read-more-button">Read More</div>
       <!-- .tribe-events-single-event-description -->
       <?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
 
