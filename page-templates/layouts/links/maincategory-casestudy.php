@@ -7,7 +7,7 @@ $universal_testimonial = get_field('testimonial', 'option');
       <?php echo $universal_testimonial->post_title; ?>
     </h2>
     <div class="m-bodyContent__paragraph m-maincategoryCaseStudy__paragraph">
-      <?php echo $universal_testimonial->post_excerpt; ?>  
+      <?php echo get_field('testimonial_content', $universal_testimonial->ID) ?>
     </div>
     <div class="o-introContent__link m-maincategoryCaseStudy__link">
       <a class="a-roundLink o-maincategoryCaseStudylink" href="<?php echo get_the_permalink($universal_testimonial->ID); ?>">

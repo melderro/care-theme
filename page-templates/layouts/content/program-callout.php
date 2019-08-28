@@ -1,12 +1,12 @@
 <?php // Body paragraph content
-
-$testimonial = get_field('program_content_callout_testimonial');
+remove_filter ('acf_the_content', 'wpautop');
+$testimonial = get_field('testimonial');
 ?>
 <div class="o-bodyContent">
 
   <div class="m-bodyContent__contentcallout">
     <div class="m-bodyContent__callouttext">
-      "<?php echo $testimonial->post_content; ?>"
+      "<?php echo get_field('testimonial_content',$testimonial->ID); ?>"
     </div>
     <div class="m-bodyContent__calloutauthor">
     <?php echo get_acf_image_srcset( get_field('testimonial_image', $testimonial->ID), 'lazyload m-generalbodyContent__calloutimage'); ?>
