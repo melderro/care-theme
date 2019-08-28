@@ -1,6 +1,6 @@
 <?php // Body paragraph content
 
-$testimonial = get_field('news_testimonial');
+$testimonial = get_field('program_content_callout_testimonial');
 ?>
 <div class="o-bodyContent">
 
