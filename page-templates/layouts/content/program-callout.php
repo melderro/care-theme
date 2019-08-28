@@ -6,7 +6,7 @@ $testimonial = get_field('program_content_callout_testimonial');
 
   <div class="m-bodyContent__contentcallout">
     <div class="m-bodyContent__callouttext">
-      "<?php echo $testimonial->post_content; ?>"
+      "<?php echo $testimonial->post_excerpt; ?>"
     </div>
     <div class="m-bodyContent__calloutauthor">
     <?php echo get_acf_image_srcset( get_field('testimonial_image', $testimonial->ID), 'lazyload m-generalbodyContent__calloutimage'); ?>
