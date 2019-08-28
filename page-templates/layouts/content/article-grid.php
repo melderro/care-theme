@@ -12,7 +12,7 @@
   <ul class="m-articleGridBlock">
     <li><a href="<?php the_permalink();?>">
       <div class="m-articleGridBlock__imageContainer">
-        <img class="m-articleGridBlock__image" src="<?php echo get_acf_image( get_field('intro_image', get_the_ID()), '540w', 'http://via.placeholder.com/588x216?text=logo'); ?> "/>
+        <?php echo get_acf_image_srcset( get_field('intro_image'), 'lazyload m-articleGridBlock__imageContainer'); ?>
       </div>
       <div class="m-articleGridBlock__titleContainer">
         <h3 class="o-introContent__subtitle">

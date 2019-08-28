@@ -24,7 +24,7 @@
     <header>
       <section id="navigationMenu" class="newsLanding__nav">
         <?php get_partial('navigation', 'menu'); ?>
-      </section>
+      </section>    
     </header>
 
     <?php
