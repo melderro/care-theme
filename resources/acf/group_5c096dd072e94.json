@@ -258,7 +258,7 @@
         {
             "key": "field_5cc09cdfd0b1c",
             "label": "Testimonial",
-            "name": "program_content_callout_testimonial",
+            "name": "testimonial",
             "type": "post_object",
             "instructions": "",
             "required": 0,
@@ -428,11 +428,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "choices": {
-                        "http:\/\/care.local\/wp-content\/uploads\/2018\/12\/about-b.jpg": "about-b",
-                        "http:\/\/care.local\/wp-content\/uploads\/2018\/12\/about-a.jpg": "about-a",
-                        "http:\/\/care.local\/wp-content\/uploads\/2018\/12\/square-image.jpg": "square-image"
-                    },
+                    "choices": [],
                     "default_value": [],
                     "allow_null": 0,
                     "multiple": 0,
@@ -501,5 +497,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1565798557
+    "modified": 1567013184
 }

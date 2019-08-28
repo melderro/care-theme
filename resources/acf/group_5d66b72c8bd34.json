@@ -1,9 +1,9 @@
 {
-    "key": "group_5c1abf2a0c9fb",
-    "title": "Blog Landing",
+    "key": "group_5d66b72c8bd34",
+    "title": "Testimonial Landing",
     "fields": [
         {
-            "key": "field_5c1abf3e8d0be",
+            "key": "field_5d66b72c956a1",
             "label": "Introduction",
             "name": "",
             "type": "tab",
@@ -19,7 +19,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_5c1ac032466dc",
+            "key": "field_5d66b72c9570d",
             "label": "Image",
             "name": "intro_image",
             "type": "image",
@@ -43,7 +43,7 @@
             "mime_types": ""
         },
         {
-            "key": "field_5c1ac073466de",
+            "key": "field_5d66b72c9576c",
             "label": "Text",
             "name": "intro_text",
             "type": "wysiwyg",
@@ -62,7 +62,7 @@
             "delay": 0
         },
         {
-            "key": "field_5c1ac182b78f1",
+            "key": "field_5d66b72c957ca",
             "label": "Testimonial",
             "name": "",
             "type": "tab",
@@ -78,10 +78,10 @@
             "endpoint": 0
         },
         {
-            "key": "field_5d63f7c2f8805",
+            "key": "field_5d66b72c95826",
             "label": "Testimonial",
-            "name": "testimonial",
-            "type": "post_object",
+            "name": "testimonial_content",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -90,17 +90,76 @@
                 "class": "",
                 "id": ""
             },
-            "post_type": [
-                "testimonial"
-            ],
-            "taxonomy": "",
-            "allow_null": 0,
-            "multiple": 0,
-            "return_format": "object",
-            "ui": 1
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         },
         {
-            "key": "field_5c1ac7f4c7357",
+            "key": "field_5d66b75cfb761",
+            "label": "Image",
+            "name": "testimonial_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5d66b787fb762",
+            "label": "Name",
+            "name": "testimonial_source_name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d66b7aafb763",
+            "label": "Source",
+            "name": "testimonial_source",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d66b72c958d4",
             "label": "Bottom Content",
             "name": "",
             "type": "tab",
@@ -116,7 +175,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_5c1ac807c7358",
+            "key": "field_5d66b72c95936",
             "label": "Text",
             "name": "news_bottom_content_text",
             "type": "wysiwyg",
@@ -135,7 +194,7 @@
             "delay": 0
         },
         {
-            "key": "field_5d63fdfc6649e",
+            "key": "field_5d66b72c9599d",
             "label": "Image",
             "name": "news_bottom_content_image",
             "type": "image",
@@ -164,14 +223,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "post"
-            }
-        ],
-        [
-            {
-                "param": "post_template",
-                "operator": "==",
-                "value": "page-templates\/template-newsLanding.php"
+                "value": "testimonial"
             }
         ]
     ],
@@ -181,9 +233,10 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
-        "the_content"
+        "the_content",
+        "excerpt"
     ],
     "active": 1,
     "description": "",
-    "modified": 1567013458
+    "modified": 1567013007
 }
