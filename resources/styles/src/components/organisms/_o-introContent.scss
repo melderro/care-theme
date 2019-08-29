@@ -14,6 +14,16 @@
     color: $color-yellow;
   }
 
+  .o-introContent__paragraph {
+
+    h3 {
+      font-family: $base-font-family;
+      font-size: 1.6rem;
+      line-height: 1.6rem;
+      margin: 1rem 0;
+    }
+  }
+
   .o-introContent__content {
     @extend %main-body-padding-left;
 
