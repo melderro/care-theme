@@ -14,8 +14,7 @@ if ( ! tribe_get_venue_id() ) {
 }
 
 $phone   = tribe_get_phone();
-$website = tribe_get_venue_website_link();
-
+$website = tribe_get_event_website_link();
 ?>
 
 <div class="tribe-events-meta-group tribe-events-meta-group-venue">
@@ -41,6 +40,12 @@ $website = tribe_get_venue_website_link();
 			<dt class="tribe-venue-tel-label"> <?php esc_html_e( 'Phone:', 'the-events-calendar' ) ?> </dt>
 			<dd class="tribe-venue-tel"> <?php echo $phone ?> </dd>
 		<?php endif ?>
+
+		<?php if ( ! empty( $website ) ): ?>
+			<dt class="tribe-venue-tel-label"> <?php esc_html_e( 'Website:', 'the-events-calendar' ) ?> </dt>
+			<dd class="tribe-venue-tel"> <?php echo $website ?> </dd>
+		<?php endif ?>		
+
 
 		<?php do_action( 'tribe_events_single_meta_venue_section_end' ) ?>
 	</dl>
