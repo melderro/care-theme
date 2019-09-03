@@ -78,7 +78,13 @@ $event_id = get_the_ID();
     <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
       <!-- Event featured image, but exclude link -->
       <div class="tribe-events-top-container">
-        <?php echo tribe_event_featured_image( $event_id, 'full', false ); ?>
+        <?php 
+          $featured_image = tribe_event_featured_image($event_id, 'full', false); 
+          if($featured_image)
+            echo $featured_image;
+          else
+            echo '<div class="tribe-events-event-image"><img width="600" height="600" src="'. get_site_url() .'/wp-content/uploads/2019/08/care-employee-assistance-human-resources.jpg" class="attachment-full size-full wp-post-image" alt="care-employee-assistance-human-resources" srcset="'. get_site_url() .'/wp-content/uploads/2019/08/care-employee-assistance-human-resources.jpg 600w, '.  get_site_url() .'/wp-content/uploads/2019/08/care-employee-assistance-human-resources-150x150.jpg 150w, '. get_site_url() .'/wp-content/uploads/2019/08/care-employee-assistance-human-resources-300x300.jpg 300w, '. get_site_url() .'/wp-content/uploads/2019/08/care-employee-assistance-human-resources-64x64.jpg 64w, '.get_site_url() .'/wp-content/uploads/2019/08/care-employee-assistance-human-resources-128x128.jpg 128w, '.get_site_url() .'/wp-content/uploads/2019/08/care-employee-assistance-human-resources-240x240.jpg 240w, '.get_site_url() .'/wp-content/uploads/2019/08/care-employee-assistance-human-resources-320x320.jpg 320w, '. get_site_url() .'/wp-content/uploads/2019/08/care-employee-assistance-human-resources-360x360.jpg 360w, '.get_site_url().'/wp-content/uploads/2019/08/care-employee-assistance-human-resources-375x375.jpg 375w, '. get_site_url() .'/wp-content/uploads/2019/08/care-employee-assistance-human-resources-480x480.jpg 480w, '. get_site_url().'/wp-content/uploads/2019/08/care-employee-assistance-human-resources-540x540.jpg 540w" sizes="(max-width: 600px) 100vw, 600px"></div>';
+        ?>
 
         <div class="tribe-events-top-content">
           <div class="tribe-events-category-list">

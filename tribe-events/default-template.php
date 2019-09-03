@@ -33,7 +33,7 @@ do_action('get_header');
         <?php get_partial('navigation', 'menu');?>
       </section>
       <?php
-        if(!is_single()):
+        if(!is_single() || get_query_var('eventDisplay') == 'all') :
       ?>
       <section id="topBanner" class="calendar__topBanner">
           <?php get_partial('slider', 'calendar-featured');?>
@@ -45,7 +45,8 @@ do_action('get_header');
 
 
 <main id="tribe-events-pg-template" class="tribe-events-pg-template">
-	<?php tribe_events_before_html(); ?>
+  <?php 
+  tribe_events_before_html(); ?>
 	<?php tribe_get_view(); ?>
 	<?php tribe_events_after_html(); ?>
 </main> <!-- #tribe-events-pg-template -->
