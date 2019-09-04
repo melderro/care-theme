@@ -1,8 +1,23 @@
 <?php // News Categories Filter ?>
 <div class="o-articleGrid">
 <?php
+  $blog_category = get_field('blog_category');
+  if(!$blog_category)
+    $blog_category = 49;
   $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-  $args = array( 'post_type' => 'post', 'posts_per_page' => 5, 'paged' => $paged );
+  $args = array( 
+    'post_type' => 'post', 
+    'posts_per_page' => 5, 
+    'paged' => $paged, 
+    'tax_query' => array(
+      array(
+        'taxonomy' => 'category',
+        'field'    => 'term_id',
+        'terms'    =>  $blog_category, // 12
+        'include_children' => true
+      )
+    )
+  );
   $posts = new WP_Query($args); 
   add_filter( 'the_category', 'no_links' );
   while($posts->have_posts()) :
