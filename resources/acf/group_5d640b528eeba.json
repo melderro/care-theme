@@ -145,7 +145,7 @@
             {
                 "param": "options_page",
                 "operator": "==",
-                "value": "acf-options-event-page-settings"
+                "value": "event-default-settings"
             }
         ]
     ],
@@ -157,5 +157,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1566838597
+    "modified": 1567525944
 }
