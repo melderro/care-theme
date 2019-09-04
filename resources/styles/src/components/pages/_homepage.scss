@@ -6,3 +6,30 @@
 .homepage__footerContent {
   background-color: $color-yellow;
 }
+
+.home {
+  .o-navigationMenu {
+
+    .o-navigationMenu__bottomRow a {
+      color: $color-white;
+    }
+  }
+
+  .homepage__nav {
+    background-color: transparent;
+
+    &.condensed {
+      background-color: $color-white;
+    }
+  }
+
+  .condensed {
+
+    .o-navigationMenu {
+
+      .o-navigationMenu__bottomRow a {
+        color: $color-bodycopy;
+      }
+    }
+  }
+}

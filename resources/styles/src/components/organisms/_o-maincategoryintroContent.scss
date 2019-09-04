@@ -37,5 +37,10 @@
     @media(max-width: 980px) {
       flex: 0 1 100%;
     }
+
+    a {
+      color: $color-yellow;
+      text-decoration: none;
+    }
   }
 }
