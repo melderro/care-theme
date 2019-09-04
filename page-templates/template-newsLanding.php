@@ -40,12 +40,18 @@
       <section id="programBodyContent" class="newsLanding__bodyContentbottom">
         <?php get_partial('content', 'news-bottom'); ?>
       </section>
+      <section id="newslandingSlideshow" class="newsLanding__bodyContentbottom">
+        <?php get_partial('slider', 'general-photos'); ?>
+      </section>      
     </main>
 
     <?php
     // Footer content
     ?>
     <footer id="footer">
+      <section id="supplementalLinks" class="programLanding__footerLinks">
+        <?php get_partial('links', 'blog-supplement-links'); ?>
+      </section>
       <section id="DonateSignup" class="newsLanding__DonateLink">
         <?php get_partial('links', 'donateLink'); ?>
       </section>

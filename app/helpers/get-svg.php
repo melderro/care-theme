@@ -13,9 +13,9 @@
  */
 // SVG importer
 function get_svg( $file ) {
-  echo file_get_contents( get_stylesheet_directory_uri() . '/resources/images/dist/svg/' . $file . '.svg');
+  echo file_get_contents( get_template_directory() . '/resources/images/dist/svg/' . $file . '.svg');
 }
 
 function return_svg( $file ) {
-  return file_get_contents( get_stylesheet_directory_uri() . '/resources/images/dist/svg/' . $file . '.svg');
+  return file_get_contents( get_template_directory() . '/resources/images/dist/svg/' . $file . '.svg');
 }

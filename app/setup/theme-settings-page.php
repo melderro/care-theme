@@ -12,6 +12,16 @@ if( function_exists('acf_add_options_page') ):
     'position'    => '59.9',
     'icon_url'    => 'dashicons-index-card'
   ));
+  acf_add_options_page(array(
+    'page_title'  => 'Event Default Settings',
+    'menu_title'  => 'Event Default Settings',
+    'menu_slug'   => 'event-default-settings',
+    'capability'  => 'edit_posts',
+    'redirect'    => false,
+    'position'    => '60.0',
+    'parent_slug' => 'theme-settings',
+    'icon_url'    => 'dashicons-index-card'
+  ));  
 else:
   add_action( 'admin_notices', 'fwd_install_acf_notice' );
 endif;

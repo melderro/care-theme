@@ -12,7 +12,13 @@
   <ul class="m-articleGridBlock">
     <li><a href="<?php the_permalink();?>">
       <div class="m-articleGridBlock__imageContainer">
-        <?php echo get_acf_image_srcset( get_field('intro_image'), 'lazyload m-articleGridBlock__imageContainer'); ?>
+      <?php 
+        if(get_field('intro_image')): 
+          echo get_acf_image_srcset( get_field('intro_image'), 'lazyload m-articleGridBlock__imageContainer'); 
+        else :
+          echo get_acf_image_srcset( get_field('news_intro_image', 'option'), 'lazyload m-articleGridBlock__imageContainer'); 
+        endif;
+      ?>
       </div>
       <div class="m-articleGridBlock__titleContainer">
         <h3 class="o-introContent__subtitle">
