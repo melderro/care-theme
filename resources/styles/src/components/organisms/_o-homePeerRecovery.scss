@@ -34,6 +34,12 @@
 
     .o-homePeerRecovery__text {
       color: $color-white;
+
+      a {
+        color: white;
+        font-weight: 600;
+        text-decoration: none;
+      }
     }
 
     .o-homePeerRecovery__link {
