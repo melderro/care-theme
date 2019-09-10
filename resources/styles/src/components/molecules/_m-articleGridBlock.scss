@@ -9,6 +9,7 @@
     a {
       display: flex;
       flex-direction: row;
+      text-decoration: none;
 
       .m-articleGridBlock__imageContainer {
         flex: 0 1 20%;
@@ -48,12 +49,28 @@
       }
 
       .m-articleGridBlock__contentContainer {
+        color: $color-bodycopy;
         display: flex;
         flex: 0 1 40%;
         flex-direction: column;
         justify-content: center;
         padding-left: 2rem;
       }
+    }
+  }
+}
+
+.page-nav-container {
+  display: flex;
+  padding: 1rem;
+
+  .page-numbers {
+    color: $color-yellow;
+    padding: 0 .5rem;
+    text-decoration: none;
+
+    &.current {
+      color: $color-bodycopy;
     }
   }
 }

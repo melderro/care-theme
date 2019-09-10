@@ -16,8 +16,15 @@
     margin-top: 8rem;
   }
 
-  .type-tribe_events .tribe-events-event-image {
-    flex: 0 1 40%;
+  .type-tribe_events {
+
+    .tribe-events-event-image {
+      flex: 0 1 40%;
+    }
+
+    .tribe-events-read-more-button {
+      width: 100%;
+    }
   }
 
   .tribe-events-top-content {
@@ -107,5 +114,13 @@
 
   .tribe-events-venue-map {
     border: none;
+  }
+
+  .newsLanding__callToAction {
+    background-color: $color-purple;
+  }
+
+  .programLanding__footerContent {
+    background-color: $color-yellow;
   }
 }
