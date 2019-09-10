@@ -118,6 +118,12 @@
   flex-wrap: wrap;
   margin-bottom: 4rem !important;
 
+  .tribe-events-category-list {
+    color: $color-purple;
+    font-family: $script-font-family;
+    font-size: 1.8rem;
+  }
+
   .tribe-events-list-event-title {
     color: $color-purple;
     display: block;
@@ -130,13 +136,13 @@
     position: relative;
 
     &:after {
-      background: $color-lightgray;
-      bottom: -9px;
+      border-bottom: 4px solid $color-lightgray;
+      bottom: -12px;
       content: "";
       height: 6px;
       left: 0;
       position: absolute;
-      width: 6rem;
+      width: 100px;
       transition: .5s;
     }
 
@@ -144,7 +150,7 @@
 
       &:after {
         width: 40%;
-        background: #fab040;
+        border-bottom: 4px solid $color-yellow;
       }
     }
 

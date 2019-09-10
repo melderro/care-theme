@@ -44,13 +44,14 @@
             left: 0;
             position: absolute;
             width: 100px;
+            transition: .5s;
           }
 
           &:hover {
 
             &:after {
               width: 80%;
-              background: $color-yellow;
+              border-bottom: 4px solid $color-yellow;
             }
           }
         }
