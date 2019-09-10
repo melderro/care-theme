@@ -4,6 +4,10 @@
   flex-wrap: wrap;
   width: 100%;
 
+  p {
+    display: flex;
+  }
+
   h3 {
     font-family: $base-font-family;
     font-size: 1.6rem;
@@ -12,7 +16,9 @@
   }
 
   .footnote {
+    display: inline-block;
     font-size: .7rem;
+    padding-top: 2rem;
   }
 }
 
@@ -102,7 +108,7 @@
 
   a {
     color: $color-yellow;
-    display: inline-block;
+    display: inline;
     text-decoration: none;
   }
 

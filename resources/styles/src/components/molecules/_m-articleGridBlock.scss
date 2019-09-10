@@ -45,6 +45,14 @@
             position: absolute;
             width: 100px;
           }
+
+          &:hover {
+
+            &:after {
+              width: 80%;
+              background: $color-yellow;
+            }
+          }
         }
       }
 

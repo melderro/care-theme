@@ -9,6 +9,11 @@
     flex-wrap: wrap;
   }
 
+  .tribe-events-category-list {
+    color: $color-yellow;
+    font-family: $script-font-family;
+  }
+
   .tribe-events-top-container {
     display: flex;
     flex: 0 1 100%;
@@ -31,10 +36,6 @@
     flex: 0 1 60%;
   }
 
-  .tribe-events-single-event-title {
-    color: $color-purple;
-  }
-
   .tribe-events-start-time-label {
     display: flex;
 
@@ -43,8 +44,15 @@
     }
   }
 
-  .tribe-events-detials-container {
+  .tribe-events-details-container {
     display: flex;
+  }
+
+  .tribe-events-meta-group {
+
+    .tribe-events-single-section-title {
+      color: $color-purple;
+    }
   }
 
   .tribe-events-meta-group-details {
@@ -89,9 +97,17 @@
     max-width: 800px;
     max-height: 200px;
     overflow: hidden;
+    position: relative;
     transition: max-height .8s linear;
     &.open{
       max-height: 1500px;
+    }
+
+    &:after {
+      background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,1));
+      position: absolute;
+      width: 100%;
+      z-index: 5;
     }
   }
 
@@ -116,7 +132,7 @@
     border: none;
   }
 
-  .newsLanding__callToAction {
+  .programLanding__callToAction {
     background-color: $color-purple;
   }
 
