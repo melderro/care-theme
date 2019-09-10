@@ -161,11 +161,34 @@
     .tribe-event-schedule-details {
       font-weight: $font-regular;
       font-style: italic;
+
+      svg {
+        width: .75rem;
+      }
+
+      .tribe-event-date-start {
+        padding-left: .5rem;
+      }
     }
 
     .tribe-events-venue-details {
+      display: flex;
+      flex-wrap: wrap;
       font-style: normal;
       line-height: 1.2rem;
+
+      svg {
+        width: .75rem;
+      }
+
+      a {
+        padding-left: .5rem;
+      }
+
+      .tribe-address {
+        flex: 0 1 100%;
+        padding-left: 1.3rem;
+      }
 
       .tribe-events-gmap {
         color: $color-yellow;
