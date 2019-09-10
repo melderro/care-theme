@@ -44,15 +44,8 @@
     }
   }
 
-  .tribe-events-details-container {
+  .tribe-events-detials-container {
     display: flex;
-  }
-
-  .tribe-events-meta-group {
-
-    .tribe-events-single-section-title {
-      color: $color-purple;
-    }
   }
 
   .tribe-events-meta-group-details {
@@ -64,6 +57,10 @@
   }
 
   .tribe-events-meta-group {
+
+    .tribe-events-single-section-title {
+      color: $color-purple;
+    }
 
     ul {
       list-style: none;
