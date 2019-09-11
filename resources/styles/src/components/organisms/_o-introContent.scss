@@ -16,6 +16,7 @@
 
   .o-introContent__paragraph {
     display: flex;
+    flex-wrap: wrap;
 
     h3 {
       font-family: $base-font-family;
