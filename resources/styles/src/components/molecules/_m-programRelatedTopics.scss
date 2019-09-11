@@ -11,6 +11,8 @@
   li {
     flex: 0 1 30%;
     padding-bottom: 1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
     text-align: center;
 
     @media(max-width: 840px) {

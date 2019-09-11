@@ -5,14 +5,20 @@
   width: 100%;
 
   p {
-    display: flex;
+    margin: .5rem 0;
+  }
+
+  h2 {
+    font-family: $base-font-family;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
     margin: .5rem 0;
   }
 
   h3 {
     font-family: $base-font-family;
     font-size: 1.6rem;
-    line-height: 1.9rem;
+    line-height: 2.1rem;
     margin: .5rem 0;
   }
 
@@ -109,6 +115,13 @@
 
   @media(max-width: 640px) {
     flex: 0 1 100%;
+  }
+
+  h2 {
+    font-family: $base-font-family;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    margin: .5rem 0;
   }
 
   a {
