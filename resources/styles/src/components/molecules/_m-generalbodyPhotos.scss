@@ -13,4 +13,18 @@
         box-shadow: 20px -20px $color-yellow;
     }
   }
+
+  .slick-prev {
+    left: 2%;
+    position: absolute;
+    top: 48%;
+    z-index: 5;
+  }
+
+  .slick-next {
+    position: absolute;
+    right: 2%;
+    top: 48%;
+    z-index: 5;
+  }
 }
