@@ -6,13 +6,18 @@
 
   p {
     display: flex;
+    margin: .5rem 0;
   }
 
   h3 {
     font-family: $base-font-family;
     font-size: 1.6rem;
     line-height: 1.9rem;
-    margin: 1rem 0;
+    margin: .5rem 0;
+  }
+
+  ul {
+    margin: .5rem 0;
   }
 
   .footnote {
