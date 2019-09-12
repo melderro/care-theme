@@ -1,35 +1,72 @@
 @import '../../../node_modules/slick-carousel/slick/slick.css';
+
+.page-template-template-homepage {
+
+  .m-navigationRow {
+
+    .m-navigationRow__link {
+
+      a {
+        color: $color-white;
+
+        &:hover {
+          background-color: $color-white;
+        }
+      }
+
+      &:hover > a {
+        background-color: $color-white;
+        color: $color-yellow;
+      }
+
+      ul {
+
+        a {
+          color: $color-bodycopy;
+        }
+      }
+    }
+
+    &.m-navigationRow--upper {
+
+      a {
+        background-color: $color-white;
+        border: 2px solid $color-white;
+        color: $color-bodycopy;
+      }
+
+      .search-form {
+
+        .search-field {
+          border: none;
+        }
+      }
+    }
+  }
+
+  .condensed {
+
+    .m-navigationRow {
+
+      .m-navigationRow__link {
+
+        a {
+          color: $color-bodycopy;
+        }
+
+        &:hover > a {
+          background-color: $color-white;
+          color: $color-yellow;
+        }
+      }
+    }
+  }
+}
+
 .homepage__callToAction {
   background-color: $color-purple;
   }
 
 .homepage__footerContent {
   background-color: $color-yellow;
-}
-
-.home {
-  .o-navigationMenu {
-
-    .o-navigationMenu__bottomRow a {
-      color: $color-white;
-    }
-  }
-
-  .homepage__nav {
-    background-color: transparent;
-
-    &.condensed {
-      background-color: $color-white;
-    }
-  }
-
-  .condensed {
-
-    .o-navigationMenu {
-
-      .o-navigationMenu__bottomRow a {
-        color: $color-bodycopy;
-      }
-    }
-  }
 }

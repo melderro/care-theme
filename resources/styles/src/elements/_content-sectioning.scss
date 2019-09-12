@@ -45,8 +45,8 @@ h2,
 h3.m-footerSupplementLinks__title {
   @extend %main-heading;
   font-size: 3rem;
-  line-height: 2.8rem;
-  margin: 10px 0;
+  line-height: 3rem;
+  margin: .5rem 0;
 
   @media(max-width: 600px) {
     font-size: 2.8rem;
