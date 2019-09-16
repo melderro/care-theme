@@ -171,19 +171,21 @@ a[href="#my-menu"] {
   display: block;
   position: relative;
   flex: 0 1 7%;
+  height: 30px;
   padding-right: 1rem;
+  width: 50px;
 
   &:before {
     content: "";
     position: absolute;
     left: 0;
-    top: -6px;
+    top: 7px;
     width: 1.2em;
     height: 0.17em;
-    background: $color-white;
+    background: $color-bodycopy;
     box-shadow:
-      0 0.4em 0 0 $color-white,
-      0 0.8em 0 0 $color-white;
+      0 0.4em 0 0 $color-bodycopy,
+      0 0.8em 0 0 $color-bodycopy;
   }
 
   @media(min-width: 768px) {
