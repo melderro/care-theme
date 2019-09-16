@@ -60,6 +60,16 @@
       }
     }
   }
+
+  a[href="#my-menu"] {
+
+    &:before {
+          background: $color-white;
+      box-shadow:
+        0 0.4em 0 0 $color-white,
+        0 0.8em 0 0 $color-white;
+    }
+  }
 }
 
 .generalLanding__caseStudy {

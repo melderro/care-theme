@@ -159,7 +159,7 @@
       left: 0px;
       padding: 0px;
       position: absolute;
-      top: 40px;
+      top: 48px;
 
       li {
         flex-direction: column-reverse;
@@ -209,10 +209,6 @@
 
   #menu-primary li,
   #menu-top {
-
-    &:hover ul {
-      top: 25px;
-    }
 
     a {
     -webkit-transition: all 0.2s ease-in;
