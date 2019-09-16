@@ -2,6 +2,10 @@
 
   .o-introContent__image {
     max-width: 300px;
+
+    @media(max-width: 640px) {
+      max-width: 160px;
+    }
   }
 
   .programLanding__resourceLinks {

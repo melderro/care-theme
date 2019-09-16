@@ -90,7 +90,7 @@
     }
 
     a {
-      border: 2px solid $color-bodycopy;
+      border: 1px solid $color-bodycopy;
       border-radius: 2rem;
       font-size: .9rem;
       padding: .25rem .5rem;
@@ -101,6 +101,10 @@
 
       img {
         max-width: 20px;
+
+        @media(max-width: 500px) {
+          margin-right: 0;
+        }
       }
     }
   }
@@ -131,7 +135,7 @@
 
     &:hover ul {
       background: rgba(255,255,255,1);
-      /*display: flex;*/
+      display: flex;
     }
 
     &:hover ul ul {
