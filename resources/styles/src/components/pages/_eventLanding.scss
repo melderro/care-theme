@@ -72,6 +72,12 @@
   .tribe-events-meta-group-details {
     flex: 0 1 40%;
     padding-right: 2rem;
+
+    @media(max-width: 900px) {
+      flex-wrap: wrap;
+      flex: 0 1 100%;
+      padding-right: 0;
+    }
   }
 
   .tribe-events-meta-group-venue {
