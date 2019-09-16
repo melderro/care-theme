@@ -77,14 +77,13 @@
   background-color: $color-white;
 
   a[href="#my-menu"] {
-  
-    &:before {     
+    &:before {
       background: $color-bodycopy;
       box-shadow:
         0 0.4em 0 0 $color-bodycopy,
         0 0.8em 0 0 $color-bodycopy;
     }
-  
+
     @media(min-width: 768px) {
       display: none;
     }

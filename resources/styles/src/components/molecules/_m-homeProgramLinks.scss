@@ -31,6 +31,9 @@
       text-decoration: none;
 
       span {
+        flex: 0 1 100%;
+        padding-top: .5rem;
+        width: 100%;
 
         &:after {
           background: $color-yellow;
@@ -66,12 +69,6 @@
       img {
         flex: 0 1 100%;
         max-width: 160px;
-        width: 100%;
-      }
-
-      span {
-        flex: 0 1 100%;
-        padding-top: .5rem;
         width: 100%;
       }
     }
