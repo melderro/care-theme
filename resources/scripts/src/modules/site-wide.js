@@ -42,6 +42,8 @@ $(document).ready(function () {
         .fadeIn()
         .addClass('open');
     }
-
+  });
+  $('#menu-primary>li>ul>li').on('click', function (e){
+    e.stopPropagation();
   });
 });
