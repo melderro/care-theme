@@ -34,7 +34,7 @@
         bottom: -9px;
         content: '';
         height: 6px;
-        left: 0;
+        left: 20%;
         position: absolute;
         width: 6rem;
         -o-transition: .5s;
@@ -47,7 +47,7 @@
       &:hover {
 
         &:after {
-          width: 80%;
+          width: 60%;
 		      background: $color-yellow;
         }
       }

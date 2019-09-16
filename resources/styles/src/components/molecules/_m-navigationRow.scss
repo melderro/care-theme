@@ -14,7 +14,7 @@
     a {
       color: $color-bodycopy;
       font-family: $link-font-family;
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: $font-regular;
       letter-spacing: .08rem;
       line-height: 1rem;
@@ -71,8 +71,22 @@
   &.m-navigationRow--upper {
 
     li {
-      display: block;
+      display: flex;
       padding: 0 .5rem;
+
+      @media(max-width: 500px) {
+        padding: 0 .25rem;
+      }
+
+      &#menu-item-32 {
+
+        span {
+
+          @media(max-width: 500px) {
+            display: none;
+          }
+        }
+      }
     }
 
     a {
@@ -117,7 +131,7 @@
 
     &:hover ul {
       background: rgba(255,255,255,1);
-      display: flex;
+      /*display: flex;*/
     }
 
     &:hover ul ul {
