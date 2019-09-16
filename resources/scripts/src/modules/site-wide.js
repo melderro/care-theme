@@ -20,11 +20,28 @@ $(document).ready(function () {
   $('.preload').removeClass('preload');
 
   $('#menu-primary>li').on('click', function (e) {
-    if($('ul', this).length)
+    const clickedNavElement = $('ul', this);
+    if(clickedNavElement.length)
       e.preventDefault();
-    $('.open').fadeToggle('fast');
-    $('.open').removeClass('open');
-    $('ul', this).fadeToggle('fast');
-    $('ul', this).addClass('open');
+
+    // check if current nav is open. 
+    // if it is, just close it and end. 
+    // if not, close all others and then open clicked
+    if(clickedNavElement.hasClass('open')){
+      clickedNavElement
+      .css('display', 'none')
+      .removeClass('open');
+
+    }else{
+      $('.open')
+        .css('display', 'none')
+        .removeClass('open');
+      clickedNavElement
+        .css('display', 'flex')
+        .hide()
+        .fadeIn()
+        .addClass('open');
+    }
+
   });
 });
