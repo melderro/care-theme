@@ -25,7 +25,8 @@
   z-index: 4;
 
   @media(max-width: 768px) {
-    width: 80%;
+    padding-right: .5rem;
+    width: 95%;
   }
 
   .o-navigationMenu__link {
@@ -36,7 +37,7 @@
 
     .o-navigationMenu__image {
       align-self: center;
-      max-width: 200px;
+      max-width: 160px;
       padding: 1rem;
       position: relative;
       -webkit-transition: all 0.5s ease-in;
@@ -75,6 +76,20 @@
 .condensed {
   background-color: $color-white;
 
+  a[href="#my-menu"] {
+  
+    &:before {     
+      background: $color-bodycopy;
+      box-shadow:
+        0 0.4em 0 0 $color-bodycopy,
+        0 0.8em 0 0 $color-bodycopy;
+    }
+  
+    @media(min-width: 768px) {
+      display: none;
+    }
+  }
+
   .o-navigationMenu {
     height: 50px;
     -webkit-transition: all 0.5s ease-in;
@@ -85,11 +100,15 @@
     .o-navigationMenu__link {
 
       .o-navigationMenu__image {
-        max-width: 140px;
+        max-width: 120px;
         -webkit-transition: all 0.5s ease-in;
         -moz-transition: all 0.5s ease-in;
         -o-transition: all 0.5s ease-in;
         transition: all 0.5s ease-in;
+
+        @media(max-width: 980px) {
+          max-width: 110px;
+        }
       }
     }
   }
@@ -101,7 +120,7 @@
     background-color: $color-white;
     background-position: 4px center;
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: 20px;
     border: 2px solid $color-bodycopy;
     border-radius: 2rem;
     cursor: pointer;
@@ -129,19 +148,20 @@
 a[href="#my-menu"] {
   display: block;
   position: relative;
-  width: 20%;
+  flex: 0 1 7%;
+  padding-right: 1rem;
 
   &:before {
     content: "";
     position: absolute;
     left: 0;
-    top: 0.25em;
-    width: 1em;
-    height: 0.15em;
+    top: -6px;
+    width: 1.2em;
+    height: 0.17em;
     background: $color-white;
     box-shadow:
-      0 0.25em 0 0 $color-white,
-      0 0.5em 0 0 $color-white;
+      0 0.4em 0 0 $color-white,
+      0 0.8em 0 0 $color-white;
   }
 
   @media(min-width: 768px) {
