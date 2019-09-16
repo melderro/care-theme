@@ -20,13 +20,12 @@
     }
 
     a {
-      align-items: flex-start;
+      align-items: center;
       color: $color-bodycopy;
       display: flex;
       flex-direction: column;
       font-size: 1.25rem;
       position: relative;
-      text-align: left;
       text-decoration: none;
 
       &:after {
@@ -36,7 +35,7 @@
         height: 6px;
         left: 20%;
         position: absolute;
-        width: 6rem;
+        width: 0;
         -o-transition: .5s;
   		  -ms-transition: .5s;
         -moz-transition: .5s;
@@ -48,7 +47,12 @@
 
         &:after {
           width: 60%;
-		      background: $color-yellow;
+          background: $color-yellow;
+          -o-transition: .5s;
+          -ms-transition: .5s;
+          -moz-transition: .5s;
+          -webkit-transition: .5s;
+          transition: .5s;
         }
       }
 

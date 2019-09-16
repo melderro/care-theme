@@ -32,7 +32,7 @@
         width: 100%;
 
         &:after {
-          background: $color-yellow;
+          background: $color-purple;
           bottom: -9px;
           content: '';
           height: 6px;
@@ -54,6 +54,11 @@
           &:after {
             width: 60%;
             background: $color-yellow;
+            -o-transition: .5s;
+            -ms-transition: .5s;
+            -moz-transition: .5s;
+            -webkit-transition: .5s;
+            transition: .5s;
           }
         }
       }

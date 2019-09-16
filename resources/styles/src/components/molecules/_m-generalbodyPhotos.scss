@@ -1,13 +1,9 @@
 .m-generalbodyPhotos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   list-style: none;
   margin: 0px;
   padding: 3rem 0;
 
   li {
-    flex: 0 1 20%;
 
     img {
         box-shadow: 20px -20px $color-yellow;
@@ -19,6 +15,21 @@
     position: absolute;
     top: 48%;
     z-index: 5;
+
+    &:after {
+      right: 50%;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(250, 176, 64, 0);
+      border-right-color: #fab040;
+      border-width: 30px;
+      margin-top: -30px;
+    }
   }
 
   .slick-next {
@@ -26,5 +37,20 @@
     right: 2%;
     top: 48%;
     z-index: 5;
+
+    &:after {
+      left: 50%;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(250, 176, 64, 0);
+      border-left-color: #fab040;
+      border-width: 30px;
+      margin-top: -30px;
+    }
   }
 }
