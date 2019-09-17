@@ -5,7 +5,11 @@
   </div>
   <div class="m-bodyContent__content m-programbodyContent_contentbottom">
     <div class="m-bodyContent__paragraph">
-      <?php the_field('program_bottom_content_text'); ?>  
+      <?php 
+      add_filter ('acf_the_content', 'wpautop');
+      the_field('program_bottom_content_text');
+      remove_filter ('acf_the_content', 'wpautop');
+      ?>  
     </div>
   </div>
    

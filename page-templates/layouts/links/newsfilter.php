@@ -30,17 +30,4 @@
     </div>
   </div>
 
-    <div class="m-articleFilterBlock">
-    <h3 class="m-articleFilterBlock__title">
-        Search
-    </h3>
-    <div class="m-articleFilterBlock__dropdown">
-      <select>
-       <option value="News">News</option>
-       <option value="Press">Press</option>
-       <option value="Peer Recovery">Peer Recovery</option>
-      </select>
-    </div>
-  </div>
-
 </div>

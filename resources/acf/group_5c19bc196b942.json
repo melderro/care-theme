@@ -1,6 +1,6 @@
 {
     "key": "group_5c19bc196b942",
-    "title": "Blog: Category",
+    "title": "Blog Category",
     "fields": [
         {
             "key": "field_5c19bc311bea8",
@@ -124,8 +124,8 @@
             "mime_types": ""
         },
         {
-            "key": "field_5d6f2bf501bdd",
-            "label": "Blog Category",
+            "key": "field_5d80561cafdda",
+            "label": "Category",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -136,11 +136,11 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "left",
+            "placement": "top",
             "endpoint": 0
         },
         {
-            "key": "field_5d6f2b7901bdc",
+            "key": "field_5d80562bafddb",
             "label": "Category",
             "name": "blog_category",
             "type": "taxonomy",
@@ -154,7 +154,7 @@
             },
             "taxonomy": "category",
             "field_type": "select",
-            "allow_null": 1,
+            "allow_null": 0,
             "add_term": 0,
             "save_terms": 0,
             "load_terms": 0,
@@ -179,5 +179,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1567566858
+    "modified": 1568691952
 }

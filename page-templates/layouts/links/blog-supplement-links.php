@@ -66,5 +66,5 @@
   <?php
     endfor;
   ?>
-  <a class="a-roundLink o-donateLinklink" href="/news">All Articles</a>
+  <a class="a-roundLink o-donateLinklink" href="/news-media">All Articles</a>
 </div>
