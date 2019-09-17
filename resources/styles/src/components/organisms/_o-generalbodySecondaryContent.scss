@@ -6,6 +6,11 @@
   justify-content: flex-end;
   padding-bottom: 3rem;
 
+  a {
+    color: $color-yellow;
+    text-decoration: none;
+  }
+
   .o-generalbodySecondaryContent__contentContainer {
     flex: 0 1 60%;
     padding-right: 3rem;
