@@ -120,7 +120,6 @@
       position: inherit;
 
       ul {
-        flex-wrap: nowrap;
         justify-content: space-evenly;
         padding: 1rem 2rem;
         top: 63px;
@@ -130,6 +129,20 @@
 
           a {
             justify-content: center;
+          }
+
+          &#menu-item-1314,
+          &#menu-item-1316 {
+            display: flex;
+            flex: 0 1 100%;
+
+            a {
+              background-color: $color-yellow;
+              border-radius: 3rem;
+              color: $white;
+              margin-top: 1rem;
+              width: auto;
+            }
           }
         }
 
@@ -162,6 +175,7 @@
       top: 48px;
 
       li {
+        flex: 0 1 14%;
         flex-direction: column-reverse;
 
         a {
