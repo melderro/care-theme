@@ -80,10 +80,21 @@ $event_id = get_the_ID();
       <div class="tribe-events-top-container">
         <?php 
           $featured_image = tribe_event_featured_image($event_id, 'full', false); 
-          if($featured_image)
+          if($featured_image) :
             echo $featured_image;
-          else
-            echo '<div class="tribe-events-event-image"><img width="600" height="600" src="'. get_site_url() .'/wp-content/uploads/2019/08/care-employee-assistance-human-resources.jpg" class="attachment-full size-full wp-post-image" alt="care-employee-assistance-human-resources" srcset="'. get_site_url() .'/wp-content/uploads/2019/08/care-employee-assistance-human-resources.jpg 600w, '.  get_site_url() .'/wp-content/uploads/2019/08/care-employee-assistance-human-resources-150x150.jpg 150w, '. get_site_url() .'/wp-content/uploads/2019/08/care-employee-assistance-human-resources-300x300.jpg 300w, '. get_site_url() .'/wp-content/uploads/2019/08/care-employee-assistance-human-resources-64x64.jpg 64w, '.get_site_url() .'/wp-content/uploads/2019/08/care-employee-assistance-human-resources-128x128.jpg 128w, '.get_site_url() .'/wp-content/uploads/2019/08/care-employee-assistance-human-resources-240x240.jpg 240w, '.get_site_url() .'/wp-content/uploads/2019/08/care-employee-assistance-human-resources-320x320.jpg 320w, '. get_site_url() .'/wp-content/uploads/2019/08/care-employee-assistance-human-resources-360x360.jpg 360w, '.get_site_url().'/wp-content/uploads/2019/08/care-employee-assistance-human-resources-375x375.jpg 375w, '. get_site_url() .'/wp-content/uploads/2019/08/care-employee-assistance-human-resources-480x480.jpg 480w, '. get_site_url().'/wp-content/uploads/2019/08/care-employee-assistance-human-resources-540x540.jpg 540w" sizes="(max-width: 600px) 100vw, 600px"></div>';
+          else:
+            $imageID = get_field('default_event_image', 'option');
+        ?>
+          <div class="tribe-events-event-image">';
+            <img class="lazyload lazyload--blurUp"
+              alt="<?php echo get_post_meta($imageID, '_wp_attachment_image_alt', true); ?>"
+              data-sizes="auto"
+              src="<?php echo get_the_post_thumbnail_url( $imageID,  $size = 'preload' ); ?>"
+              data-srcset="<?php echo wp_get_attachment_image_srcset( $imageID) ?>"
+            />
+            </div>
+        <?php 
+          endif;
         ?>
 
         <div class="tribe-events-top-content">
@@ -114,7 +125,9 @@ $event_id = get_the_ID();
 
         ?>
       </div>
-      <div class="tribe-events-read-more-button">Read More</div>
+      <div class="read-more-button-container">
+        <div class="tribe-events-read-more-button">Read More</div>
+      </div>
       <!-- .tribe-events-single-event-description -->
       <?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
 
