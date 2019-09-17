@@ -9,5 +9,5 @@
     </h1>
     <div class="o-pageBanner__text"><?php the_field('general_top_banner_text'); ?></div>
   </div>
-  <img class="o-pageBanner__image" src="<?php echo get_acf_image( get_field('general_top_banner_image'), '540w', 'http://via.placeholder.com/588x216?text=logo'); ?> "/>
+  <?php echo get_acf_image_srcset(  get_field('general_top_banner_image'), 'lazyload o-pageBanner__image'); ?>  
 </div>
