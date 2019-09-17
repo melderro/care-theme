@@ -19,7 +19,7 @@ get_partial('meta', 'head');
 ?>
 
   <body <?php body_class();?> ?>
-
+  <div id="mmenu-container">
     <?php
 // Included for the sake of plugins and child themes that rely on it.
 do_action('get_header');
@@ -69,5 +69,6 @@ do_action('get_header');
 // Footer meta data and scripts. Includes the WP admin footer, etc.
 get_partial('meta', 'foot');
 ?>
+</div>
   </body>
 </html>
