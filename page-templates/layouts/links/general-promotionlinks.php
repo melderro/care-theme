@@ -1,16 +1,19 @@
 <?php // Home Promotional Links ?>
 <div class="o-homePromotionalLinks o-generalPromotionalLinks">
-  
-  <div class="m-homePromotionalLinks__Block homePromotionalData homePromotionalCaseStudy">
-    <div class="m-homePromotionalLinks__text">  
-      <?php the_field('data_statistic_content', 'option'); ?>
+  <?php
+    echo get_acf_image_srcset( get_field('footer_promotion_image', 'option'), 'lazyload m-generalPromotionalLinks__image'); 
+  ?>
+
+  <div class="m-generalPromotionalLinks__Block homePromotionalData homePromotionalCaseStudy">
+    <div class="m-generalPromotionalLinks__title">  
+      <?php the_field('footer_promotion_title', 'option'); ?>
     </div>
-    <div class="m-homePromotionalLinks__source">  
-      <?php the_field('data_statistic_content_source', 'option'); ?>
+    <div class="m-generalPromotionalLinks__text">  
+      <?php the_field('footer_promotion_text', 'option'); ?>
     </div>
+    <a class="m-generalPromotionalLinks__Block homePromotionalImage homePromotionalCaseStudy" href="<?php the_field('footer_promotion_link', 'option'); ?>">Learn More
+    </a>
   </div>
-  <a class="m-homePromotionalLinks__Block homePromotionalImage homePromotionalCaseStudy" href="<?php the_field('home_case_study_link'); ?>">
-      <img class="m-homePromotionalLinks__image" src="<?php echo get_acf_image( get_field('general_video'), '540w', 'http://via.placeholder.com/588x216?text=logo'); ?> "/>
-  </a>
+
 
 </div>
