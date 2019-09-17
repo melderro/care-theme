@@ -31,16 +31,18 @@ $(document).ready(function () {
       clickedNavElement
       .css('display', 'none')
       .removeClass('open');
-
+      $('.open-tab').removeClass('open-tab');
     }else{
       $('.open')
         .css('display', 'none')
         .removeClass('open');
+      $('.open-tab').removeClass('open-tab');
       clickedNavElement
         .css('display', 'flex')
         .hide()
         .fadeIn()
         .addClass('open');
+      $(this).addClass('open-tab');
     }
   });
   $('#menu-primary>li>ul>li').on('click', function (e){

@@ -20,7 +20,7 @@ get_partial('meta', 'head');
 ?>
 
   <body <?php body_class();?> ?>
-
+  <div id="mmenu-container">
     <?php
 // Included for the sake of plugins and child themes that rely on it.
 do_action('get_header');
@@ -139,5 +139,6 @@ $event_id = get_the_ID();
 
 
 </div><!-- #tribe-events-content -->
+            </div>
   </body>
 </html>
