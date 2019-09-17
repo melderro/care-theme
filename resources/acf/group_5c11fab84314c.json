@@ -719,44 +719,6 @@
             "multiple": 0,
             "return_format": "object",
             "ui": 1
-        },
-        {
-            "key": "field_5c1334d8f8553",
-            "label": "Event",
-            "name": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "left",
-            "endpoint": 0
-        },
-        {
-            "key": "field_5c1335a0f8558",
-            "label": "Event",
-            "name": "home_event_link",
-            "type": "post_object",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "post_type": [
-                "tribe_events"
-            ],
-            "taxonomy": "",
-            "allow_null": 0,
-            "multiple": 0,
-            "return_format": "object",
-            "ui": 1
         }
     ],
     "location": [
@@ -776,5 +738,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1566827802
+    "modified": 1568689334
 }

@@ -2,7 +2,7 @@
   $home_case_study_testimonial = get_field('testimonial', 'option');
   $featured_image_id = get_post_thumbnail_id($home_case_study_testimonial->ID);
 
-  $event = get_field('home_event_link');
+  $event = get_field('default_event', 'option');
   $event_featured_image_id = get_post_thumbnail_id($event->ID);
 
 ?>

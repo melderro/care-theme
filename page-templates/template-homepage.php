@@ -46,9 +46,6 @@
         <section id="homepagePromotionlinks" class="homepage__promotionlinks">
           <?php get_partial('links', 'home-promotionlinks'); ?>
         </section>
-        <section id="generalPromotionlinks" class="homepage__promotionlinks general__promotionlinks">
-          <?php get_partial('links', 'general-promotionlinks'); ?>
-        </section>        
       </main>
 
       <?php
