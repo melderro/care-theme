@@ -3,10 +3,12 @@
 <?php
   $s = get_search_query();
   $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
   $args = array( 
     'post_type' => 'any',
     'posts_per_page' => 5, 
     'paged' => $paged,
+    'post_status' => 'publish',
     's' => $s,
     );
   $posts = new WP_Query($args); 

@@ -18,6 +18,7 @@ require 'helpers/placeholder-img-url.php';
 require 'helpers/get-events.php';
 require 'helpers/newsletter-form.php';
 require 'helpers/filters.php';
+require 'helpers/actions.php';
 
 /**
  * Theme setup and supports
