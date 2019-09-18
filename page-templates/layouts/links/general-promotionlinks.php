@@ -1,7 +1,7 @@
 <?php // General Promotional Links
 
   $event = get_field('default_event', 'option');
-  $event_featured_image_id = get_post_thumbnail_id($event->ID);
+  $event_featured_image_id = (get_field('event_main_image', $event->ID) ? get_field('event_main_image', $event->ID) : get_field('default_event_image', 'option'));
 
 ?>
 <div class="o-generalPromotionalLinks">
@@ -30,7 +30,7 @@
     <h3 class="m-generalPromotionalLinks__title">  
       <?php echo $event->post_title ?>
     </h3>
-    <div class="m-homePromotionalLinks__imagetext"><?php echo $home_case_study_testimonial->post_excerpt; ?></div> 
+    <div class="m-homePromotionalLinks__imagetext"><?php echo $event->post_excerpt; ?></div> 
     <span class="a-roundLink o-generalPromotionalEventLink">Learn More</span>
 </div>
 </a>

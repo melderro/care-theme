@@ -1,7 +1,7 @@
 <?php
 /**
- * Template Name: General Content
- * Description: General content page
+ * Template Name: 404 Template
+ * Description: 404 page
  */
 ?>
 <!doctype html>

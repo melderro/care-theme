@@ -1,26 +1,34 @@
 <?php // News Categories Filter ?>
 <div class="o-articleGrid">
 <?php
-  $blog_category = get_field('blog_category');
+  $post_type = get_posttype_name();
+  if($post_type == 'testimonial')
+    $taxonomy = 'taxonomy_category';
+  else
+    $taxonomy = 'category';
+
+  $blog_category = (get_field('blog_category') ? get_field('blog_category'): get_field('testimonial_category'));
   if(!$blog_category) :
     $tax_query = '';
-    else:
-      $tax_query = array(
-        array(
-          'taxonomy' => 'category',
-          'field'    => 'term_id',
-          'terms'    =>  $blog_category, // 12
-          'include_children' => true
-        )
-        );
-    endif;
+  else:
+    $tax_query = array(
+      array(
+        'taxonomy' => $taxonomy,
+        'field'    => 'term_id',
+        'terms'    =>  $blog_category, // 12
+        'include_children' => true
+      )
+    );
+  endif;
+
   $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   $args = array( 
-    'post_type' => 'post', 
+    'post_type' => $post_type, 
     'posts_per_page' => 5, 
     'paged' => $paged, 
     'tax_query' => $tax_query,
   );
+
   $posts = new WP_Query($args); 
 ?>
   <ul class="m-articleGridBlock">
