@@ -1,11 +1,15 @@
-<?php // Top Banner ?>
+<?php // Top Banner 
+
+    $page_title = get_page_title();
+    $sub_title = get_sub_title();
+?>
 <div class="o-pageBanner">
   <div class="o-pageBanner__titlecontent">  
     <h3 class="o-pageBanner__subtitle">
-      404 sub-title
+      <?php echo get_sub_title(); ?>
     </h3>
     <h1 class="o-pageBanner__title">
-      404 title
+      <?php echo get_page_title(); ?>
     </h1>
     <div class="o-pageBanner__text"><?php the_field('general_top_banner_text'); ?></div>
   </div>
