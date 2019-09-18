@@ -85,7 +85,7 @@ $event_id = get_the_ID();
           else:
             $imageID = get_field('default_event_image', 'option');
         ?>
-          <div class="tribe-events-event-image">';
+          <div class="tribe-events-event-image">
             <img class="lazyload lazyload--blurUp"
               alt="<?php echo get_post_meta($imageID, '_wp_attachment_image_alt', true); ?>"
               data-sizes="auto"
