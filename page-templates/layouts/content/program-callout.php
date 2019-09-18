@@ -11,9 +11,11 @@ $imageID = (get_field('testimonial_image', $testimonial->ID) ? get_field('testim
     </div>
     <div class="m-bodyContent__calloutauthor">
     <?php echo get_acf_image_srcset( $imageID, 'lazyload m-generalbodyContent__calloutimage'); ?>
-      <span class="m-bodyContent__calloutname"><?php echo get_field('testimonial_source', $testimonial->ID); ?></span>
-      <span class="m-bodyContent__calloutsource">
+      <span class="m-bodyContent__calloutname">
         <?php echo get_field('testimonial_source_name', $testimonial->ID); ?>
+      </span>
+      <span class="m-bodyContent__calloutsource">
+        <?php echo get_field('testimonial_source', $testimonial->ID); ?>
       </span>
     </div>
   </div> 
