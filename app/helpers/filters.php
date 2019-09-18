@@ -26,3 +26,14 @@ function get_sub_title(){
     return "Search Sub Results";
   endif;
 }
+
+/** 
+ *  get static page sub title
+*/
+function get_posttype_name(){
+  if(is_page('success-stories')) :
+    return "testimonial";
+  else :
+    return "post";
+  endif;
+}
