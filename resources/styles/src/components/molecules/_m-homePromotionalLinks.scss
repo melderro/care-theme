@@ -48,7 +48,6 @@
     }
 
     &.homePromotionalEvent {
-      @extend %main-body-padding-left;
 
       @media(max-width: 770px) {
         flex: 0 1 70%;
@@ -117,17 +116,15 @@
 
       @media(max-width: 770px) {
         flex: 0 1 50%;
-        margin: 0 25% 6rem;
+        margin: 0 0 4rem;
       }
 
       @media(max-width: 640px) {
         flex: 0 1 60%;
-        margin: 0 20% 4rem;
       }
 
       @media(max-width: 500px) {
         flex: 0 1 80%;
-        margin: 0 10% 4rem;
       }
 
       &::before {
@@ -214,16 +211,30 @@
     @media(max-width: 840px) {
       flex: 0 1 50%;
       order: 2;
-      padding-right: 3rem;
       margin-bottom: 2rem;
+    }
+
+    @media(max-width: 640px) {
+      flex: 0 1 60%;
+    }
+
+    @media(max-width: 500px) {
+      flex: 0 1 80%;
     }
   }
 
   .homePromotionalData {
+    padding-left: 3rem;
 
     @media(max-width: 840px) {
       flex: 0 1 100%;
       order: 1;
+      padding-right: 3rem;
+    }
+
+    @media(max-width: 770px) {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
