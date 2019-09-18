@@ -58,7 +58,7 @@
             "key": "field_5cd05f066b6e8",
             "label": "Registration Form",
             "name": "events_registration_form",
-            "type": "forms",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -67,9 +67,11 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "id",
-            "allow_null": 0,
-            "multiple": 0
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_5d819ffe92ce5",
@@ -129,5 +131,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1568776273
+    "modified": 1568848710
 }
