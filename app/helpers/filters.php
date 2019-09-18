@@ -49,7 +49,7 @@ function add_acf_excerpt($content) {
     for($i=0; $i<30; $i++)
       $excerpt .= $text[$i] . " ";
     substr($excerpt, 0, 1);
-    $excerpt .= "...";
+    $excerpt .= '...<br><a href="'.get_the_permalink().'" class="read-more">Read More</a>';
     return $excerpt;
   else : 
     return $content;
