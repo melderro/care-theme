@@ -1,6 +1,9 @@
 <?php // Genearl Body paragraph content 
 
 $callout_testimonial = get_field('general_content_callout_testimonial');
+$imageID = (get_field('testimonial_image', $callout_testimonial->ID) ? get_field('testimonial_image', $callout_testimonial->ID) : get_field('testimonial_default_image', 'option'));
+
+
 ?>
 <div class="o-generalbodyContent">
   
@@ -21,7 +24,7 @@ $callout_testimonial = get_field('general_content_callout_testimonial');
     <div class="m-generalbodyContent__calloutcontainer">
       <div class="m-generalbodyContent__calloutimagecontainer">
 
-        <?php echo get_acf_image_srcset( get_field('testimonial_image', $callout_testimonial->ID), 'lazyload m-generalbodyContent__calloutimage'); ?>
+        <?php echo get_acf_image_srcset( $imageID, 'lazyload m-generalbodyContent__calloutimage'); ?>
       </div>
       <div class="m-generalbodyContent__calloutcontent">
       <?php echo apply_filters('the_content', $callout_testimonial->post_excerpt); ?>
