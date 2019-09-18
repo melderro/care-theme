@@ -83,7 +83,7 @@ $event_id = get_the_ID();
           if($featured_image) :
             echo $featured_image;
           else:
-            $imageID = get_field('default_event_image', 'option');
+            $imageID = (get_field('event_main_image') ? get_field('event_main_image') : get_field('default_event_image', 'option'));
         ?>
           <div class="tribe-events-event-image">
             <img class="lazyload lazyload--blurUp"

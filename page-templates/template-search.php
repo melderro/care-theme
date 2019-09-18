@@ -1,7 +1,7 @@
 <?php
 /**
- * Template Name: General Content
- * Description: General content page
+ * Template Name: Search
+ * Description: Search page
  */
 ?>
 <!doctype html>
