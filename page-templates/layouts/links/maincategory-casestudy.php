@@ -1,5 +1,6 @@
 <?php // Main Category Case Study content
 $universal_testimonial = get_field('testimonial', 'option');
+$imageID = (get_field('testimonial_image', $universal_testimonial->ID) ? get_field('testimonial_image', $universal_testimonial->ID) : get_field('testimonial_default_image', 'option'));
 ?>
 <div class="o-maincategoryCaseStudy">
   <div class="m-bodyContent__content m-maincategoryCaseStudy__content">
@@ -17,6 +18,6 @@ $universal_testimonial = get_field('testimonial', 'option');
   </div>
   <div class="m-bodyContent__contentimage m-maincategoryCaseStudy__contentimage ">
 
-  <?php echo get_acf_image_srcset( get_field('testimonial_image', $universal_testimonial->ID), 'lazyload m-bodyContent__image m-maincategoryCaseStudy__image'); ?>
+  <?php echo get_acf_image_srcset( $imageID, 'lazyload m-bodyContent__image m-maincategoryCaseStudy__image'); ?>
   </div>
 </div>
