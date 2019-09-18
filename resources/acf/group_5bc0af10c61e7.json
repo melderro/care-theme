@@ -839,6 +839,25 @@
             "button_label": "",
             "sub_fields": [
                 {
+                    "key": "field_5d818bd45746c",
+                    "label": "Label",
+                    "name": "uploads_label",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
                     "key": "field_5cbf6e868fbb8",
                     "label": "File",
                     "name": "uploads_file",
@@ -851,7 +870,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array",
+                    "return_format": "url",
                     "library": "all",
                     "min_size": "",
                     "max_size": "",
@@ -1071,5 +1090,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1568750027
+    "modified": 1568771203
 }

@@ -416,10 +416,10 @@
             "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_5cbf71975a009",
-                    "label": "File",
-                    "name": "program_related_resources_file",
-                    "type": "select",
+                    "key": "field_5d818ba327d10",
+                    "label": "Label",
+                    "name": "program_related_resources_label",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -428,14 +428,30 @@
                         "class": "",
                         "id": ""
                     },
-                    "choices": [],
-                    "default_value": [],
-                    "allow_null": 0,
-                    "multiple": 0,
-                    "ui": 0,
-                    "return_format": "array",
-                    "ajax": 0,
-                    "placeholder": ""
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5cbf71975a009",
+                    "label": "File",
+                    "name": "program_related_resources_file",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ""
                 }
             ]
         },
@@ -497,5 +513,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1567017999
+    "modified": 1568771161
 }

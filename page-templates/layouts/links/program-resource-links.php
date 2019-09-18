@@ -29,15 +29,28 @@
       if(have_rows('program_related_resources')) :
         while(have_rows('program_related_resources')) : the_row();
           $file = get_sub_field('program_related_resources_file');
+          $label = get_sub_field('program_related_resources_label');
     ?>
       <li>
-        <a href="<?php echo $file['value'];?>" target="_blank">
-          <?php echo $file['label']; ?>
+        <a href="<?php echo $file;?>" target="_blank">
+          <?php echo $label; ?>
         </a>
       </li>
       <?php 
         endwhile;
-      else:
+      elseif(have_rows('uploads', 'option')) :
+          while(have_rows('uploads', 'option')) : the_row();
+            $file = get_sub_field('uploads_file', 'option');
+            $label = get_sub_field('uploads_label');
+      ?>
+      <li>
+        <a href="<?php echo $file;?>" target="_blank">
+          <?php echo $label; ?>
+        </a>
+      </li>
+        <?php 
+          endwhile;
+        else :
       ?>
       <li>
         <a>There are currently no resources.</a>
