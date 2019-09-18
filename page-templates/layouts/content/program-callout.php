@@ -1,6 +1,7 @@
 <?php // Body paragraph content
 remove_filter ('acf_the_content', 'wpautop');
 $testimonial = get_field('testimonial');
+$imageID = (get_field('testimonial_image', $testimonial->ID) ? get_field('testimonial_image', $testimonial->ID) : get_field('testimonial_default_image', 'option'));
 ?>
 <div class="o-bodyContent">
 
@@ -9,7 +10,7 @@ $testimonial = get_field('testimonial');
       "<?php echo get_field('testimonial_content',$testimonial->ID); ?>"
     </div>
     <div class="m-bodyContent__calloutauthor">
-    <?php echo get_acf_image_srcset( get_field('testimonial_image', $testimonial->ID), 'lazyload m-generalbodyContent__calloutimage'); ?>
+    <?php echo get_acf_image_srcset( $imageID, 'lazyload m-generalbodyContent__calloutimage'); ?>
       <span class="m-bodyContent__calloutname"><?php echo get_field('testimonial_source', $testimonial->ID); ?></span>
       <span class="m-bodyContent__calloutsource">
         <?php echo get_field('testimonial_source_name', $testimonial->ID); ?>
