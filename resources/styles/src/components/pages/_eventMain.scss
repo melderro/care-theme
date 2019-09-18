@@ -20,19 +20,27 @@
   }
 }
 
+.tribe-events-page-title {
+  background-color: $color-yellow;
+  color: $color-white;
+  font-size: $font-regular;
+  margin: 0;
+  padding-top: 1rem;
+}
+
 #tribe-events-bar {
     background-color: $color-yellow;
     margin-bottom: 0;
 
   #tribe-bar-form {
     @extend %container-shared;
-    background-color: $color-light-yellow;
+    background-color: $color-yellow;
     color: #fff;
     padding: 0;
 
     #tribe-bar-filters-wrap {
       background-color: $color-yellow;
-      padding: 1.5rem 0;
+      padding: 1rem 0 1.5rem;
     }
 
     label {
@@ -70,7 +78,7 @@
     #tribe-bar-views {
 
       .tribe-bar-views-inner {
-        background: $color-light-yellow;
+        background: $color-yellow;
         padding: 3rem 0 1rem;
       }
     }
@@ -121,7 +129,8 @@
   .tribe-events-category-list {
     color: $color-purple;
     font-family: $script-font-family;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
   }
 
   .tribe-events-list-event-title {
@@ -377,7 +386,7 @@
 // View Drop Down
 
 #tribe-bar-views .tribe-bar-views-list {
-  background-color: $color-light-yellow;
+  background-color: $color-yellow;
 }
 
 #tribe-bar-views .tribe-bar-views-option.tribe-bar-active,

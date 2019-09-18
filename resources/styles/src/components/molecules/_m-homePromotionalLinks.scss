@@ -120,10 +120,6 @@
       }
 
       @media(max-width: 640px) {
-        flex: 0 1 60%;
-      }
-
-      @media(max-width: 500px) {
         flex: 0 1 80%;
       }
 
@@ -215,10 +211,6 @@
     }
 
     @media(max-width: 640px) {
-      flex: 0 1 60%;
-    }
-
-    @media(max-width: 500px) {
       flex: 0 1 80%;
     }
   }
