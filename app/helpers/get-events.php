@@ -65,7 +65,7 @@
 LI;
     endforeach;
   else: 
-    $li_html = "<li>There are currently no events.</li>";
+    $li_html = "<li><a>There are currently no events.</a></li>";
   endif;
   echo ($li_html);
 }
