@@ -4,7 +4,7 @@
   $testimonial_imageID = (get_field('testimonial_image', $testimonial->ID) ? get_field('testimonial_image', $testimonial->ID) : get_field('testimonial_default_image', 'option'));
 
   $event = get_field('default_event', 'option');
-  $event_featured_image_id = get_post_thumbnail_id($event->ID);
+  $event_featured_image_id = (get_field('event_main_image', $event->ID) ? get_field('event_main_image', $event->ID) : get_field('default_event_image', 'option'));
 
 ?>
 <div class="o-homePromotionalLinks">
@@ -33,22 +33,24 @@
       <span class="a-roundLink o-homePromotionalCaseStudyLink"> Read More </span>
     </div>
   </a>
-  <div class="m-homePromotionalLinks__Block homePromotionalImage homePromotionalEvent">
-  <img class="m-homePromotionalLinks__image lazyload lazyload--blurUp"
-    alt="<?php echo get_post_meta($event_featured_image_id, '_wp_attachment_image_alt', true); ?>"
-    data-sizes="auto"
-    src="<?php echo get_the_post_thumbnail_url( $event->ID,  $size = 'preload' ); ?>"
-    data-srcset="<?php echo wp_get_attachment_image_srcset( $event_featured_image_id) ?>"
-  />  
-  </div>
-  
-  <a class="m-homePromotionalLinks__Block homePromotionalData homePromotionalEvent">
-    <h2 class="m-homePromotionalLinks__title">  
-      <?php echo $event->post_title ?>
-    </h2>
-    <div class="m-homePromotionalLinks__text">  
-      <?php echo $event->post_excerpt; ?>
+  <div class="m-homePromotionalEvent__container">
+    <div class="m-homePromotionalLinks__Block homePromotionalImage homePromotionalEvent">
+    <img class="m-homePromotionalLinks__image lazyload lazyload--blurUp"
+      alt="<?php echo get_post_meta($event_featured_image_id, '_wp_attachment_image_alt', true); ?>"
+      data-sizes="auto"
+      src="<?php echo get_the_post_thumbnail_url( $event->ID,  $size = 'preload' ); ?>"
+      data-srcset="<?php echo wp_get_attachment_image_srcset( $event_featured_image_id) ?>"
+    />  
     </div>
-    <a href="<?php echo get_the_permalink($event->ID); ?>"><span class="a-roundLink o-homePromotionalEventLink">Learn More</span></a>
-  </a>
+  
+    <div class="m-homePromotionalLinks__Block homePromotionalData homePromotionalEvent">
+      <h2 class="m-homePromotionalLinks__title">  
+        <?php echo $event->post_title ?>
+      </h2>
+      <div class="m-homePromotionalLinks__text">  
+        <?php echo $event->post_excerpt; ?>
+      </div>
+      <a href="<?php echo get_the_permalink($event->ID); ?>"><span class="a-roundLink o-homePromotionalEventLink">Learn More</span></a>
+    </div>
+  </div>
 </div>

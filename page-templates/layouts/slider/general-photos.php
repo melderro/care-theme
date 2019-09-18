@@ -7,7 +7,9 @@
       while(have_rows('general_photo_slider')):the_row();
     ?>
     <li>
-      <img class="m-generalbodyPhotos__image" src="<?php echo get_acf_image( get_sub_field('general_photo_slider_image'), '540w', 'http://via.placeholder.com/588x216?text=logo'); ?> "/> 
+      <?php 
+        echo get_acf_image_srcset( get_sub_field('general_photo_slider_image'), 'lazyload m-generalbodyContent__calloutimage', '375w'); 
+      ?>
     </li>
     <?php
       endwhile;
