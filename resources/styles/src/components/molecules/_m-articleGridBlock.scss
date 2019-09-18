@@ -5,66 +5,63 @@
   padding: 3rem 4rem;
 
   li {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
 
-    a {
+    .m-articleGridBlock__imageContainer {
+      flex: 0 1 20%;
+
+      img {
+        box-shadow: 20px 20px $color-purple;
+      }
+    }
+
+    .m-articleGridBlock__titleContainer {
       display: flex;
-      flex-direction: row;
-      text-decoration: none;
+      flex: 0 1 40%;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 5rem;
 
-      .m-articleGridBlock__imageContainer {
-        flex: 0 1 20%;
-
-        img {
-          box-shadow: 20px 20px $color-purple;
-        }
+      .o-introContent__subtitle {
+        color: $color-purple;
+        font-size: 1.8rem;
       }
 
-      .m-articleGridBlock__titleContainer {
-        display: flex;
-        flex: 0 1 40%;
-        flex-direction: column;
-        justify-content: center;
-        padding-left: 5rem;
+      .o-introContent__title {
+        color: $color-purple;
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+        position: relative;
 
-        .o-introContent__subtitle {
-          color: $color-purple;
-          font-size: 1.8rem;
+        &:after {
+          border-bottom: 4px solid $color-lightgray;
+          bottom: -12px;
+          content: '';
+          left: 0;
+          position: absolute;
+          width: 100px;
+          transition: .5s;
         }
 
-        .o-introContent__title {
-          color: $color-purple;
-          font-size: 2.4rem;
-          line-height: 2.8rem;
-          position: relative;
+        &:hover {
 
           &:after {
-            border-bottom: 4px solid $color-lightgray;
-            bottom: -12px;
-            content: '';
-            left: 0;
-            position: absolute;
-            width: 100px;
-            transition: .5s;
-          }
-
-          &:hover {
-
-            &:after {
-              width: 80%;
-              border-bottom: 4px solid $color-yellow;
-            }
+            width: 80%;
+            border-bottom: 4px solid $color-yellow;
           }
         }
       }
+    }
 
-      .m-articleGridBlock__contentContainer {
-        color: $color-bodycopy;
-        display: flex;
-        flex: 0 1 40%;
-        flex-direction: column;
-        justify-content: center;
-        padding-left: 2rem;
-      }
+    .m-articleGridBlock__contentContainer {
+      color: $color-bodycopy;
+      display: flex;
+      flex: 0 1 40%;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 2rem;
     }
   }
 }

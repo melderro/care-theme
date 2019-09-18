@@ -109,7 +109,8 @@
     }
   }
 
-  &.o-homePromotionalCaseStudyLink {
+  &.o-homePromotionalCaseStudyLink,
+  &.o-generalPromotionalEventLink {
     border-color: $color-white;
     color: $color-white;
 

@@ -14,19 +14,20 @@
       <?php the_field('data_statistic_content_source', 'option'); ?>
     </div>
   </div>
-  <div class="m-generalPromotionalLinks__Block generalPromotionalImage generalPromotionalEvent">
+  <a class="m-generalPromotionalEvent__container" href="<?php echo get_the_permalink($event->ID); ?>">
   <img class="m-generalPromotionalLinks__image lazyload lazyload--blurUp"
     alt="<?php echo get_post_meta($event_featured_image_id, '_wp_attachment_image_alt', true); ?>"
     data-sizes="auto"
     src="<?php echo get_the_post_thumbnail_url( $event->ID,  $size = 'preload' ); ?>"
     data-srcset="<?php echo wp_get_attachment_image_srcset( $event_featured_image_id) ?>"
   />  
-  </div>
   
-  <a class="m-generalPromotionalLinks__Block generalPromotionalData generalPromotionalEvent">
-    <h2 class="m-generalPromotionalLinks__title">  
+  <div class="m-generalPromotionalLinks__ContentContainer">
+    <h3 class="m-generalPromotionalLinks__title">  
       <?php echo $event->post_title ?>
-    </h2>
-    <a href="<?php echo get_the_permalink($event->ID); ?>"><span class="a-roundLink o-generalPromotionalEventLink">Learn More</span></a>
-  </a>
+    </h3>
+    <div class="m-homePromotionalLinks__imagetext"><?php echo $home_case_study_testimonial->post_excerpt; ?></div> 
+    <span class="a-roundLink o-generalPromotionalEventLink">Learn More</span>
+</div>
+</a>
 </div>
