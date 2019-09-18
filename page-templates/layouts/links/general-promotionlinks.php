@@ -10,9 +10,13 @@
     <div class="m-generalPromotionalLinks__text">  
       <?php the_field('data_statistic_content', 'option'); ?>
     </div>
-    <div class="m-generalPromotionalLinks__source">  
+    <?php
+     if(get_field('data_statistic_content_source', 'option')) :
+    ?>
+    <div class="m-homePromotionalLinks__source">  
       <?php the_field('data_statistic_content_source', 'option'); ?>
     </div>
+    <?php endif; ?>
   </div>
   <a class="m-generalPromotionalEvent__container" href="<?php echo get_the_permalink($event->ID); ?>">
   <img class="m-generalPromotionalLinks__image lazyload lazyload--blurUp"
