@@ -14,6 +14,16 @@ function get_page_title(){
   elseif(is_search()) :
     $s = get_search_query();
     return "Search Results: ".$s;
+  else:
+    $year     = get_query_var('year');
+    $category = get_query_var('category');
+    if($year) :
+      $month = DateTime::createFromFormat('!m',get_query_var('monthnum'));
+      $month = $month->format('F');
+      return "Archive: ".$month." ".$year;
+    endif;
+    echo "Category: ";
+    single_cat_title();
   endif;
 }
 /** 
