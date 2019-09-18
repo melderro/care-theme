@@ -2,21 +2,24 @@
 <div class="o-articleGrid">
 <?php
   $blog_category = get_field('blog_category');
-  if(!$blog_category)
-    $blog_category = -1;
+  if(!$blog_category) :
+    $tax_query = '';
+    else:
+      $tax_query = array(
+        array(
+          'taxonomy' => 'category',
+          'field'    => 'term_id',
+          'terms'    =>  $blog_category, // 12
+          'include_children' => true
+        )
+        );
+    endif;
   $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   $args = array( 
     'post_type' => 'post', 
     'posts_per_page' => 5, 
     'paged' => $paged, 
-    'tax_query' => array(
-      array(
-        'taxonomy' => 'category',
-        'field'    => 'term_id',
-        'terms'    =>  $blog_category, // 12
-        'include_children' => true
-      )
-    )
+    'tax_query' => $tax_query,
   );
   $posts = new WP_Query($args); 
 ?>
