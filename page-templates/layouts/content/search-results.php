@@ -1,32 +1,11 @@
 <?php // News Categories Filter ?>
 <div class="o-articleGrid">
-<?php
-  $blog_category = get_field('blog_category');
-  if(!$blog_category) :
-    $tax_query = '';
-    else:
-      $tax_query = array(
-        array(
-          'taxonomy' => 'category',
-          'field'    => 'term_id',
-          'terms'    =>  $blog_category, // 12
-          'include_children' => true
-        )
-        );
-    endif;
-  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-  $args = array( 
-    'post_type' => 'post', 
-    'posts_per_page' => 5, 
-    'paged' => $paged, 
-    'tax_query' => $tax_query,
-  );
-  $posts = new WP_Query($args); 
-?>
   <ul class="m-articleGridBlock">
     <?php 
-      while($posts->have_posts()) :
-        $posts->the_post();
+  echo "Search found ".$wp_query->found_posts." results";
+
+      while(have_posts()) : the_post();
+        //$posts->the_post();
         $categories = get_the_category();    
         $meta_date = get_the_date('M d, Y');
     ?>
@@ -68,11 +47,8 @@
   <?php 
     remove_filter( 'the_category', 'no_links' );
     // Bottom pagination (pagination arguments)
-    echo "<div class='page-nav-container'>" . paginate_links(array(
-      'total' => $posts->max_num_pages,
-      'prev_text' => __('<'),
-      'next_text' => __('>')
-    )) . "</div>";
-
-  
-  ?>
+    the_posts_pagination( array(
+      'mid_size' => 2,
+      'prev_text' => __( 'Previous', 'textdomain' ),
+      'next_text' => __( 'Next', 'textdomain' ),
+  ) ); ?>

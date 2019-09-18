@@ -28,8 +28,21 @@ $imageID = (get_field('testimonial_image', $callout_testimonial->ID) ? get_field
       </div>
       <div class="m-generalbodyContent__calloutcontent">
       <?php echo apply_filters('the_content', $callout_testimonial->post_excerpt); ?>
-        <div class="m-generalbodyContent__calloutnamecontainer">   
-          <span class="m-bodyContent__calloutname m-generalbodyContent__calloutname"><?php the_field('testimonial_source_name', $callout_testimonial->ID); ?></span><span class="m-bodyContent__calloutsource m-generalbodyContent__calloutsource"><?php the_field('testimonial_source', $callout_testimonial->ID); ?></span>
+        <div class="m-generalbodyContent__calloutnamecontainer"> 
+          <?php
+            if(get_field('testimonial_source_name', $callout_testimonial->ID)) :
+          ?>
+          <span class="m-bodyContent__calloutname m-generalbodyContent__calloutname">
+            <?php the_field('testimonial_source_name', $callout_testimonial->ID); ?>
+          </span>
+          <?php 
+            endif;
+            if(get_field('testimonial_source', $callout_testimonial->ID)) :
+          ?>
+          <span class="m-bodyContent__calloutsource m-generalbodyContent__calloutsource">
+            <?php the_field('testimonial_source', $callout_testimonial->ID); ?>
+          </span>
+          <?php endif; ?>
         </div>
       </div>
     </div>

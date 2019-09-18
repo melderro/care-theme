@@ -96,8 +96,19 @@ $organizer = tribe_get_organizer();
 <?php do_action( 'tribe_events_after_the_meta' ) ?>
 
 <!-- Event Image -->
-<?php echo tribe_event_featured_image( null, 'medium' ); ?>
-
+<div class="tribe-events-event-image">
+<?php 
+if(get_field('event_main_image')) :
+	echo '<a href="'. esc_url( tribe_get_event_link() ).'">';
+	echo get_acf_image_srcset( get_field('event_main_image'), 'lazyload'); 
+	echo '</a>';
+else :
+	echo '<a href="'. esc_url( tribe_get_event_link() ).'">';
+	echo get_acf_image_srcset( get_field('default_event_image', 'option'), 'lazyload'); 
+	echo '</a>';
+endif;
+?>
+</div>
 <!-- Event Content -->
 <?php do_action( 'tribe_events_before_the_content' ); ?>
 <div class="tribe-events-list-event-description tribe-events-content description entry-summary">
