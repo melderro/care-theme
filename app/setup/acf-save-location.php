@@ -44,4 +44,4 @@ function acf_load_program_related_resources_field_choices($field){
 
 }
 
-add_filter('acf/load_field/name=program_related_resources_file', 'acf_load_program_related_resources_field_choices');
+//add_filter('acf/load_field/name=program_related_resources_file', 'acf_load_program_related_resources_field_choices');
