@@ -1,6 +1,4 @@
-@import '../../../node_modules/slick-carousel/slick/slick.css';
-
-.page-template-template-homepage {
+.archive {
 
   .m-navigationRow {
 
@@ -72,12 +70,4 @@
         0 0.8em 0 0 $color-white;
     }
   }
-}
-
-.homepage__callToAction {
-  background-color: $color-purple;
-  }
-
-.homepage__footerContent {
-  background-color: $color-yellow;
 }
