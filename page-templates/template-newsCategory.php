@@ -35,9 +35,13 @@
       // Main content area
       ?>
       <main>
+        <?php 
+         if(!is_page('success-stories')) :
+        ?>
         <section id="newsFilter" class="newsCategory__filter">
           <?php get_partial('links', 'newsfilter'); ?>
         </section>
+        <?php endif; ?>
         <section id="newsArticleGrid" class="newsCategory__articleGrid">
           <?php get_partial('content', 'article-grid'); ?>
         </section>
