@@ -25,7 +25,9 @@ $(document).ready(function(){
       autoplay: true,
       autoplaySpeed: 4000,
       infinite: true,
-      dots: false,
+      dots: false,  
+      nextArrow: '<div class="slick-next slick-arrow" aria-label="Next"  style="width: 20px; height: 20px"></div>',
+      prevArrow: '<div class="slick-prev slick-arrow" aria-label="Previous" style="width: 20px; height: 20px"></div>',
     });
 
   }
