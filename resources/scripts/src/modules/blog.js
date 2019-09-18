@@ -17,7 +17,7 @@ $(document).ready(function(){
     });
 
     slider.slick({
-      slidesToShow: 2,
+      slidesToShow: 3,
       slidesToScroll: 1,
       lazyLoad: 'ondemand',
       arrows: true,
