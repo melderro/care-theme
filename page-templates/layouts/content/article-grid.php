@@ -3,7 +3,7 @@
 <?php
   $blog_category = get_field('blog_category');
   if(!$blog_category)
-    $blog_category = 1;
+    $blog_category = -1;
   $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
   $args = array( 
     'post_type' => 'post', 
@@ -25,6 +25,7 @@
       while($posts->have_posts()) :
         $posts->the_post();
         $categories = get_the_category();    
+        $meta_date = get_the_date('M d, Y');
     ?>
     <li>
       <div class="m-articleGridBlock__imageContainer">
@@ -45,6 +46,10 @@
           <?php the_title(); ?>
         </h1>
         </a>
+        <div class="m-articleGridBlock__metadata">
+          <?php get_svg('clock-light');?>
+          <span><?php echo $meta_date; ?></span>
+        </div>
       </div>
       <div class="m-articleGridBlock__contentContainer">
         <div class="m-articleGridBlock__content">
