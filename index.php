@@ -6,6 +6,8 @@ elseif( is_home() || is_archive() || is_paged() ):
   get_template_part( 'page-templates/blog-archive' );
 elseif( is_singular(array ('post', 'testimonial'))) :
   get_template_part( 'page-templates/template-newsLanding' );
+elseif(is_404()) :
+  get_template_part( 'page-templates/template-404' );
 else:
   get_template_part( 'page-templates/template-generalLanding' );
 endif;
