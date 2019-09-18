@@ -113,6 +113,10 @@
   flex-direction: column;
   justify-content: center;
 
+  @media(max-width: 900px) {
+    flex: 0 1 60%;
+  }
+
   @media(max-width: 640px) {
     flex: 0 1 100%;
   }
@@ -180,7 +184,7 @@
   max-width: 800px;
 
   @media(max-width: 640px) {
-    padding: 6rem 0;
+    padding: 4rem 0;
   }
 
   .m-bodyContent__callouttext {
@@ -188,6 +192,11 @@
     font-family: $script-font-family;
     font-size: 2.5rem;
     line-height: 3rem;
+
+    @media(max-width: 700px) {
+      font-size: 2.2rem;
+      line-height: 2.8rem;
+    }
   }
 
   .m-bodyContent__calloutauthor {
@@ -196,6 +205,10 @@
     flex-direction: row;
     justify-content: center;
     padding-top: 1.5rem;
+
+    @media(max-width: 700px) {
+      flex-wrap: wrap;
+    }
 
     .m-bodyContent__calloutimage {
       clip-path: circle(40px at 40px 40px);
@@ -215,12 +228,23 @@
   position: relative;
   text-transform: uppercase;
 
+  @media(max-width: 700px) {
+    display: flex;
+    flex: 0 1 100%;
+    justify-content: center;
+    margin-bottom: .25rem;
+  }
+
   &:after {
     @extend %border-source;
     content: "";
     display: block;
     position: absolute;
     width: 100%;
+
+    @media(max-width: 700px) {
+      content: none;
+    }
   }
 }
 
@@ -231,4 +255,10 @@
   font-style: italic;
   line-height: 1.45rem;
   padding-left: 5px;
+
+  @media(max-width: 700px) {
+    display: flex;
+    flex: 0 1 100%;
+    justify-content: center;
+  }
 }

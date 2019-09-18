@@ -115,6 +115,24 @@
   li {
     position: relative;
 
+    &.open-tab {
+
+      a {
+        background-color: $color-white;
+        color: $color-bodycopy;
+      }
+
+      ul {
+
+        li {
+
+          &:hover > a {
+            color: $color-yellow;
+          }
+        }
+      }
+    }
+
     &#menu-item-24,
     &#menu-item-72 {
       position: inherit;
