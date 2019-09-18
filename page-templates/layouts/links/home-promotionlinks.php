@@ -13,9 +13,13 @@
     <div class="m-homePromotionalLinks__text">  
       <?php the_field('data_statistic_content', 'option'); ?>
     </div>
+    <?php
+     if(get_field('data_statistic_content_source', 'option')) :
+    ?>
     <div class="m-homePromotionalLinks__source">  
       <?php the_field('data_statistic_content_source', 'option'); ?>
     </div>
+    <?php endif; ?>
   </div>
   <a class="m-homePromotionalLinks__Block homePromotionalImage homePromotionalCaseStudy" href="<?php echo get_the_permalink($home_case_study_testimonial->ID); ?>">
       
