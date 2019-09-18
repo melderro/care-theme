@@ -272,6 +272,50 @@
             ]
         },
         {
+            "key": "field_5d82b876b5afa",
+            "label": "Related Topics",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5d82b889b5afb",
+            "label": "Page Link",
+            "name": "program_related_topics_page_link",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page",
+                "post"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type",
+                "taxonomy"
+            ],
+            "elements": "",
+            "min": "",
+            "max": 24,
+            "return_format": "object"
+        },
+        {
             "key": "field_5c1966bed55e4",
             "label": "Bottom Content",
             "name": "",
@@ -343,5 +387,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1568750345
+    "modified": 1568848069
 }
