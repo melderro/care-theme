@@ -1,6 +1,7 @@
 <?php // Home Promotional Links
   $home_case_study_testimonial = get_field('testimonial', 'option');
-  $featured_image_id = get_post_thumbnail_id($home_case_study_testimonial->ID);
+  $testimonial = get_field('testimonial', 'option');
+  $testimonial_imageID = (get_field('testimonial_image', $testimonial->ID) ? get_field('testimonial_image', $testimonial->ID) : get_field('testimonial_default_image', 'option'));
 
   $event = get_field('default_event', 'option');
   $event_featured_image_id = get_post_thumbnail_id($event->ID);
@@ -19,10 +20,10 @@
   <a class="m-homePromotionalLinks__Block homePromotionalImage homePromotionalCaseStudy" href="<?php echo get_the_permalink($home_case_study_testimonial->ID); ?>">
       
   <img class="m-homePromotionalLinks__image lazyload lazyload--blurUp"
-    alt="<?php echo get_post_meta($featured_image_id, '_wp_attachment_image_alt', true); ?>"
+    alt="<?php echo get_post_meta($testimonial_imageID, '_wp_attachment_image_alt', true); ?>"
     data-sizes="auto"
-    src="<?php echo get_the_post_thumbnail_url( $home_case_study_testimonial->ID,  $size = 'preload' ); ?>"
-    data-srcset="<?php echo wp_get_attachment_image_srcset( $featured_image_id) ?>"
+    src="<?php echo get_the_post_thumbnail_url($testimonial_imageID->ID, $size = 'preload' ); ?>"
+    data-srcset="<?php echo wp_get_attachment_image_srcset($testimonial_imageID); ?>"
   />
 
 
