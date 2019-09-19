@@ -126,6 +126,7 @@
 
   .tribe-events-detials-container {
     display: flex;
+    flex: 0 1 100%;
 
     @media(max-width: 900px) {
       flex-wrap: wrap;
@@ -140,7 +141,7 @@
   }
 
   .tribe-events-meta-group-details {
-    flex: 0 1 40%;
+    flex: 0 1 auto;
     padding-right: 2rem;
 
     @media(max-width: 900px) {
