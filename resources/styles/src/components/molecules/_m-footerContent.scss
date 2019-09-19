@@ -25,6 +25,10 @@
       flex-direction: row;
       text-decoration: none;
 
+      &:hover {
+        color: $color-purple;
+      }
+
       img {
         padding-right: 1rem;
         max-width: 40px;
@@ -64,12 +68,20 @@
     margin: 0 .45rem;
 
     a {
-      border: 2px solid white;
+      border: 2px solid $color-white;
       border-radius: 3rem;
       color: $color-white;
       display: flex;
       flex-direction: row;
       padding: .5rem;
+
+      &:hover {
+        border: 2px solid $color-purple;
+
+        svg {
+          fill: $color-purple;
+        }
+      }
 
       img {
         flex: 0 1 50%;

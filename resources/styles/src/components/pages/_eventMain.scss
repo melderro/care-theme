@@ -26,6 +26,11 @@
   font-size: $font-regular;
   margin: 0;
   padding-top: 1rem;
+
+  a {
+    color: $color-white;
+    text-decoration: none;
+  }
 }
 
 #tribe-events-bar {
