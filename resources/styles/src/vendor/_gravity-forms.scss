@@ -68,6 +68,11 @@
     padding: .7rem 3rem;
     text-decoration: none;
     text-transform: uppercase;
+
+    &:hover {
+      background-color: $color-yellow;
+      color: $color-white;
+    }
   }
 }
 
