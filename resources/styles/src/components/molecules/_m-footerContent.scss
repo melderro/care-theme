@@ -53,6 +53,7 @@
   display: flex;
   flex: 0 1 100%;
   flex-direction: row;
+  justify-content: center;
   list-style: none;
   padding: 0px;
   margin: 0px;
@@ -60,16 +61,26 @@
   li {
     display: flex;
     flex-direction: column;
+    margin: 0 .45rem;
 
     a {
+      border: 2px solid white;
+      border-radius: 3rem;
       color: $color-white;
       display: flex;
       flex-direction: row;
+      padding: .5rem;
 
       img {
         flex: 0 1 50%;
         max-width: 60px;
       }
     }
+  }
+
+  svg {
+    fill: $color-white;
+    height: 30px;
+    width: 30px;
   }
 }

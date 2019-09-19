@@ -5,8 +5,9 @@
 
   .o-pageBanner__titlecontent {
     left: 50%;
+    max-width: 600px;
     position: absolute;
-    top: 50%;
+    top: 60%;
     text-align: center;
     transform: translate(-50%, -50%);
     width: 80%;
@@ -17,11 +18,7 @@
 
     .o-pageBanner__subtitle {
       color: $color-yellow;
-      margin: 2rem;
-
-      @media(max-width: 600px) {
-        margin: .5rem 0;
-      }
+      margin: .5rem 0;
     }
 
     .o-pageBanner__title {
