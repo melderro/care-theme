@@ -22,8 +22,7 @@ function get_page_title(){
       $month = $month->format('F');
       return "Archive: ".$month." ".$year;
     endif;
-    echo "Category: ";
-    single_cat_title();
+    return "Category: ".get_the_archive_title();
   endif;
 }
 /** 
