@@ -136,6 +136,13 @@
         padding-left: 0;
         margin-top: 2rem;
       }
+
+      a {
+        color: $color-purple;
+        display: block;
+        margin-top: .5rem;
+        text-decoration: none;
+      }
     }
   }
 }

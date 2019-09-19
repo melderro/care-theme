@@ -37,6 +37,11 @@
     .o-pageBanner__text {
       color: $color-white;
       line-height: 1.5rem;
+
+      a {
+        color: $color-yellow;
+        text-decoration: none;
+      }
     }
   }
 
