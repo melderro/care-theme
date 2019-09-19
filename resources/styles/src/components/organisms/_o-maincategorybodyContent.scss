@@ -4,4 +4,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 3rem 0rem;
+
+  @media(max-width: 640px) {
+    justify-content: center;
+  }
 }
