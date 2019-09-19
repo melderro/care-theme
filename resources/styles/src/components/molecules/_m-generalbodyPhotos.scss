@@ -10,11 +10,21 @@
     }
   }
 
+  .slick-slide {
+
+    @media(max-width: 1300px) {
+      margin-right: 4rem;
+      margin-top: 20px;
+    }
+  }
+
   .slick-prev {
     left: 2%;
     position: absolute;
     top: 48%;
     z-index: 5;
+    width: 50px !important;
+    height: 50px !important;
 
     &:after {
       right: 50%;
@@ -37,6 +47,8 @@
     right: 2%;
     top: 48%;
     z-index: 5;
+    width: 50px !important;
+    height: 50px !important;
 
     &:after {
       left: 50%;
