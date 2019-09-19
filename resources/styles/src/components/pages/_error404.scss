@@ -73,11 +73,13 @@
 }
 
 .search-form-in-page {
+  display: flex;
   margin-top: 2rem;
+  width: 100%;
 
   .search-field {
     background-color: $color-lightgray;
-    padding: .75rem 2rem;
+    padding: 1rem 2rem;
   }
 
   .search-submit {
@@ -93,7 +95,8 @@
     font-size: 1.1rem;
     justify-content: center;
     letter-spacing: .2rem;
-    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-top: 0;
     padding: .7rem 3rem;
     text-decoration: none;
     text-transform: uppercase;
