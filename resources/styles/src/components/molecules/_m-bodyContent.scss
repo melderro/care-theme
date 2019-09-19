@@ -238,6 +238,7 @@
   &:after {
     @extend %border-source;
     content: "";
+    bottom: -9px;
     display: block;
     position: absolute;
     width: 100%;

@@ -1,5 +1,5 @@
 .o-footerCopyright {
-  color: $white;
+  color: $color-white;
   display: flex;
   font-size: .8rem;
   justify-content: space-between;
@@ -16,11 +16,11 @@
   margin: 0;
 
   a {
-    color: $white;
+    color: $color-white;
     text-decoration: none;
 
     &:hover {
-      text-decoration: underline;
+      color: $color-purple;
     }
   }
 }
