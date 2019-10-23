@@ -37,12 +37,15 @@
         $posts->the_post();
         $meta_date = get_the_date('M d, Y');
         $categories = get_the_category();
-        $category_list = '';
+        $category_list = array();
         foreach($categories as $category) :
-          if($category->category_parent == 49)
-            $category_list .= $category->name . ',';
+          $parent_category = get_main_parent_category($category);
+          if($parent_category) :
+            if(!in_array($parent_category, $category_list))
+              array_push($category_list, $parent_category);
+          endif;
         endforeach;
-        $category_list = substr($category_list, 0, -1);
+        $list = implode(', ', $category_list);
     ?>
     <li>
       <div class="m-articleGridBlock__imageContainer">
@@ -56,7 +59,7 @@
       </div>
       <div class="m-articleGridBlock__titleContainer">
         <h3 class="o-introContent__subtitle">
-          <?php echo $category_list; ?>
+          <?php echo $list; ?>
         </h3>
         <a href="<?php the_permalink();?>">
         <h1 class="o-introContent__title">
