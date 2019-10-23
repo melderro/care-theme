@@ -19,6 +19,20 @@ $(document).scroll(() => {
 $(document).ready(function () {
   $('.preload').removeClass('preload');
 
+  $('.sub-nav-close').on('click', function(){
+    const clickedNavElement = $('ul', this); // get parent element. this isn't right
+    $('.open')
+    .css('display', 'none')
+    .removeClass('open');
+    $('.open-tab').removeClass('open-tab');
+    clickedNavElement
+      .css('display', 'flex')
+      .hide()
+      .fadeIn()
+      .addClass('open');
+    $(this).addClass('open-tab');   
+  });
+  
   $('#menu-primary>li').on('click', function (e) {
     const clickedNavElement = $('ul', this);
     if(clickedNavElement.length)
