@@ -35,8 +35,14 @@
     <?php 
       while($posts->have_posts()) :
         $posts->the_post();
-        $categories = get_the_category();    
         $meta_date = get_the_date('M d, Y');
+        $categories = get_the_category();
+        $category_list = '';
+        foreach($categories as $category) :
+          if($category->category_parent == 49)
+            $category_list .= $category->name . ',';
+        endforeach;
+        $category_list = substr($category_list, 0, -1);
     ?>
     <li>
       <div class="m-articleGridBlock__imageContainer">
@@ -50,7 +56,7 @@
       </div>
       <div class="m-articleGridBlock__titleContainer">
         <h3 class="o-introContent__subtitle">
-          <?php the_category(', '); ?>
+          <?php echo $category_list; ?>
         </h3>
         <a href="<?php the_permalink();?>">
         <h1 class="o-introContent__title">

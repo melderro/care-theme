@@ -1,4 +1,5 @@
 <?php // Body paragraph content ?>
+<?php if ( get_field('program_top_content_title') ) : ?>
 <div class="o-bodyContent">
   <div class="m-bodyContent__content m-programbodyContent_contenttop">
     <h2 class="m-bodyContent__title">
@@ -12,3 +13,4 @@
     <img class="m-bodyContent__image" src="<?php echo get_acf_image( get_field('program_top_content_image'), '540w', 'http://via.placeholder.com/588x216?text=logo'); ?> "/>
   </div>   
 </div>
+<?php endif; ?>
