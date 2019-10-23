@@ -19,6 +19,7 @@ require 'helpers/get-events.php';
 require 'helpers/newsletter-form.php';
 require 'helpers/filters.php';
 require 'helpers/actions.php';
+require 'helpers/blog.php';
 
 /**
  * Theme setup and supports
