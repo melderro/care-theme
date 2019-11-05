@@ -59,6 +59,12 @@
 
   .gform_next_button,
   .gform_previous_button {
+    display: flex;
+  }
+
+  .gform_next_button,
+  .gform_previous_button,
+  .gform_button {
     align-items: center;
     border-color: $color-purple;
     border-radius: 3rem;
@@ -66,7 +72,6 @@
     border-width: 2px;
     color: $color-purple;
     cursor: pointer;
-    display: flex;
     font-family: $link-font-family;
     font-size: 1.1rem;
     justify-content: center;
@@ -87,4 +92,18 @@
 
 #footer-newsletterform {
   display: flex;
+}
+
+// Form Select
+
+.gfield_select {
+  background-color: $color-lightgray;
+  padding: .5rem 1rem;
+}
+
+.gform_wrapper.gf_browser_chrome {
+
+  select {
+    padding: .5rem 1rem;
+  }
 }
