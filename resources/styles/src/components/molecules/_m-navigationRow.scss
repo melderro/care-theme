@@ -126,6 +126,42 @@
 
         li {
 
+          &.sub-nav-close {
+            display: flex;
+            flex: 0 1 100%;
+            flex-direction: row;
+            justify-content: flex-end;
+            padding: 10px 0 0;
+
+            &:hover {
+
+              a {
+                color: $white;
+              }
+            }
+
+            a {
+              background-color: $color-yellow;
+              color: $white;
+              height: 35px;
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 35px;
+              z-index: 5;
+
+              i {
+                font-size: 1.5em;
+                font-weight: $font-bold;
+                margin-top: 0;
+                position: absolute;
+                top: 50%;
+                right: 50%;
+                transform: translate(50%,-50%);
+              }
+            }
+          }
+
           &:hover > a {
             color: $color-yellow;
           }
@@ -139,7 +175,7 @@
 
       ul {
         justify-content: space-evenly;
-        padding: 1rem 2rem;
+        padding: 0 0 1rem;
         top: 63px;
         width: 100%;
 
@@ -195,6 +231,7 @@
       li {
         flex: 0 1 14%;
         flex-direction: column-reverse;
+        padding: 0 1%;
 
         a {
           display: flex;
