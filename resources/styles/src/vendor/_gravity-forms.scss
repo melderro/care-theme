@@ -101,9 +101,22 @@
   padding: .5rem 1rem;
 }
 
-.gform_wrapper.gf_browser_chrome {
+select {
+  background-color: $color-lightgray;
+}
+
+.gform_wrapper.gf_browser_chrome,
+.gform_wrapper.gf_browser_chrome .ginput_complex .ginput_right,
+.gform_wrapper.gf_browser_chrome .ginput_complex {
 
   select {
-    padding: .5rem 1rem;
+    padding: .5rem 1rem !important;
   }
 }
+
+body.admin-bar {
+
+  .datepicker {
+    margin-top: 0;
+  }
+} 
