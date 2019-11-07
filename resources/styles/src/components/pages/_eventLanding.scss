@@ -142,6 +142,10 @@
     display: flex;
     flex: 0 1 100%;
 
+    a {
+      color: $color-yellow !important;
+    }
+
     @media(max-width: 900px) {
       flex-wrap: wrap;
       flex-direction: row;
@@ -180,6 +184,10 @@
 
     dd {
       margin: 0;
+
+      &.tribe-venue {
+        font-weight: $font-bold;
+      }
     }
   }
 
@@ -195,7 +203,7 @@
 
   .tribe-venue-tel-label,
   .tribe-venue-tel {
-    width: auto;
+    width: 100%;
     display: inline-block;
   }
 
@@ -244,6 +252,27 @@
     background: $color-yellow;
     border: none;
     color: $white;
+
+    &.secondary {
+      display: flex;
+
+      a {
+        color: $white !important;
+        text-decoration: underline;
+      }
+
+      .tribe-venue-tel-label {
+        padding-top: 0;
+      }
+
+      .tribe-events-gmap {
+        color: $white !important;
+      }
+    }
+
+    dt {
+      width: 100%;
+    }
 
     .tribe-events-meta-group-venue {
       width: 40%;
