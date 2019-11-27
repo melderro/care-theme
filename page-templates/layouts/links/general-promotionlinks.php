@@ -1,6 +1,13 @@
 <?php // General Promotional Links
 
   $event = get_field('default_event', 'option');
+  if(!$event) :
+    $event = tribe_get_events([ 
+      'posts_per_page' => 1, 
+      'start_date'     => 'now',
+    ]);
+    $event = $event[0];
+  endif;
   $event_featured_image_id = (get_field('event_main_image', $event->ID) ? get_field('event_main_image', $event->ID) : get_field('default_event_image', 'option'));
 
 ?>
