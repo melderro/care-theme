@@ -8,7 +8,11 @@ $(document).ready(function(){
     if(description_box_height > 300) {
     }
   }
-
+  if(window.location.hash) {
+    description_box.removeClass('closed');
+    description_box.addClass('open');
+    $('.tribe-events-read-more-button').text('Read Less');    
+  }
   $('.tribe-events-read-more-button').on('click', function(){
     let div_class = description_box.attr('class');
     div_class = div_class.split(' ');
@@ -23,5 +27,6 @@ $(document).ready(function(){
       $('.tribe-events-read-more-button').text('Read More');
     }
   });
+
 
 });
