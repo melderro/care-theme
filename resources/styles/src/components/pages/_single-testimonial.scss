@@ -1,5 +1,9 @@
 .single-testimonial {
 
+  main {
+    padding: 0 0 2rem 0;
+  }
+
   .m-bodyContent__calloutauthor {
     border-radius: 100%;
     width: 100%;
@@ -16,8 +20,8 @@
       margin-right: 0;
     }
   }
-}
 
-.o-newsbodyContent {
-  max-width: 900px;
+  .o-newsbodyContent {
+    max-width: 900px;
+  }
 }
