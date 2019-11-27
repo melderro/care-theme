@@ -139,9 +139,13 @@
 
       a {
         color: $color-purple;
-        display: block;
+        display: inline-block;
         margin-top: .5rem;
         text-decoration: none;
+
+        .read-more {
+          display: block;
+        }
       }
     }
   }
