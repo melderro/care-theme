@@ -114,8 +114,11 @@
 
 .tribe-events-loop {
   max-width: 900px !important;
-  margin: 1.5rem auto 20px;
-  text-align: center;
+
+  &.tribe-events-back {
+    margin: 1.5rem auto 20px;
+    text-align: center;
+  }
 
   .tribe-events-list-separator-month {
     color: $color-purple;
