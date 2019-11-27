@@ -4,7 +4,7 @@
   * see how many posts on page and let that determine how many recent posts are needed. 
   * Display in page posts first.
 */
-
+  $post_type = get_post_type();
   $titles = array();
   $excerpts = array();
   $permalinks = array();
@@ -65,6 +65,11 @@
   </div>
   <?php
     endfor;
+
+    if($post_type == "post") :
   ?>
   <a class="a-roundLink o-donateLinklink" href="/news-media">All Articles</a>
+  <?php else: ?>
+  <a class="a-roundLink o-donateLinklink" href="/success-stories/">All Success Stories</a>
+  <?php endif; ?>
 </div>

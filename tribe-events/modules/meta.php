@@ -58,6 +58,7 @@ if ( tribe_get_venue_id() ) {
 	do_action( 'tribe_events_single_event_meta_secondary_section_start' );
 
 	tribe_get_template_part( 'modules/meta/venue' );
+	tribe_get_template_part( 'modules/meta/organizer' );
 	tribe_get_template_part( 'modules/meta/map' );
 
 	do_action( 'tribe_events_single_event_meta_secondary_section_end' );

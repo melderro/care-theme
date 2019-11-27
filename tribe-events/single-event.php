@@ -101,10 +101,12 @@ $event_id = get_the_ID();
           <div class="tribe-events-category-list">
             <?php 
               $categories = get_the_terms(get_the_ID(), 'tribe_events_cat');
-              foreach ($categories as $category ) :
-                $category_list .= $category->name . ", ";
-              endforeach;
-              echo substr($category_list, 0, -2);
+              if($categories) :
+                foreach ($categories as $category ) :
+                  $category_list .= $category->name . ", ";
+                endforeach;
+                echo substr($category_list, 0, -2);
+              endif;
             ?>
           </div>
 	        <?php the_title('<h1 class="tribe-events-single-event-title">', '</h1>');?>
