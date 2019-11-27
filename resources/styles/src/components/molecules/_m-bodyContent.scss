@@ -191,9 +191,10 @@
 
   .m-bodyContent__callouttext {
     color: $color-yellow;
-    font-family: $script-font-family;
-    font-size: 2.5rem;
-    line-height: 3rem;
+    font-family: $base-font-family;
+    font-size: 1.3rem;
+    font-style: italic;
+    line-height: 2rem;
 
     @media(max-width: 700px) {
       font-size: 2.2rem;

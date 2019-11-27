@@ -78,6 +78,15 @@
         padding: 0 .25rem;
       }
 
+      &:first-child {
+
+        a {
+          background-color: $color-yellow;
+          border: 1px solid $color-yellow;
+          color: $white;
+        }
+      }
+
       &#menu-item-32 {
 
         span {
@@ -100,10 +109,11 @@
       transition: all 0.2s ease-in;
 
       img {
-        max-width: 20px;
+        max-width: 15px;
 
         @media(max-width: 500px) {
           margin-right: 0;
+          margin-top: -3px;
         }
       }
     }
@@ -307,6 +317,18 @@
   .m-navigationRow {
 
     &.m-navigationRow--upper {
+
+      li {
+
+        &:first-child {
+
+          a {
+            background-color: $color-yellow;
+            border: 1px solid $color-yellow;
+            color: $white;
+          }
+        }
+      }
 
       a {
         border: none;
