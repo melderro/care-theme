@@ -140,8 +140,8 @@
             display: flex;
             flex: 0 1 100%;
             flex-direction: row;
+            height: 30px;
             justify-content: flex-end;
-            padding: 10px 0 0;
 
             &:hover {
 
@@ -179,9 +179,54 @@
       }
     }
 
-    &#menu-item-24,
     &#menu-item-72 {
+
+      li {
+        ul {
+          display: none !important;
+        }
+
+        &#menu-item-1109 {
+          &:hover {
+            ul {
+              display: block !important;
+              left: 100%;
+              position: absolute;
+              top: 5px;
+              z-index: 10;
+            }
+          }
+        }
+
+        &#menu-item-1333 {
+          a {
+            background-color: $color-yellow;
+            border-radius: 3rem;
+            color: $white;
+            font-size: .9rem;
+            line-height: 1rem;
+            margin-bottom: 1rem;
+            padding: .5rem;
+            text-align: center;
+            width: 90%;
+          }
+        }
+      }
+    }
+
+    &#menu-item-24 {
       position: inherit;
+
+      &.open-tab {
+        ul {
+          li {
+
+            &.sub-nav-close {
+              flex: 0 1 100%;
+            }
+          }
+        }
+      }
 
       ul {
         justify-content: space-evenly;
@@ -190,6 +235,7 @@
         width: 100%;
 
         li {
+          flex: 0 1 14%;
 
           a {
             justify-content: center;
@@ -233,13 +279,13 @@
       background: rgba(255,255,255,1);
       display: none;
       flex-wrap: wrap;
-      left: 0px;
-      padding: 0px;
+      left: 0;
+      padding: 0 0 1rem;
       position: absolute;
       top: 48px;
 
       li {
-        flex: 0 1 14%;
+        flex: 0 1 100%;
         flex-direction: column-reverse;
         padding: 0 1%;
 
@@ -248,6 +294,7 @@
           flex-wrap: wrap;
           font-size: 1.15rem;
           line-height: 1.3rem;
+          padding: .7rem 1rem;
           text-transform: capitalize;
           width: 100%;
         }
@@ -275,7 +322,7 @@
               font-weight: $font-regular;
               justify-content: flex-start;
               line-height: 1rem;
-              padding: .5rem 1rem;
+              padding: .5rem .75rem;
             }
           }
         }
@@ -300,8 +347,7 @@
   #menu-primary {
 
     li {
-      &#menu-item-24,
-      &#menu-item-72 {
+      &#menu-item-24 {
 
         ul {
           top: 50px;
