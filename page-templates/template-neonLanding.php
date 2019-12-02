@@ -12,6 +12,9 @@ get_partial('meta', 'head');
 ?>
 
 <body <?php body_class();?> ?>
+<?php 
+    get_partial('meta', 'gtm');
+  ?>
   <div id="mmenu-container">
 
   <?php

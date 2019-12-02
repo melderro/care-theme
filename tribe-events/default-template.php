@@ -19,6 +19,9 @@ get_partial('meta', 'head');
 ?>
 
   <body <?php body_class();?> ?>
+  <?php 
+    get_partial('meta', 'gtm');
+  ?>
   <div id="mmenu-container">
     <?php
 // Included for the sake of plugins and child themes that rely on it.
