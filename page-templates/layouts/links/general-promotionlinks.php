@@ -35,7 +35,7 @@
   
   <div class="m-generalPromotionalLinks__ContentContainer">
     <h3 class="m-generalPromotionalLinks__title">  
-      <?php echo $event->post_title ?>
+      Event: <?php echo $event->post_title ?>
     </h3>
     <div class="m-homePromotionalLinks__imagetext"><?php echo $event->post_excerpt; ?></div> 
     <span class="a-roundLink o-generalPromotionalEventLink">Learn More</span>
