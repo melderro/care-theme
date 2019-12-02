@@ -49,7 +49,7 @@
   
     <div class="m-homePromotionalLinks__Block homePromotionalData homePromotionalEvent">
       <h2 class="m-homePromotionalLinks__title">  
-        <?php echo $event->post_title ?>
+        Event: <?php echo $event->post_title ?>
       </h2>
       <div class="m-homePromotionalLinks__text">  
         <?php echo $event->post_excerpt; ?>
