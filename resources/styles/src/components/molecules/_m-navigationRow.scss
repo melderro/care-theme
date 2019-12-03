@@ -89,6 +89,12 @@
           border: 1px solid $color-yellow;
           color: $white;
         }
+
+        &:hover > a {
+          background-color: $color-purple;
+          border: 1px solid $color-purple;
+          color: $color-white;
+        }
       }
 
       &#menu-item-32 {
@@ -418,6 +424,12 @@
             background-color: $color-yellow;
             border: 1px solid $color-yellow;
             color: $white;
+          }
+
+          &:hover > a {
+            background-color: $color-purple;
+            border: 1px solid $color-purple;
+            color: $color-white;
           }
         }
       }
