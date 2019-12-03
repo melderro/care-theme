@@ -69,8 +69,14 @@ LI;
   endif;
   echo ($li_html);
 }
-
+/**
+ * Display number of current registered people for an event
+ *
+ * @param [type] $field
+ * @return void
+ */
 function admin_current_registration_count( $field){
+  var_dump($field);
   $value = $field['value'];
   if(!$value)
     $value = 0;
@@ -78,4 +84,55 @@ function admin_current_registration_count( $field){
   $field['value'] = $value;
   return $field;
 }
-add_filter('acf/load_field/key=field_5cd04db5d02b1', 'admin_current_registration_count');
+//add_filter('acf/load_field/key=field_5cd04db5d02b1', 'admin_current_registration_count');
+
+/**
+ * when registration complete, add to registration count 
+ * 
+ * 
+ */
+
+function add_registrant_to_event( $entry, $form ) {
+    //
+    $key = array_search('eventRegistration', $entry);
+    if($key !== FALSE) :
+      foreach($form['fields'] as &$field) :
+        if($field->label == "PostID") :
+          $fieldID = $field->id;
+          break;
+        endif;
+      endforeach;
+      $post_id = $entry[$fieldID];
+      
+      $current_registration = get_field('current_number_registrations', $post_id);
+      $current_registration++;
+      update_field('current_number_registrations', $current_registration, $post_id);
+    endif;
+    
+}
+add_action( 'gform_after_submission', 'add_registrant_to_event', 10, 2 );
+
+/**
+ * 
+ * dynamically populate field with post id
+ */
+
+function populate_post_id( $form ) {
+  global $post;
+  foreach($form['fields'] as &$field) :
+    if($field->label == "PostID") :
+      $field->defaultValue = $post->ID;
+      break;
+    endif;
+    if($field->label == "Class") :
+      $field->defaultValue = $post->post_title;
+      break;
+    endif;    
+  endforeach;
+  return $form;
+}
+add_filter( 'gform_pre_render', 'populate_post_id' );
+
+
+
+ 
