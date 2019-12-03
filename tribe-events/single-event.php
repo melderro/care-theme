@@ -119,19 +119,27 @@ $event_id = get_the_ID();
       <!-- Event content -->
       <?php do_action( 'tribe_events_single_event_before_the_content' ) ?>
       <div class="tribe-events-single-event-description tribe-events-content closed">
-        <?php the_content(); ?>
+        <?php the_content(); ?>      
+      <div class="event-registration-form">
+      <?php
+          $current_number_of_registrants = get_field('current_number_registrations');
+          $max_number_of_registrants = (int) get_field('events_max_number_registrations');
+          if($current_number_of_registrants < $max_number_of_registrants) :
+            $formId = get_field('events_registration_form');
+            if($formId) :
+              echo do_shortcode($formId);
+            endif;
+          else:
+            echo do_shortcode('[gravityform id="9" title="true" description="true"]');
+          endif;
+
+        ?>
+      </div>
       </div>
       <div class="read-more-button-container">
         <div class="tribe-events-read-more-button">Read More</div>
       </div>
-      <div class="event-registration-form">
-      <?php
-          $formId = get_field('events_registration_form');
-          if($formId)
-            echo do_shortcode($formId);
 
-        ?>
-      </div>
       <!-- .tribe-events-single-event-description -->
       <?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
 

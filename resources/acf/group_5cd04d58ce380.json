@@ -40,8 +40,8 @@
         {
             "key": "field_5cd04db5d02b1",
             "label": "Current Number Registrations",
-            "name": "",
-            "type": "message",
+            "name": "current_number_registrations",
+            "type": "number",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -50,9 +50,14 @@
                 "class": "",
                 "id": ""
             },
-            "message": "0 guests currently registered",
-            "new_lines": "wpautop",
-            "esc_html": 0
+            "default_value": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "message": "10 guests currently registered"
         },
         {
             "key": "field_5cd05f066b6e8",
@@ -131,5 +136,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1568848710
+    "modified": 1575387055
 }
