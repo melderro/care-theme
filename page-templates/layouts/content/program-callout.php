@@ -1,6 +1,6 @@
 <?php // Body paragraph content
 remove_filter ('acf_the_content', 'wpautop');
-$testimonial = get_field('testimonial');
+$testimonial = (get_field('testimonial') ? get_field('testimonial') : get_field('testimonial', 'option'));
 $imageID = (get_field('testimonial_image', $testimonial->ID) ? get_field('testimonial_image', $testimonial->ID) : get_field('testimonial_default_image', 'option'));
 ?>
 <div class="o-bodyContent">
