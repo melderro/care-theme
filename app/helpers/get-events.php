@@ -124,6 +124,10 @@ function populate_post_id( $form ) {
       $field->defaultValue = $post->ID;
       break;
     endif;
+    if($field->label == "Class") :
+      $field->defaultValue = $post->post_title;
+      break;
+    endif;    
   endforeach;
   return $form;
 }
