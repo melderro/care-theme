@@ -428,6 +428,48 @@
     a {
       font-size: 1.4rem;
       font-weight: $font-regular;
+
+      @media(max-width: 768px) {
+        background: transparent;
+      }
     }
+  }
+}
+
+.tribe-events-venue {
+
+  .tribe-events-back {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 8rem 4% 0;
+
+    @media(max-width: 768px) {
+      padding: 6rem 4% 0;
+    }
+
+    a {
+      color: $color-purple;
+      font-size: 1.4rem;
+      font-weight: $font-regular;
+    }
+  }
+
+  .url {
+
+    a {
+      color: $color-yellow;
+      font-weight: $font-regular;
+    }
+  }
+
+  .tribe-events-gmap {
+    color: $color-yellow;
+    font-weight: $font-regular;
+  }
+
+  .tribe-events-venue-meta {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 1rem 4% 0;
   }
 }
