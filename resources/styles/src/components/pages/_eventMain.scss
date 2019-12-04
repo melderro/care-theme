@@ -533,7 +533,10 @@ input {
 }
 
 #tribe-bar-views-toggle {
-  border: 1px solid $white !important;
+
+  @media(max-width: 820px) {
+    border: 1px solid $white !important;
+  }
 }
 
 #tribe-bar-form {
