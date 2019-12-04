@@ -1,5 +1,6 @@
 <?php // Genearl Body paragraph content 
-  if(have_rows('general_photo_slider')):
+
+  if(have_rows('general_photo_slider')) :
 ?>
 <div class="o-generalbodyPhotos">
   <ul class="m-generalbodyPhotos" class="preload">
