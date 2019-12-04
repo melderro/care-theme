@@ -37,9 +37,6 @@
         <section id="newslandingIntroContent" class="newsLanding__intro">
           <?php get_partial('content', 'news-intro'); ?>
         </section>
-        <section id="programBodyContent" class="newsLanding__bodyContentcallout">
-          <?php get_partial('content', 'program-callout'); ?>
-        </section>
         <section id="programBodyContent" class="newsLanding__bodyContentbottom">
           <?php get_partial('content', 'news-bottom'); ?>
         </section>

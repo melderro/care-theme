@@ -1,6 +1,5 @@
 <?php // Home Promotional Links
-  $home_case_study_testimonial = get_field('testimonial', 'option');
-  $testimonial = get_field('testimonial', 'option');
+  $home_case_study_testimonial = (get_field('home_case_study_testimonial') ? get_field('home_case_study_testimonial') : get_field('testimonial', 'option'));
   $testimonial_imageID = (get_field('testimonial_image', $testimonial->ID) ? get_field('testimonial_image', $testimonial->ID) : get_field('testimonial_default_image', 'option'));
 
   $event = get_field('default_event', 'option');
