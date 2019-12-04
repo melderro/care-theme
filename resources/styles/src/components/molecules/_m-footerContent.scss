@@ -30,8 +30,10 @@
       }
 
       img {
+        align-self: flex-start;
         padding-right: 1rem;
         max-width: 40px;
+        width: auto;
       }
     }
   }
@@ -61,6 +63,10 @@
   list-style: none;
   padding: 0px;
   margin: 0px;
+
+  @media(max-width: 500px) {
+    margin-top: 1rem;
+  }
 
   li {
     display: flex;

@@ -348,6 +348,7 @@
         }
 
         img {
+          align-self: flex-start;
           max-width: 50px;
           margin-right: 0;
         }
@@ -449,6 +450,16 @@
           border: none;
         }
       }
+    }
+  }
+}
+
+.mm-listitem {
+
+  &.sub-nav-close {
+
+    @media(max-width: 7680px) {
+      display: none;
     }
   }
 }
