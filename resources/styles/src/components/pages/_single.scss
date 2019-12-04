@@ -5,6 +5,10 @@
     line-height: 1.8rem;
   }
 
+  .o-introContent {
+    padding-bottom: 2rem;
+  }
+
   .o-introContent__title {
     margin-top: .5rem;
   }
@@ -46,5 +50,9 @@
         color: $color-white;
       }
     }
+  }
+
+  .m-programbodyContent_contentbottom {
+    padding-top: 0;
   }
 }

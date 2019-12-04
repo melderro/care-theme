@@ -96,7 +96,7 @@
       background: $color-bodycopy !important;
       box-shadow:
         0 0.4em 0 0 $color-bodycopy,
-        0 0.8em 0 0 $color-bodycopy important;
+        0 0.8em 0 0 $color-bodycopy !important;
     }
 
     @media(min-width: 768px) {

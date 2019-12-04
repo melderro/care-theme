@@ -80,7 +80,7 @@
         input[type="submit"] {
           background-color: #fff;
           border-radius: 3rem;
-          color: $color-bodycopy;
+          color: $color-bodycopy !important;
         }
       }
     }
@@ -553,4 +553,8 @@ input {
 #tribe-bar-views .tribe-bar-views-option.tribe-bar-active,
 #tribe-bar-views .tribe-bar-views-option:hover {
   background: $color-light-yellow !important;
+}
+
+#tribe-bar-collapse-toggle span.tribe-bar-toggle-arrow:after {
+  border-top-color: $white;
 }
