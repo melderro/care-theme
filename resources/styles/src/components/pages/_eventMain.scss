@@ -473,3 +473,19 @@
     padding: 1rem 4% 0;
   }
 }
+
+input {
+  &[type="submit"] {
+    background-color: $color-yellow;
+    border-color: $color-yellow !important;
+    border-radius: 3rem;
+    color: $white !important;
+    margin-top: 1rem;
+    padding: .7rem 1rem;
+    width: auto;
+
+    &:hover {
+      border-color: $color-purple !important;
+    }
+  }
+}
