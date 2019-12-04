@@ -53,6 +53,7 @@
 
       img {
         box-shadow: 20px 20px $color-purple;
+        align-self: flex-start;
       }
     }
 
@@ -134,7 +135,7 @@
 
       @media(max-width: 600px) {
         padding-left: 0;
-        margin-top: 2rem;
+        margin-top: 1rem;
       }
 
       a {
@@ -142,7 +143,7 @@
         display: inline-block;
         text-decoration: none;
 
-        .read-more {
+        &.read-more {
           display: block;
           margin-top: .5rem;
         }
@@ -171,6 +172,7 @@
   margin-top: 1rem;
 
   svg {
+    align-self: flex-start;
     width: .25rem;
     padding-right: .5rem;
   }
