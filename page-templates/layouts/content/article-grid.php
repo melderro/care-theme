@@ -46,6 +46,18 @@
           endif;
         endforeach;
         $list = implode(', ', $category_list);
+
+        if(has_excerpt()) :
+          $excerpt = get_the_excerpt();
+        else :
+          
+          if($post_type == 'testimonial'):
+            $acf = 'testimonial_content';
+          else:
+            $acf = 'intro_text';
+          endif;
+          $excerpt = wp_trim_words(get_field($acf, get_the_ID(), 30));
+        endif;        
     ?>
     <li>
       <div class="m-articleGridBlock__imageContainer">
@@ -73,7 +85,7 @@
       </div>
       <div class="m-articleGridBlock__contentContainer">
         <div class="m-articleGridBlock__content">
-         <?php the_excerpt(); ?>
+         <?php echo $excerpt; ?>
         </div>
       </div>
     </li>

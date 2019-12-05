@@ -28,7 +28,7 @@
   $number_articles=sizeof($titles);
   if( $number_articles < 2) :
     $number_articles = 2 - $number_articles;
-    $args = array( 'numberposts' => $number_articles );
+    $args = array( 'numberposts' => $number_articles, 'post_type' => $post_type );
     $news_article = wp_get_recent_posts( $args );
     foreach ($news_article as $article) :
       array_push($titles, $article['post_title']);
@@ -37,7 +37,14 @@
       if(has_excerpt($article['ID'])) :
         $excerpt = get_the_excerpt($article['ID']);
       else :
-        $excerpt = wp_trim_words(get_field('intro_text', $article['ID']), 30);
+        if($post_type == 'testimonial'):
+          $acf = 'testimonial_content';
+          $sub_title = 'Success Story';
+        else:
+          $acf = 'intro_text';
+          $sub_title = get_field('footer_blog_subtitle', 'option');
+        endif;
+        $excerpt = wp_trim_words(get_field($acf, $article['ID']), 30);
       endif;
       array_push($excerpts, $excerpt);
     endforeach;
@@ -53,7 +60,7 @@
     <img class="m-footerSupplementLinks__image" src="<?php echo get_acf_image(get_field('footer_blog_icon', 'option'), '540w', 'http://via.placeholder.com/588x216?text=logo'); ?> " />
 
     <h3 class="m-footerSupplementLinks__subtitle">
-      <?php the_field('footer_blog_subtitle', 'option'); ?>
+      <?php echo $sub_title; ?>
     </h3>
     <h1 class="m-footerSupplementLinks__title">
       <?php echo $titles[$i]; ?>
