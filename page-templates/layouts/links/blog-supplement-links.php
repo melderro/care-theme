@@ -28,7 +28,29 @@
   $number_articles=sizeof($titles);
   if( $number_articles < 2) :
     $number_articles = 2 - $number_articles;
-    $args = array( 'numberposts' => $number_articles, 'post_type' => $post_type );
+    //get tax type
+    if($post_type == 'testimonial')
+      $taxonomy = 'taxonomy_category';
+    else
+      $taxonomy = 'category';   
+
+    if($post_type == 'testimonial'){
+      $category = '142';
+      $tax_query = array(
+        array(
+          'taxonomy' => $taxonomy,
+          'field'    => 'term_id',
+          'terms'    =>  $category,
+        )
+      );      
+    }else
+      $tax_query = '';
+
+    $args = array( 
+      'numberposts' => $number_articles, 
+      'post_type' => $post_type,
+      'tax_query' => $tax_query,
+    );
     $news_article = wp_get_recent_posts( $args );
     foreach ($news_article as $article) :
       array_push($titles, $article['post_title']);
