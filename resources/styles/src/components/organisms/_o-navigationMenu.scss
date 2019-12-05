@@ -33,7 +33,7 @@
   @media(max-width: 500px) {
     height: 50px;
     padding-right: .5rem;
-    width: 95%;
+    width: 90%;
   }
 
   .o-navigationMenu__link {
@@ -170,7 +170,7 @@
 a[href="#my-menu"] {
   display: block;
   position: relative;
-  flex: 0 1 7%;
+  flex: 0 1 10%;
   height: 30px;
   padding-right: 1rem;
   width: 50px;
@@ -180,7 +180,7 @@ a[href="#my-menu"] {
     position: absolute;
     left: 0;
     top: 7px;
-    width: 1.2em;
+    width: 1.8em;
     height: 0.17em;
     background: $color-bodycopy;
     box-shadow:
@@ -203,6 +203,7 @@ a[href="#my-menu"] {
     padding: .5rem;
 
     img {
+      align-self: flex-start;
       max-width: 100px;
     }
   }
@@ -252,6 +253,7 @@ a[href="#my-menu"] {
       align-self: stretch;
       color: $color-white !important;
       font-weight: $font-semibold;
+      text-align: left;
     }
   }
 

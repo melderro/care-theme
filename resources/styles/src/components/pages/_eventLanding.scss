@@ -125,8 +125,8 @@
     }
 
     @media(max-width: 600px) {
+      flex: 0 1 100%;
       font-size: 2rem;
-      line-height: 2rem;
     }
   }
 
@@ -155,7 +155,7 @@
   .tribe-events-schedule {
     background: transparent;
     border: none;
-    margin: 1em 0 0;
+    margin: 0 !important;
   }
 
   .tribe-events-meta-group-details {
@@ -187,6 +187,7 @@
 
       &.tribe-venue {
         font-weight: $font-bold;
+        line-height: 1.3 !important;
       }
     }
   }
