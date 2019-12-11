@@ -20,7 +20,7 @@ endif;
         <?php echo get_acf_image_srcset( $image, 'lazyload m-featureSlider__image'); ?>
           <div class="m-featureSlider__content">
             <h2 class="m-featureSlider__title">
-            Care Events & Calendar
+            CARE Events & Calendar
             </h2>
           </div>
         </div>
