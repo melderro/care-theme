@@ -1,9 +1,14 @@
 <?php // Footer Newsletter Signup ?>
 <div class="o-footerNewsletterSignup">
   <h2 class="m-footerNewsletterSignup__title">get our latest news</h2>
-  <form method="post" enctype="multipart/form-data" id="footer-newsletterform" action="<?php echo esc_url(admin_url('admin-post.php'));?>">
-  <input type="hidden" name="action" value="footer_newsletter_form">
-  <input type="text" id="email" name="email" placeholder="Email Address">
-  <input type="submit" value="Submit">
-  </form>
+  <div class="m-footerNewsletterSignup__content">
+    Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla porttitor accumsan tincidunt. Vivamus suscipit tortor eget felis porttitor volutpat.
+  </div>
+  <div class="o-footerSignup__button gf_button_get_form_1">
+  <?php 
+  // The form
+  //gravity_form( $form, false, false, false );
+  echo do_shortcode('[gravityforms action="button" id="1" text="SUBSCRIBE" ajax=false]');
+  ?>
+  </div>
 </div>

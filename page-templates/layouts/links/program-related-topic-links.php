@@ -1,6 +1,6 @@
 <?php // Program Related Topics content ?>
 <div class="o-programRelatedTopics">  
-<h2>Related Topics Heading</h2>
+<h2>Related Topics</h2>
   <ul class="m-programRelatedTopics__list">
     <?php
       if(get_field('program_related_topics_page_link')) :
