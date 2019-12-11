@@ -22,7 +22,7 @@ function get_page_title(){
       $month = $month->format('F');
       return "Archive: ".$month." ".$year;
     endif;
-    return "Category: ".get_the_archive_title();
+    return get_the_archive_title();
   endif;
 }
 /** 
@@ -32,7 +32,7 @@ function get_sub_title(){
   if(is_404()) :
     return "404 Sub Title";
   elseif(is_search()) :
-    return "Search Sub Results";
+    return "Search Results";
   endif;
 }
 
