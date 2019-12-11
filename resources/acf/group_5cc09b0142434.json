@@ -7,7 +7,7 @@
             "label": "Image",
             "name": "testimonial_image",
             "type": "image",
-            "instructions": "",
+            "instructions": "Dimensions: 1200px x 1200px",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -82,5 +82,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1568844249
+    "modified": 1575930604
 }

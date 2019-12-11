@@ -1,0 +1,508 @@
+{
+    "key": "group_5deeeba821ae3",
+    "title": "Theme Settings: Instructions",
+    "fields": [
+        {
+            "key": "field_5deeebe57995a",
+            "label": "Pages",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5deeebf87995b",
+            "label": "Admin",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "PAGES tab in menu.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5deeec268f89f",
+            "label": "Adding Pages",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<ol>\r\n            <li><i>Enter Title.<\/i><\/li>\r\n            <li><i>Pick a Page Template:<\/i> The template determines the visual layout for your new page. If you are unsure of the template to use, view an existing page in which you would like the new page to mimic.<\/li>\r\n            <li><i>Enter Content.<\/i><\/li>\r\n            <li><i>Preview Page:<\/i> Preview the page appearance before it goes live.<\/li>\r\n            <li><i>Save Draft:<\/i> Save the page as a draft until published.<\/li>\r\n            <li><i>Publish:<\/i> Publish the page to go live\/public on your website.<\/li>\r\n            <li><i>Add Link to Main Navigation:<\/i>\r\n                <ul>\r\n                    <li>a. Go to the APPEARANCE > MENU tab.<\/li>\r\n                    <li>b. Select the menu to edit in dropdown.<\/li>\r\n                    <li>c. Choose Page to Add: The new page automatically appears at the bottom of the navigation list.<\/li>\r\n                    <li>d. Drag page into the desired order. <\/li>\r\n                <\/ul>    \r\n            <\/li>\r\n        <\/ol>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5deeec39f9316",
+            "label": "Pages: History",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5deeec45f9317",
+            "label": "Admin",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "TIMELINE EXPRESS tab in menu.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5deeefa7d0220",
+            "label": "Adding to the History Page Timeline",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<ol>\r\n            <li><i>Adding History Milestone:<\/i> Milestones are labeled as <b>Announcements<\/b>. Click on <b>New Announcement<\/b> in order to add a milestone.<\/li>\r\n                   \r\n        <\/ol>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5deef03c2a56a",
+            "label": "Posts: Testimonials",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5deeefff2a568",
+            "label": "Admin",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<p>TESTIMONIALS tab in menu. These posts appear in two areas:<\/p>\r\n        <ol>\r\n            <li><i>Short Testimonial Quotes:<\/i> Integrated into page content<\/li>\r\n            <li><i>Success Stories:<\/i> Integrated into the Success Stories area<\/li>\r\n        <\/ol>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5deef01e2a569",
+            "label": "Adding Testimonial Posts",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<ol>\r\n            <li><i>Enter Title.<\/i><\/li>\r\n            <li><i>Pick a Content Category(s):<\/i> It is important to choose a relevant content category for each post since this will determine where the post will appear throughout the website.<\/li>\r\n            <li><i>Pick Success Story Category if Applicable:<\/i> This is relevant only for the longer, case study testimonials that will appear in the Success Stories Page.<\/li>\r\n            <li><i>Enter Content:<\/i>\r\n                <ul>\r\n                    <li>a. Short Testimonial Quotes: The only required fields for this post are the fields located in the <b>Testimonial<\/b> tab of the content admin.<\/li>\r\n                    <li>b. If nothing is inputted into the <b>Introduction > Image<\/b> field, the Default Testimonial Image will appear.<\/li>\r\n                <\/ul>\r\n            <\/li>\r\n            <li><i>Preview Page:<\/i> Preview the post appearance before it goes live.<\/li>\r\n            <li><i>Save Draft:<\/i> Save the post as a draft until published.<\/li>\r\n            <li><i>Publish:<\/i> Publish the post to go live\/public on your website.<\/li>\r\n        <\/ol>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5deeefdb2a567",
+            "label": "Posts: News",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5deef07289fce",
+            "label": "Admin",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<p>POSTS tab in menu.<\/p>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5deef08789fcf",
+            "label": "Adding News Posts",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<ol>\r\n            <li><i>Enter Title.<\/i><\/li>\r\n            <li><i>Pick a Content Category(s):<\/i> It is important to choose a relevant content category for each post since this will determine where the post will appear throughout the website.<\/li>\r\n            <li><i>Enter Content:<\/i>\r\n                    <ul>\r\n                        <li>a. If nothing is inputted into the <b>Introduction > Image<\/b> field, the Default Blog Image will appear.<\/li>\r\n                    <\/ul>\r\n            <\/li>\r\n            <li><i>Preview Page:<\/i> Preview the post appearance before it goes live.<\/li>\r\n            <li><i>Save Draft:<\/i> Save the post as a draft until published.<\/li>\r\n            <li><i>Publish:<\/i> Publish the post to go live\/public on your website.<\/li>\r\n        <\/ol>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5deef0afe100d",
+            "label": "Posts: Calendar",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5deef0c4e100e",
+            "label": "Admin",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<p>EVENTS tab in menu.<\/p>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5deef0d4e100f",
+            "label": "Adding Calendar Posts",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<ol>\r\n            <li><i>Enter Title.<\/i><\/li>\r\n            <li><i>Pick a Content Category(s):<\/i> It is important to choose a relevant content category for each post since this will determine where the post will appear throughout the website.<\/li>\r\n            <li><i>Pick a Calendar Category(s):<\/i> (Ex. Signature Events, Events, Classes & Groups, Training) It is important to choose a calendar category for each post since this will determine where the post will appear throughout the website.<\/li>\r\n            <li><i>Enter Content.<\/i><\/li>\r\n            <li><i>Preview Page:<\/i> Preview the post appearance before it goes live.<\/li>\r\n            <li><i>Save Draft:<\/i> Save the post as a draft until published.<\/li>\r\n            <li><i>Publish:<\/i> Publish the post to go live\/public on your website.<\/li>\r\n            <li><i>Form ID:<\/i> If there is a form associated with the post, make sure to fill out the <b>Registration Form<\/b> field with the appropriate form ID.<\/li>\r\n        <\/ol>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5deefbe178cdf",
+            "label": "Signature Events",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "There are landing pages for each of the signature events (Subpages under <b>Events & Calendar > Signature Events<\/b> tab).\r\n\r\nWhenever a calendar post is created for any of the signature events, make sure to add a post link in the relevant Signature Event subpage.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5deef0e3e1010",
+            "label": "Forms",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5deef0f1e1011",
+            "label": "Admin",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<p>FORMS tab in menu.<\/p>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5deef10ae1012",
+            "label": "Adding Forms",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<ol>\r\n            <li><i>New Form:<\/i> Either add new form or duplicate an existing form template.<\/li>\r\n            <li><i>Enter Content:<\/i> Drag and drop desired fields from right-hand side field groups.<\/li>\r\n            <li><i>Update Form:<\/i> Save form.<\/li>  \r\n            <li><i>Form ID:<\/i> Each form will have a unique ID visible in the <b>ID<\/b> column of the form list view.<\/li>\r\n        <\/ol>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5deef11ae1013",
+            "label": "Adding Forms: Settings",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<ol>\r\n            <li><i>Confirmations:<\/i> Make sure to set a Thank You page.<\/li>\r\n            <li><i>Notifications:<\/i>\r\n                <ul>\r\n                    <li>a. Form inquiries will go to the email addresses set in the <b>Send to Email<\/b> field.<\/li>\r\n                    <li>b. From Email: This will be the email address forms will be sent from.<\/li>\r\n                <\/ul>\r\n            <\/li>\r\n            <li><i>MailChimp:<\/i> Choose the email audience segment you would like inquiries to filter into using the <b>MailChimp List<\/b> dropdown.<\/li>\r\n        <\/ol>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5deef12be1014",
+            "label": "Theme Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5deef1f561d88",
+            "label": "Admin",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<p>THEME SETTINGS tab in menu.<\/p>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5deef20761d89",
+            "label": "Managing Theme Settings",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<p>This area is where all general settings are set for the website. If there is content that is set universally throughout all site pages (ex. footer content), the content is most likely edited in this area.<\/p>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5deef22561d8a",
+            "label": "Media Library",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5deef23861d8b",
+            "label": "Admin",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<p>MEDIA tab in menu.<\/p>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5deef25361d8c",
+            "label": "Managing Media",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<ul>\r\n            <li>Naming Assets for Web: <\/li>\r\n                <ol>\r\n                    <li>Create SEO Optimized Titles (maintopic-subtopic-01.jpg).<\/li>\r\n                    <li>Reference keywords for the page (What are the page search terms?).<\/li>\r\n                    <li>Sequence of the words should make sense logically. Typically the first word is the most important.<\/li>\r\n                <\/ol>\r\n            <li>Alt Tags:<\/li>\r\n                <ol>\r\n                    <li>Should be relatively the same as file name.<\/li>\r\n                    <li>These should contain simple descriptions of the image and include a target keyphrase when relevant.<\/li>\r\n                <\/ol>\r\n        <\/ul>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5deef26b61d8d",
+            "label": "User Information",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5deef27c61d8e",
+            "label": "Admin",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<p>USERS tab in menu.<\/p>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5deef28b61d8f",
+            "label": "Managing Users",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<ol>\r\n            <li>Administrators have access to all the administration features.<\/li>\r\n            <li>Editors can publish posts, manage posts as well as manage other people’s posts, etc.<\/li>\r\n            <li>Authors can publish and manage their own posts, and are able to upload files.<\/li>\r\n            <li>Contributors can write and manage their posts but not publish posts or upload media files.<\/li>\r\n            <li>Subscribers can read comments\/comment\/receive newsletters, etc. but cannot create regular site content.<\/li>\r\n        <\/ol>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "site-instructions"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "General Instructions for Content Integration into the CARE website.",
+    "modified": 1575943568
+}

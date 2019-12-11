@@ -23,7 +23,7 @@
             "label": "Image",
             "name": "intro_image",
             "type": "image",
-            "instructions": "",
+            "instructions": "Dimensions: 1200px x 1200px",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -220,7 +220,7 @@
             "label": "Image",
             "name": "program_top_content_image",
             "type": "image",
-            "instructions": "",
+            "instructions": "Dimensions: 1200px x 1200px",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -317,7 +317,7 @@
             "label": "Image",
             "name": "program_bottom_content_image",
             "type": "image",
-            "instructions": "",
+            "instructions": "Dimensions: 1200px x 1200px",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -514,5 +514,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1575407394
+    "modified": 1575930480
 }

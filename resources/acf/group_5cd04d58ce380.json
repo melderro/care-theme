@@ -31,7 +31,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": 50,
             "placeholder": "",
             "prepend": "",
             "append": "",
@@ -64,7 +64,7 @@
             "label": "Registration Form",
             "name": "events_registration_form",
             "type": "text",
-            "instructions": "",
+            "instructions": "Reference Form ID in FORMS admin list view",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -73,10 +73,10 @@
                 "id": ""
             },
             "default_value": "",
-            "maxlength": "",
             "placeholder": "",
             "prepend": "",
-            "append": ""
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_5d819ffe92ce5",
@@ -99,7 +99,7 @@
             "label": "Image",
             "name": "event_main_image",
             "type": "image",
-            "instructions": "",
+            "instructions": "Dimensions: 1200px x 1200px",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -136,5 +136,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1575387055
+    "modified": 1575930101
 }

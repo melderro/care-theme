@@ -23,7 +23,7 @@
             "label": "Image",
             "name": "general_top_banner_image",
             "type": "image",
-            "instructions": "",
+            "instructions": "Dimensions: 2732px × 1535px",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -250,7 +250,7 @@
                     "label": "Image",
                     "name": "general_photo_slider_image",
                     "type": "image",
-                    "instructions": "",
+                    "instructions": "Dimensions: 1200px x 1200px",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -389,5 +389,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1575316536
+    "modified": 1575929900
 }
