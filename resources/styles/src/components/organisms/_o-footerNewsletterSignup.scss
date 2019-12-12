@@ -28,13 +28,56 @@
       background-size: 20px;
       border: 1px solid $color-white !important;
       color: $color-white;
-      padding: 1rem 2.5rem 1rem 1rem;
+      margin: 6px 0 0 !important;
+      padding: .7rem 2.5rem .7rem 1rem;
       transition: .5s;
 
       &:hover {
-        background-color: $color-yellow;
         transition: .5s;
       }
     }
+  }
+}
+
+.o-footerSignup__button {
+  text-align: center;
+
+  form {
+    display: flex;
+  }
+
+  li {
+    margin-top: 0 !important;
+  }
+
+  label {
+    color: $white;
+    padding-left: 1rem;
+  }
+
+  input {
+    width: 100% !important;
+  }
+
+  .gform_wrapper {
+
+    .gform_body {
+      flex: 0 1 80%;
+    }
+
+    .gform_footer {
+      flex: 0 1 20%;
+      margin-top: 0;
+    }
+  }
+
+  button {
+    background-color: $color-purple;
+    border: 2px solid $white;
+    border-radius: 3rem;
+    color: $white;
+    letter-spacing: .1rem;
+    margin-top: 1rem;
+    padding: .7rem 3rem;
   }
 }

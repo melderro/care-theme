@@ -4,32 +4,35 @@
     padding: 3rem 0;
   }
 
-  .gform_footer {
+  .m-generalbodyContent__paragraph {
 
-    .gform_button {
-      align-items: center;
-      background-color: $white;
-      border-color: $color-yellow;
-      border-radius: 3rem;
-      border-style: solid;
-      border-width: 2px;
-      color: $color-yellow !important;
-      cursor: pointer;
-      display: flex;
-      font-family: omnes-cond,sans-serif;
-      font-size: 1.1rem;
-      justify-content: center;
-      letter-spacing: .2rem;
-      margin-top: 3rem;
-      padding: .7rem 3rem;
-      text-decoration: none;
-      text-transform: uppercase;
-      transition: .5s;
+    .gform_footer {
 
-      &:hover {
-        border-color: $color-yellow !important;
-        background-color: $color-yellow;
-        color: $color-white !important;
+      .gform_button {
+        align-items: center;
+        background-color: $white;
+        border-color: $color-yellow;
+        border-radius: 3rem;
+        border-style: solid;
+        border-width: 2px;
+        color: $color-yellow !important;
+        cursor: pointer;
+        display: flex;
+        font-family: omnes-cond,sans-serif;
+        font-size: 1.1rem;
+        justify-content: center;
+        letter-spacing: .2rem;
+        margin-top: 3rem;
+        padding: .7rem 3rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: .5s;
+
+        &:hover {
+          border-color: $color-yellow !important;
+          background-color: $color-yellow;
+          color: $color-white !important;
+        }
       }
     }
   }
