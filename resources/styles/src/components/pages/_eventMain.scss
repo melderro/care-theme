@@ -561,3 +561,13 @@ input {
 #tribe-bar-collapse-toggle span.tribe-bar-toggle-arrow:after {
   border-top-color: $white;
 }
+
+.tribe-events-list {
+
+  .tribe-events-loop {
+
+    .tribe-event-featured {
+      background: transparent !important;
+    }
+  }
+}
