@@ -4,7 +4,7 @@
 
 label,
 button,
-input,
+input:not([type="checkbox"]),
 select {
   @extend %input-reset;
 }
