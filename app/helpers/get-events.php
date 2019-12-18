@@ -77,6 +77,7 @@ LI;
  */
 function admin_current_registration_count( $field){
   var_dump($field);
+  die();
   $value = $field['value'];
   if(!$value)
     $value = 0;
