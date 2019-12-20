@@ -38,5 +38,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <?php // WordPress head() function
   
     wp_head();
+
+    /**
+ * Redirect rule for Internet Explorer
+ */
+// Only runs if the page is not the compatibility page
+if( !is_page( array('ie', 'IE Compatibility Landing Page') ) ):
   ?>
+    <script type="text/javascript">
+    if(navigator.appName.indexOf("Internet Explorer")!=-1 || navigator.userAgent.match(/Trident.*rv[ :]*11\./))
+    {
+      //This user uses Internet Explorer
+      window.location = "https://careofsem.com/ie/";
+    }
+    </script>
+<?php endif; ?>
 </head>
