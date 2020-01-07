@@ -50,6 +50,10 @@
   .gf_progressbar {
     background-color: $color-yellow;
   }
+
+  select {
+    height: 2.6rem;
+  }
 }
 
 // Form Footer
@@ -119,4 +123,12 @@ body.admin-bar {
   .datepicker {
     margin-top: 0;
   }
+}
+
+.gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox],
+.gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio],
+input[type="checkbox"],
+input[type="radio"] {
+  margin-top: 0;
+  -webkit-appearance: checkbox;
 }
