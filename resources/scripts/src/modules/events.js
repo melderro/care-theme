@@ -28,5 +28,9 @@ $(document).ready(function(){
     }
   });
 
+  //copy venu informaiton to the hidden field
+  const venueInfo = $('.tribe-events-top-content .tribe-venue').html();
+  $('.venue.gf_invisible input').attr('value', venueInfo);
+
 
 });
