@@ -106,7 +106,10 @@
 #tribe-events-header {
   @extend %container-shared;
   padding-top: 2rem;
-
+  &:after,
+  &:before {
+    background-color: inherit;
+  }
   .tribe-events-sub-nav {
     display: flex;
     justify-content: space-between;
