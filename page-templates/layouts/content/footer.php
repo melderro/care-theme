@@ -17,6 +17,17 @@
   </ul>
   </div>
 
+  <div class="o-footerContentBlock o-footerContent__hours">
+    <h3 class="m-footerContent__contactLinksTitle">Hours</h3>
+    <ul class="m-footerContent__contactLinks">
+      <li>Monday: 8:30am-8:30pm</li>
+      <li>Tuesday: 8:30am-8:30pm</li>
+      <li>Wednesday: 8:30am-5pm</li>
+      <li>Thursday: 8:30am-8:30pm</li>
+      <li>Friday: 8:30am-1pm</li>
+    </ul>
+  </div>
+
   <div class="o-footerContentBlock o-footerContent__socialLinks">
     <h3 class="m-footerContent__socialLinksTitle">Follow Us</h3>
     <ul class="m-footerContent__socialLinks">
