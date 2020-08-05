@@ -1,1 +1,8 @@
 /* Hustle Modal  */
+.hustle-ui .hustle-info .hustle-group-content ul:not(.forminator-poll--answers) li:before {content: none !important;}
+
+a {color: #363b61;}
+
+.hustle-modal-close{
+  padding: 0 1rem .25rem;
+}
