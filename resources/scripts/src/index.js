@@ -11,7 +11,6 @@ require('../../styles/src/index.scss');
 require('./vendor/dialog-polyfill');
 require('./vendor/lazysizes');
 require('./vendor/smoothscroll-polyfill');
-require('./vendor/hustle-modal');
 
 /**
  * modules libraries and plugin settings
