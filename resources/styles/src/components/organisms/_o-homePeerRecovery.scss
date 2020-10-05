@@ -1,0 +1,50 @@
+.o-homePeerRecovery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .o-homePeerRecovery__block {
+    background-color: $color-yellow;
+    display: flex;
+    flex: 0 1 60%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 3rem;
+
+    @media(max-width: 800px) {
+      flex: 0 1 100%;
+    }
+
+    &.homepeerrecoveryList {
+      flex: 0 1 40%;
+      background-color: $color-brown;
+
+      @media(max-width: 800px) {
+        flex: 0 1 100%;
+      }
+    }
+
+    .o-homePeerRecovery__subtitle {
+      color: $color-brown;
+    }
+
+    .o-homePeerRecovery__title {
+      color: $color-white;
+    }
+
+    .o-homePeerRecovery__text {
+      color: $color-white;
+
+      a {
+        color: white;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
+
+    .o-homePeerRecovery__link {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+}

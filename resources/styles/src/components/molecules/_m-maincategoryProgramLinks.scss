@@ -1,0 +1,73 @@
+.m-maincategoryProgramLinks {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px;
+
+  li {
+    flex: 0 1 25%;
+    padding: 0 1.5rem 1rem;
+
+    @media(max-width: 800px) {
+      flex: 0 1 33%;
+    }
+
+    @media(max-width: 600px) {
+      flex: 0 1 50%;
+    }
+
+    a {
+      align-items: center;
+      color: $color-bodycopy;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+
+      span {
+        flex: 01 100%;
+        padding-top: .5rem;
+        width: 100%;
+
+        &:after {
+          background: $color-purple;
+          bottom: -9px;
+          content: '';
+          height: 6px;
+          left: 20%;
+          position: absolute;
+          width: 0;
+          -o-transition: .5s;
+          -ms-transition: .5s;
+          -moz-transition: .5s;
+          -webkit-transition: .5s;
+          transition: .5s;
+        }
+      }
+
+      &:hover {
+
+        span {
+
+          &:after {
+            width: 60%;
+            background: $color-yellow;
+            -o-transition: .5s;
+            -ms-transition: .5s;
+            -moz-transition: .5s;
+            -webkit-transition: .5s;
+            transition: .5s;
+          }
+        }
+      }
+
+      img {
+        flex: 01 100%;
+        max-width: 160px;
+        width: 100%;
+      }
+    }
+  }
+}

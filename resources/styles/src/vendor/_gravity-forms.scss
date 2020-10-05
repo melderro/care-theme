@@ -1,0 +1,122 @@
+// Resets basic styles
+.gform_fields {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.gform_body {
+  width: 100%;
+
+  .gform_fields {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.gfield_label {
+  display: none;
+}
+
+.ginput_container {
+  margin: 0 auto 10px !important;
+  max-width: 100%;
+
+  .medium,
+  .large {
+    width: 100%;
+  }
+
+  input {
+    background-color: $color-lightgray;
+    padding: .75rem !important;
+  }
+
+  textarea {
+    background-color: #e7e7e8;
+    padding: .75rem!important;
+  }
+}
+
+.gform_validation_container {
+  display: none;
+}
+
+.gform_wrapper  {
+
+  .gsection {
+    border-bottom: none;
+  }
+
+  .gf_progressbar {
+    background-color: $color-yellow;
+  }
+}
+
+// Form Footer
+
+.gform_page_footer {
+  border-top: 1px solid #CCC;
+
+  .gform_next_button,
+  .gform_previous_button {
+    display: flex;
+  }
+
+  .gform_next_button,
+  .gform_previous_button,
+  .gform_button {
+    align-items: center;
+    border-color: $color-purple;
+    border-radius: 3rem;
+    border-style: solid;
+    border-width: 2px;
+    color: $color-purple;
+    cursor: pointer;
+    font-family: $link-font-family;
+    font-size: 1.1rem;
+    justify-content: center;
+    letter-spacing: .2rem;
+    margin-top: 1rem;
+    padding: .7rem 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $color-purple;
+      color: $color-white;
+    }
+  }
+}
+
+// Newsletter signup
+
+#footer-newsletterform {
+  display: flex;
+}
+
+// Form Select
+
+.gfield_select {
+  background-color: $color-lightgray;
+  padding: .5rem 1rem;
+}
+
+select {
+  background-color: $color-lightgray;
+}
+
+.gform_wrapper.gf_browser_chrome,
+.gform_wrapper.gf_browser_chrome .ginput_complex .ginput_right,
+.gform_wrapper.gf_browser_chrome .ginput_complex {
+
+  select {
+    padding: .5rem 1rem !important;
+  }
+}
+
+body.admin-bar {
+
+  .datepicker {
+    margin-top: 0;
+  }
+}

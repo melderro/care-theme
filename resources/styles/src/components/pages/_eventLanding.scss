@@ -1,0 +1,343 @@
+.single-tribe_events {
+
+  #tribe-events-pg-template {
+
+    .tribe-events-content {
+
+      h2,
+      h3 {
+        font-family: $base-font-family;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        margin: .5rem 0;
+      }
+    }
+  }
+
+  .tribe-events-notices {
+    margin-top: 6rem;
+  }
+
+  #tribe-events-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tribe-events-category-list {
+    color: $color-yellow;
+    font-family: $script-font-family;
+    width: 100%;
+  }
+
+  .tribe-events-single-event-title {
+    width: 100%;
+
+    @media(max-width: 768px) {
+      margin-bottom: 2rem;
+    }
+
+    @media(max-width: 600px) {
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .tribe-events-top-container {
+    display: flex;
+    flex: 0 1 100%;
+    margin-bottom: 3rem;
+    margin-top: 8rem;
+
+    @media(max-width: 900px) {
+      align-items: center;
+    }
+
+    @media(max-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 6rem;
+    }
+  }
+
+  .tribe-events-meta-group-venue {
+    flex: 0 1 60%;
+    font-size: 1rem;
+  }
+
+  .tribe-venue-tel-label {
+    padding-top: 1rem;
+  }
+
+  .type-tribe_events {
+
+    .tribe-events-event-image {
+      flex: 0 1 40%;
+      padding-right: 2rem;
+
+      @media(max-width: 768px) {
+        display: flex;
+        flex: 0 1 80%;
+        justify-content: center;
+        padding-bottom: 2rem;
+      }
+    }
+
+    .read-more-button-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 3rem;
+      width: 100%;
+
+      .tribe-events-read-more-button {
+        align-items: center;
+        border-color: $color-purple;
+        border-radius: 3rem;
+        border-style: solid;
+        border-width: 2px;
+        color: $color-purple;
+        cursor: pointer;
+        display: flex;
+        font-family: omnes-cond,sans-serif;
+        font-size: 1.1rem;
+        justify-content: center;
+        letter-spacing: .2rem;
+        margin-top: 3rem;
+        padding: .7rem 3rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: .5s;
+
+        &:hover {
+          background-color: $color-purple;
+          color: $color-white;
+        }
+      }
+    }
+  }
+
+  .tribe-events-top-content {
+    display: flex;
+    flex: 0 1 60%;
+    flex-wrap: wrap;
+
+    @media(max-width: 768px) {
+      flex: 0 1 80%;
+    }
+
+    @media(max-width: 600px) {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+  }
+
+  .tribe-events-start-time-label {
+    display: flex;
+
+    .tribe-events-start-time {
+      padding-left: .2rem;
+    }
+  }
+
+  .tribe-events-detials-container {
+    display: flex;
+    flex: 0 1 100%;
+
+    a {
+      color: $color-yellow !important;
+    }
+
+    @media(max-width: 900px) {
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+  }
+
+  .tribe-events-schedule {
+    background: transparent;
+    border: none;
+    margin: 1em 0 0;
+  }
+
+  .tribe-events-meta-group-details {
+    flex: 0 1 auto;
+    padding-right: 2rem;
+
+    @media(max-width: 900px) {
+      flex-wrap: wrap;
+      flex: 0 1 100%;
+      padding-right: 0;
+    }
+  }
+
+  .tribe-events-meta-group {
+
+    .tribe-events-single-section-title {
+      color: $color-purple;
+    }
+
+    ul {
+      font-size: 1rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    dd {
+      margin: 0;
+
+      &.tribe-venue {
+        font-weight: $font-bold;
+      }
+    }
+  }
+
+  .tribe-address {
+    font-style: normal;
+  }
+
+  .tribe-events-gmap {
+    color: $color-yellow;
+    display: block;
+    font-style: normal;
+  }
+
+  .tribe-venue-tel-label,
+  .tribe-venue-tel {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .tribe-events-single-event-description {
+    margin: 0 auto;
+    max-width: 800px;
+    overflow: hidden;
+    position: relative;
+    transition: max-height .8s linear;
+
+    &.closed {
+      max-height: 200px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+        opacity: 0.6;
+      }
+    }
+
+    &.open {
+      max-height: auto;
+    }
+
+    &:after {
+      background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,1));
+      position: absolute;
+      width: 100%;
+      z-index: 5;
+    }
+  }
+
+  .tribe-events-single-section {
+
+    .tribe-events-single-section-title {
+      color: $white;
+    }
+  }
+
+  .tribe-events-event-meta {
+    background: $color-yellow;
+    border: none;
+    color: $white;
+
+    &.secondary {
+      display: flex;
+
+      @media(max-width: 800px) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .tribe-events-meta-group {
+        flex: 0 1 auto;
+        padding: 0 2rem;
+      }
+
+      .tribe-venue {
+
+        a {
+          color: $white;
+        }
+      }
+
+      a {
+        color: $white !important;
+        text-decoration: underline;
+      }
+
+      .tribe-venue-tel-label {
+        padding-top: 0;
+      }
+
+      .tribe-events-gmap {
+        color: $white !important;
+      }
+    }
+
+    dt {
+      width: 100%;
+    }
+
+    .tribe-events-meta-group-venue {
+      width: 40%;
+
+      @media(max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    .tribe-events-meta-group-gmap {
+      width: 60%;
+
+      @media(max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    .tribe-events-gmap {
+      color: $white;
+    }
+  }
+
+  .tribe-events-venue-map {
+    border: none;
+  }
+
+  .programLanding__callToAction {
+    background-color: $color-purple;
+  }
+
+  .programLanding__footerContent {
+    background-color: $color-yellow;
+  }
+}
+
+.event-registration-form {
+  width: 100%;
+  margin-bottom: 4rem;
+
+  .gform_wrapper {
+
+    .gsection {
+      border-bottom: none;
+    }
+
+    h2.gsection_title {
+      font-size: 2.6rem;
+      font-weight: $font-regular;
+      line-height: 2.6rem;
+    }
+  }
+}

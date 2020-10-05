@@ -1,0 +1,22 @@
+.page-id-511 {
+
+  .m-generalbodyContent__content {
+    padding: 0;
+  }
+
+  #cd-timeline {
+
+    .cd-timeline-content {
+      color: $color-white;
+
+      .the-excerpt {
+        display: flex;
+      }
+    }
+
+    .cd-timeline-item-title {
+      color: $color-white;
+      font-family: $base-font-family;
+    }
+  }
+}

@@ -1,0 +1,264 @@
+.m-bodyContent__paragraph {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+
+  p {
+    margin: .5rem 0;
+    width: 100%;
+  }
+
+  h2 {
+    font-family: $base-font-family;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    margin: .5rem 0;
+  }
+
+  h3 {
+    font-family: $base-font-family;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    margin: .5rem 0;
+  }
+
+  ul {
+    margin: .5rem 0;
+  }
+
+  .footnote {
+    display: inline-block;
+    font-size: .7rem;
+    padding-top: 2rem;
+  }
+}
+
+.m-bodyContent__contentimage {
+  align-items: center;
+  display: flex;
+  flex: 0 1 40%;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 0px;
+
+  @media(max-width: 640px) {
+    flex: 0 1 100%;
+    padding-top: 3rem;
+  }
+
+  &.o-homeProgramsBlock {
+
+    @media(max-width: 700px) {
+      flex: 0 1 30%;
+    }
+
+    @media(max-width: 600px) {
+      display: none;
+    }
+  }
+
+  &.m-maincategorybodyContent__contentimage {
+
+    @media(max-width: 700px) {
+      flex: 0 1 30%;
+    }
+
+    @media(max-width: 640px) {
+      flex: 0 1 100%;
+      padding: 0 20%;
+      margin-bottom: 4rem;
+    }
+
+    .m-bodyContent__image {
+      @extend %square-image;
+      box-shadow: -20px 20px $color-green;
+
+      @media(max-width: 900px) {
+        box-shadow: -15px 15px $color-green;
+      }
+    }
+  }
+
+  &.m-programbodyImage {
+
+    .m-bodyContent__image {
+      @extend %square-image;
+      box-shadow: -20px 20px $color-green;
+
+      @media(max-width: 900px) {
+        box-shadow: -15px 15px $color-green;
+      }
+    }
+  }
+
+  &.m-maincategoryCaseStudy__contentimage {
+    order: 2;
+
+    @media(max-width: 700px) {
+      flex: 0 1 30%;
+    }
+
+    @media(max-width: 500px) {
+      flex: 0 1 100%;
+      padding: 0 20%;
+      margin-bottom: 2rem;
+      order: 1;
+    }
+  }
+}
+
+.m-bodyContent__content {
+  display: flex;
+  flex: 0 1 55%;
+  flex-direction: column;
+  justify-content: center;
+
+  @media(max-width: 900px) {
+    flex: 0 1 60%;
+  }
+
+  @media(max-width: 640px) {
+    flex: 0 1 100%;
+  }
+
+  h2 {
+    font-family: $base-font-family;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    margin: .5rem 0;
+  }
+
+  a {
+    color: $color-yellow;
+    display: inline;
+    text-decoration: none;
+  }
+
+  &.m-maincategorybodyContent__content {
+
+    @media(max-width: 700px) {
+      flex: 0 1 70%;
+    }
+
+    @media(max-width: 640px) {
+      flex: 0 1 100%;
+      padding-left: 0;
+    }
+  }
+
+  &.o-homeProgramsBlock {
+    order: 1;
+
+    @media(max-width: 700px) {
+      flex: 0 1 70%;
+    }
+
+    @media(max-width: 600px) {
+      flex: 0 1 100%;
+      padding-right: 0;
+    }
+  }
+
+  .m-bodyContent__subtitle {
+    color: $color-yellow;
+  }
+
+  &.m-maincategoryCaseStudy__content {
+    order: 1;
+
+    @media(max-width: 700px) {
+      flex: 0 1 70%;
+      padding-right: 2rem;
+    }
+
+    @media(max-width: 500px) {
+      flex: 0 1 100%;
+      padding-right: 0;
+      order: 2;
+    }
+  }
+}
+
+.m-bodyContent__contentcallout {
+  padding: 3rem 0;
+  margin: 0 auto;
+  max-width: 800px;
+
+  @media(max-width: 640px) {
+    padding: 4rem 0;
+  }
+
+  .m-bodyContent__callouttext {
+    color: $color-yellow;
+    font-family: $base-font-family;
+    font-size: 1.3rem;
+    font-style: italic;
+    line-height: 2rem;
+  }
+
+  .m-bodyContent__calloutauthor {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1.5rem;
+
+    @media(max-width: 700px) {
+      flex-wrap: wrap;
+    }
+
+    .m-bodyContent__calloutimage {
+      clip-path: circle(40px at 40px 40px);
+      margin-right: 1rem;
+      max-width: 80px;
+      width: 100%;
+    }
+  }
+}
+
+.m-bodyContent__calloutname {
+  color: $color-bodycopy;
+  font-family: $link-font-family;
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+  line-height: 1.45rem;
+  position: relative;
+  text-transform: uppercase;
+
+  @media(max-width: 700px) {
+    display: flex;
+    flex: 0 1 100%;
+    justify-content: center;
+    margin-bottom: .25rem;
+  }
+
+  &:after {
+    @extend %border-source;
+    content: "";
+    bottom: -9px;
+    display: block;
+    position: absolute;
+    width: 100%;
+
+    @media(max-width: 700px) {
+      content: none;
+    }
+  }
+}
+
+.m-bodyContent__calloutsource {
+  color: $color-bodycopy;
+  font-family: $base-font-family;
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 1.45rem;
+  padding-left: 5px;
+
+  @media(max-width: 700px) {
+    display: flex;
+    flex: 0 1 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}

@@ -1,0 +1,85 @@
+.page-template-template-maincategoryLanding {
+
+  .m-navigationRow {
+
+    .m-navigationRow__link {
+
+      a {
+        color: $color-white;
+
+        &:hover {
+          background-color: $color-white;
+        }
+      }
+
+      &:hover > a {
+        background-color: $color-white;
+        color: $color-yellow;
+      }
+
+      ul {
+
+        a {
+          color: $color-bodycopy;
+        }
+      }
+    }
+
+    &.m-navigationRow--upper {
+
+      a {
+        background-color: $color-white;
+        border: 2px solid $color-white;
+        color: $color-bodycopy;
+        font-size: .7rem;
+      }
+
+      .search-form {
+
+        .search-field {
+          border: none;
+        }
+      }
+    }
+  }
+
+  .condensed {
+
+    .m-navigationRow {
+
+      .m-navigationRow__link {
+
+        a {
+          color: $color-bodycopy;
+        }
+
+        &:hover > a {
+          background-color: $color-white;
+          color: $color-yellow;
+        }
+      }
+    }
+  }
+
+  a[href="#my-menu"] {
+
+    &:before {
+          background: $color-white;
+      box-shadow:
+        0 0.4em 0 0 $color-white,
+        0 0.8em 0 0 $color-white;
+    }
+  }
+}
+
+.maincategory__caseStudy {
+  background-color: $color-yellow;
+}
+
+.maincategory__callToAction {
+  background-color: $color-purple;
+}
+
+.maincategory__footerContent {
+  background-color: $color-yellow;
+}

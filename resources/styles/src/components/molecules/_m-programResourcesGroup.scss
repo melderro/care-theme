@@ -1,0 +1,38 @@
+.m-programResources__contentimage {
+
+  @media(max-width: 840px) {
+    text-align: center;
+  }
+
+  .m-programResources__image {
+    max-width: 120px;
+  }
+}
+
+.m-programResourcesGroup {
+  display: flex;
+  flex: 0 1 50%;
+  flex-direction: column;
+  margin-top: 3rem;
+  padding: 0 4rem;
+
+  @media(max-width: 840px) {
+    flex: 0 1 100%;
+    padding: 0;
+  }
+
+  .m-programResources__content {
+
+    .m-programResources__title {
+      color: $color-green;
+
+      @media(max-width: 840px) {
+        text-align: center;
+      }
+
+      &.o-programResources--events {
+        color: $color-brown;
+      }
+    }
+  }
+}

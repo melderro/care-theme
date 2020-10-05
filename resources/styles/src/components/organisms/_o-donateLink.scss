@@ -1,0 +1,25 @@
+.o-donateLink {
+@extend %container-shared;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+padding: 3rem 0rem;
+
+  .o-donateLink__contentimage {
+    flex: 0 1 30%;
+  }
+
+  .o-donateLink__content {
+    flex: 0 1 70%;
+
+    .o-donateLink__link {
+      display: flex;
+      justify-content: flex-start;
+
+      .o-donateLinklink {
+        border-color: $color-purple;
+        color: $color-purple;
+      }
+    }
+  }
+}

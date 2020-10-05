@@ -1,0 +1,116 @@
+.o-homeintroContent {
+  display: flex;
+
+  @media(max-width: 700px) {
+    flex-wrap: wrap;
+  }
+
+  .o-homeintroContent__datablocks {
+    display: flex;
+    flex: 0 1 30%;
+    flex-wrap: wrap;
+
+    @media(max-width: 700px) {
+      flex: 0 1 100%;
+      order: 2;
+    }
+
+    .m-home__datablocks {
+      align-items: center;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      flex: 0 1 100%;
+
+      @media(max-width: 700px) {
+        flex: 0 1 50%;
+      }
+
+      @media(max-width: 400px) {
+        flex: 0 1 100%;
+        min-height: 200px;
+      }
+
+      &:first-child {
+
+        &:before {
+          content: "";
+          display: block;
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          background: $color-teal;
+          opacity: .7;
+          z-index: 1;
+        }
+      }
+
+      &:before {
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background: $color-purple;
+        opacity: .7;
+        z-index: 1;
+      }
+
+      .m-home__datablocks__text {
+        color: $color-white;
+        font-family: $script-font-family;
+        font-size: 2rem;
+        line-height: 2rem;
+        position: relative;
+        text-transform: uppercase;
+        width: 80%;
+        z-index: 3;
+      }
+    }
+  }
+
+  .o-homeintroContent__maincontent {
+    background-color: $color-yellow;
+    display: flex;
+    flex: 0 1 70%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 3rem;
+
+    @media(max-width: 700px) {
+      flex: 0 1 100%;
+      order: 1;
+      padding: 2rem 5%;
+    }
+
+    .o-homeintroContent__subtitle {
+      color: $color-white;
+    }
+
+    .o-homeintroContent__title {
+      color: $color-purple;
+    }
+
+    .o-homeintroContent__paragraph {
+      color: $color-white;
+
+      a {
+        color: white;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
+
+    .o-homeintroContent__link {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+}

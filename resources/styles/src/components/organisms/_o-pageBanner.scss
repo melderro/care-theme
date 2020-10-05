@@ -1,0 +1,48 @@
+.o-pageBanner {
+  line-height: 0px;
+  position: relative;
+  width: 100%;
+
+  .o-pageBanner__titlecontent {
+    left: 50%;
+    max-width: 600px;
+    position: absolute;
+    top: 55%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 80%;
+
+    @media(max-width: 600px) {
+      width: 90%;
+    }
+
+    .o-pageBanner__subtitle {
+      color: $color-yellow;
+      margin: .5rem 0;
+    }
+
+    .o-pageBanner__title {
+      color: $color-white;
+      font-weight: $font-semibold;
+    }
+
+    .o-pageBanner__link {
+      display: flex;
+      justify-content: center;
+    }
+
+    .o-pageBanner__text {
+      color: $color-white;
+      line-height: 1.5rem;
+
+      a {
+        color: $color-yellow;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .o-pageBanner__image {
+    width: 100%;
+  }
+}

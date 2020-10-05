@@ -1,0 +1,29 @@
+%container-shared {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 90%;
+}
+
+%container-shared-small {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 80%;
+}
+
+%container-shared-full {
+  margin: 0 auto;
+  width: 100%;
+}
+
+%square-image {
+  max-width: 400px;
+  width: 100%;
+}
+
+%main-body-padding-right {
+  padding-right: 3rem;
+}
+
+%main-body-padding-left {
+  padding-left: 3rem;
+}

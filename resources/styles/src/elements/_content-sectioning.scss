@@ -1,0 +1,119 @@
+/**
+ * Content Sectioning
+ */
+
+// address {}
+// article {}
+// aside {}
+// footer {}
+// #{$all-headers} {}
+// h2 {}
+// h4 {}
+// h5 {}
+// h6 {}
+// header {}
+// hgroup {}
+// main {}
+// nav {}
+section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+h1,
+.single-tribe_events .tribe-events-single-event-title {
+  @extend %main-heading;
+  font-size: 3.3rem;
+  line-height: 3.3rem;
+  margin: .5rem 0;
+
+  @media(max-width: 800px) {
+    font-size: 2.8rem;
+    line-height: 3rem;
+  }
+
+  @media(max-width: 600px) {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+    margin: 0;
+  }
+
+  @media(max-width: 500px) {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+h2,
+h3.m-footerSupplementLinks__title {
+  @extend %main-heading;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin: .5rem 0;
+
+  @media(max-width: 600px) {
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+  }
+}
+
+h2.m-programResources__title,
+.programLanding__relatedTopics h2,
+.tribe-events-list-separator-month,
+h3.m-homePromotionalLinks__imagetitle,
+#tribe-events-pg-template .tribe-events-content h1,
+.tribe-events-after-html h1,
+.tribe-events-before-html h1 {
+  font-size: 2.6rem;
+  line-height: 2.6rem;
+}
+
+h3 {
+  @extend %sub-heading;
+}
+
+h3.o-introContent__subtitle,
+h3.o-pageBanner__subtitle,
+h3.m-footerSupplementLinks__subtitle,
+h3.o-donateLink__subtitle,
+.tribe-events-meta-group .tribe-events-single-section-title,
+.tribe-events-category-list {
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+
+  @media(max-width: 600px) {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  @media(max-width: 500px) {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+}
+
+h3.o-homeintroContent__subtitle,
+h3.o-homePeerRecovery__subtitle,
+h3.m-bodyContent__subtitle,
+h3.m-footerContent__contactLinksTitle,
+h3.m-footerContent__socialLinksTitle,
+h3.m-generalbodyContent__subtitle,
+#tribe-events-pg-template .tribe-events-content h3,
+.tribe-events-after-html h3,
+.tribe-events-before-html h3 {
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+
+h3.m-footerSupplementLinks__title,
+#tribe-events-pg-template .tribe-events-content h3,
+.tribe-events-after-html h3,
+.tribe-events-before-html h3 {
+  font-family: $base-font-family;
+}
+
+.tribe-events-meta-group .tribe-events-single-section-title {
+  font-weight: 400;
+}

@@ -1,0 +1,12 @@
+.o-newsbodyContent {
+  @extend %container-shared;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+
+  .m-bodyContent__content {
+    flex: 0 1 90%;
+    padding-left: 0px;
+  }
+}

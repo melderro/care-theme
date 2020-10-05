@@ -1,0 +1,22 @@
+.o-programRelatedTopics {
+  @extend %container-shared-small;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  position: relative;
+
+  &:before {
+    border-bottom: 1px solid #f5f5f4;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+  }
+
+  h2 {
+    color: $color-purple;
+    margin-top: 3rem;
+    text-align: center;
+  }
+}

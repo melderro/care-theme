@@ -1,0 +1,140 @@
+{
+    "key": "group_5cd04d58ce380",
+    "title": "Events: Additional Fields",
+    "fields": [
+        {
+            "key": "field_5cd04d61d02af",
+            "label": "Additional Event Data",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5cd04da6d02b0",
+            "label": "Max Number Registrations",
+            "name": "events_max_number_registrations",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 50,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5cd04db5d02b1",
+            "label": "Current Number Registrations",
+            "name": "current_number_registrations",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "message": "10 guests currently registered"
+        },
+        {
+            "key": "field_5cd05f066b6e8",
+            "label": "Registration Form",
+            "name": "events_registration_form",
+            "type": "text",
+            "instructions": "To fill out ths field:\r\n<ol><li>Go to the main content editor for the post (Content editor below post title).<\/li>\r\n<li>Click <b>Add form<\/b>. <\/li>\r\n<li>Select the appropriate form from the form dropdown.<\/li>\r\n<li>Copy and cut the line that appears in the editor. It should be something similar to [gravityform id=\"17\" title=\"true\" description=\"true\"].<\/li>\r\n<li>Paste this line into the <b>Registration Form<\/b> field.<\/li>\r\n<\/ol>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d819ffe92ce5",
+            "label": "Main Image",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5d81a03e92ce6",
+            "label": "Image",
+            "name": "event_main_image",
+            "type": "image",
+            "instructions": "Dimensions: 1200px x 1200px",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "tribe_events"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1576608422
+}

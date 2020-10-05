@@ -1,0 +1,131 @@
+.m-generalPromotionalLinks__Block  {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &.generalPromotionalData {
+    flex: 0 1 60%;
+    padding-right: 3rem;
+
+    @media(max-width: 920px) {
+      padding-bottom: 4rem;
+    }
+
+    @media(max-width: 840px) {
+        flex: 0 1 50%;
+      }
+
+    @media(max-width: 770px) {
+      flex: 0 1 100%;
+      padding-right: 0;
+    }
+
+    .m-generalPromotionalLinks__text {
+      color: $color-yellow;
+      font-family: $script-font-family;
+      font-size: 3.8rem;
+      line-height: 3.8rem;
+      text-transform: uppercase;
+
+      @media(max-width: 920px) {
+        font-size: 2.6rem;
+        line-height: 3rem;
+      }
+
+      p {
+        margin: 0px;
+      }
+    }
+
+    .m-generalPromotionalLinks__source {
+      color: $color-purple;
+      font-family: $link-font-family;
+      text-transform: uppercase;
+      letter-spacing: .12rem;
+      margin-top: 2rem;
+      position: relative;
+
+      @media(max-width: 770px) {
+        margin-top: 1rem;
+      }
+
+      &:after {
+        @extend %border-source;
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.m-generalPromotionalEvent__container {
+  display: flex;
+  flex: 0 1 40%;
+  justify-content: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: $color-purple;
+    opacity: .7;
+    z-index: 1;
+  }
+
+  @media(max-width: 840px) {
+    flex: 0 1 50%;
+  }
+
+  @media(max-width: 770px) {
+    flex: 0 1 80%;
+    padding-right: 0;
+  }
+
+  .m-generalPromotionalLinks__image {
+    @extend %square-image;
+    box-shadow: -20px 20px $color-darkgray;
+
+    @media(max-width: 900px) {
+      box-shadow: -15px 15px $color-darkgray;
+    }
+  }
+
+  .m-generalPromotionalLinks__ContentContainer {
+    left: 50%;
+    padding-bottom: 2rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 80%;
+    z-index: 5;
+
+    @media(max-width: 840px) {
+      width: 90%;
+    }
+  }
+
+  .m-generalPromotionalLinks__title {
+    color: $color-white;
+    font-family: $base-font-family;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    margin: 2rem 0 .5rem;
+  }
+
+  .m-homePromotionalLinks__imagetext {
+    color: $color-white;
+    font-size: .9rem;
+
+    @media(max-width: 960px) {
+      line-height: 1.2rem;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.m-footerSupplementLinks {
+  align-items: center;
+  display: flex;
+  flex: 0 1 50%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+
+  @media(max-width: 640px) {
+    flex: 0 1 100%;
+  }
+
+  &:first-child {
+     background-color: $color-lightgray;
+  }
+
+  .m-footerSupplementLinks__image {
+    margin-bottom: 20px;
+    max-width: 100px;
+  }
+
+  .m-footerSupplementLinks__title {
+    text-align: center;
+  }
+
+  .m-footerSupplementLinks__text {
+    display: flex;
+    padding-bottom: 1.5rem;
+    text-align: center;
+  }
+}
