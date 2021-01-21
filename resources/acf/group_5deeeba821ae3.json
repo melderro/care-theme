@@ -48,7 +48,7 @@
                 "class": "",
                 "id": ""
             },
-            "message": "<ol>\r\n            <li><i>Enter Title.<\/i><\/li>\r\n            <li><i>Pick a Page Template:<\/i> The template determines the visual layout for your new page. If you are unsure of the template to use, view an existing page in which you would like the new page to mimic.<\/li>\r\n            <li><i>Enter Content.<\/i><\/li>\r\n            <li><i>Preview Page:<\/i> Preview the page appearance before it goes live.<\/li>\r\n            <li><i>Save Draft:<\/i> Save the page as a draft until published.<\/li>\r\n            <li><i>Publish:<\/i> Publish the page to go live\/public on your website.<\/li>\r\n            <li><i>Add Link to Main Navigation:<\/i>\r\n                <ul>\r\n                    <li>a. Go to the APPEARANCE > MENU tab.<\/li>\r\n                    <li>b. Select the menu to edit in dropdown.<\/li>\r\n                    <li>c. Choose Page to Add: The new page automatically appears at the bottom of the navigation list.<\/li>\r\n                    <li>d. Drag page into the desired order. <\/li>\r\n                <\/ul>    \r\n            <\/li>\r\n        <\/ol>",
+            "message": "<ol>\r\n            <li><i>Enter Title.<\/i><\/li>\r\n            <li><i>Pick a Page Template:<\/i> The template determines the visual layout for your new page. If you are unsure of the template to use, view an existing page in which you would like the new page to mimic. Below are the available templates:\r\n<ul>\r\n<li>a. General Content: General content such as in the About page layout<\/li>\r\n<li>b. Homepage Content: Home page layout<\/li>\r\n<li>c. Main Category Content: Programs page layout<\/li>\r\n<li>d. Program Landing Content: Individual Program page layout<\/li>\r\n<li>There are additional page templates available in the dropdown menu. These are templates used by different parts of the website and should not be used for new pages.<\/li>\r\n<\/ul>\r\n<\/li>\r\n            <li><i>Enter Content.<\/i><\/li>\r\n           <li><i>Enter SEO Content:<\/i> SEO content can be added in the <b>Yoast SEO<\/b> tab of the admin.\r\n<ul>\r\n<li>a. Focus Keyphrase: Enter the word or phrase that best describes what the page content is about.<\/li>\r\n<li>b. Title: This should consist of the main topic of the page (Usually the main heading of the page) in addition to CARE of Southeastern Michigan.<\/li>\r\n<li>c. Meta Description: This is a succinct sentence that summarizes what the page is about.<\/li>\r\n<\/ul>\r\n           <\/li>\r\n            <li><i>Preview Page:<\/i> Preview the page appearance before it goes live.<\/li>\r\n            <li><i>Save Draft:<\/i> Save the page as a draft until published.<\/li>\r\n            <li><i>Publish:<\/i> Publish the page to go live\/public on your website.<\/li>\r\n            <li><i>Add Link to Main Navigation:<\/i>\r\n                <ul>\r\n                    <li>a. Go to the APPEARANCE > MENU tab.<\/li>\r\n                    <li>b. Select the menu to edit in dropdown.<\/li>\r\n                    <li>c. Choose Page to Add: The new page automatically appears at the bottom of the navigation list.<\/li>\r\n                    <li>d. Drag page into the desired order. <\/li>\r\n                <\/ul>    \r\n            <\/li>\r\n        <\/ol>",
             "new_lines": "wpautop",
             "esc_html": 0
         },
@@ -248,7 +248,7 @@
                 "class": "",
                 "id": ""
             },
-            "message": "<ol>\r\n            <li><i>Enter Title.<\/i><\/li>\r\n            <li><i>Pick a Content Category(s):<\/i> It is important to choose a relevant content category for each post since this will determine where the post will appear throughout the website.<\/li>\r\n            <li><i>Pick a Calendar Category(s):<\/i> (Ex. Signature Events, Events, Classes & Groups, Training) It is important to choose a calendar category for each post since this will determine where the post will appear throughout the website.<\/li>\r\n            <li><i>Enter Content.<\/i><\/li>\r\n            <li><i>Preview Page:<\/i> Preview the post appearance before it goes live.<\/li>\r\n            <li><i>Save Draft:<\/i> Save the post as a draft until published.<\/li>\r\n            <li><i>Publish:<\/i> Publish the post to go live\/public on your website.<\/li>\r\n            <li><i>Form ID:<\/i> If there is a form associated with the post, make sure to fill out the <b>Registration Form<\/b> field with the appropriate form ID.<\/li>\r\n        <\/ol>",
+            "message": "<ol>\r\n            <li><i>Enter Title.<\/i><\/li>\r\n            <li><i>Pick a Content Category(s):<\/i> It is important to choose a relevant content category for each post since this will determine where the post will appear throughout the website.<\/li>\r\n            <li><i>Pick a Calendar Category(s):<\/i> (Ex. Signature Events, Events, Classes & Groups, Training) It is important to choose a calendar category for each post since this will determine where the post will appear throughout the website.<\/li>\r\n            <li><i>Enter Content.<\/i><\/li>\r\n<li><i>Events: Additional Fields:<\/i><\/li>\r\n<ul>\r\n<li>a. Max Number Registrations: Type in the number of maximum participants. Default is 50.<\/li>\r\n<li>b. Current Number Registrations: This number calculates automatically. This is the current number of registrations based on the number of form submissions.<\/li>\r\n<li>c. Main Image: This image is the main image that will represent the post. If no image is chosen, the default image will appear.<\/li>\r\n<\/ul>\r\n            <li><i>Events: Additional Fields – Form ID:<\/i><\/li>\r\n<ul><li>a. If there is a form associated with the post, make sure to fill out the <b>Registration Form<\/b> field with the appropriate form ID.<\/li>\r\n<li>b. To find the appropriate form ID, the form has to have already been created in the <b>Form<\/b> admin.<\/li>\r\n<li>c. Fill out the field:<\/li>\r\n<ul><li>i. Go to the main content editor for the post (Content editor below post title).<\/li>\r\n<li>ii. Click <b>Add form<\/b>. <\/li>\r\n<li>iii. Select the appropriate form from the form dropdown.<\/li>\r\n<li>iv. Copy and cut the line that appears in the editor. It should be something similar to [gravityform id=\"17\" title=\"true\" description=\"true\"].<\/li>\r\n<li>v. Paste this line into the <b>Registration Form<\/b> field.<\/li>\r\n<\/ul><\/ul>\r\n\r\n            <li><i>Preview Page:<\/i> Preview the post appearance before it goes live.<\/li>\r\n            <li><i>Save Draft:<\/i> Save the post as a draft until published.<\/li>\r\n            <li><i>Publish:<\/i> Publish the post to go live\/public on your website.<\/li>\r\n\r\n        <\/ol>",
             "new_lines": "wpautop",
             "esc_html": 0
         },
@@ -332,7 +332,24 @@
                 "class": "",
                 "id": ""
             },
-            "message": "<ol>\r\n            <li><i>Confirmations:<\/i> Make sure to set a Thank You page.<\/li>\r\n            <li><i>Notifications:<\/i>\r\n                <ul>\r\n                    <li>a. Form inquiries will go to the email addresses set in the <b>Send to Email<\/b> field.<\/li>\r\n                    <li>b. From Email: This will be the email address forms will be sent from.<\/li>\r\n                <\/ul>\r\n            <\/li>\r\n            <li><i>MailChimp:<\/i> Choose the email audience segment you would like inquiries to filter into using the <b>MailChimp List<\/b> dropdown.<\/li>\r\n        <\/ol>",
+            "message": "<ol>\r\n<li><i>Form Settings:<\/i><\/li>\r\n<ul>\r\n<li>a. Form Title: You can edit the form title here.<\/li>\r\n <li>b. Save and Continue: Check the box for <b>Enable Save and Continue<\/b>.<\/li>\r\n<\/ul>\r\n<li><i>Confirmations:<\/i><\/li>\r\n<ul>\r\n<li>a. Default Confirmation: In order to set a Thank You page, select <b>Page<\/b> in the <b>Confirmation Type<\/b> options.<\/li>\r\n<li>b. A new Thank You page should be created per each unique page\/calendar post. You can reuse a Thank You page if it was previously used for the same page\/calendar post.<\/li>\r\n<\/ul>\r\n            <li><i>Notifications:<\/i>\r\n                <ul>\r\n                    <li>a. Form inquiries will go to the email addresses set in the <b>Send to Email<\/b> field.<\/li>\r\n                    <li>b. From Email: This will be the email address forms will be sent from.<\/li>\r\n                <\/ul>\r\n            <\/li>\r\n            <li><i>MailChimp:<\/i> Choose the email audience segment you would like inquiries to filter into using the <b>MailChimp List<\/b> dropdown.<\/li>\r\n<li><i>Testing:<\/i><\/li>\r\n<ul>\r\n<li>a. Always test forms to make sure data is being captured and notifications are being sent correctly.<\/li>\r\n<li>b. Preview: You can always preview a form before going live using the <b>Preview<\/b> tab.<\/li>\r\n<\/ul>\r\n        <\/ol>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5df91d5411c54",
+            "label": "Reviewing Form Data",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "You can review all form data entries using the <b>Entries<\/b> tab in the form admin.",
             "new_lines": "wpautop",
             "esc_html": 0
         },
@@ -504,5 +521,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "General Instructions for Content Integration into the CARE website.",
-    "modified": 1575943568
+    "modified": 1576687399
 }

@@ -64,7 +64,7 @@
             "label": "Registration Form",
             "name": "events_registration_form",
             "type": "text",
-            "instructions": "Reference Form ID in FORMS admin list view",
+            "instructions": "To fill out ths field:\r\n<ol><li>Go to the main content editor for the post (Content editor below post title).<\/li>\r\n<li>Click <b>Add form<\/b>. <\/li>\r\n<li>Select the appropriate form from the form dropdown.<\/li>\r\n<li>Copy and cut the line that appears in the editor. It should be something similar to [gravityform id=\"17\" title=\"true\" description=\"true\"].<\/li>\r\n<li>Paste this line into the <b>Registration Form<\/b> field.<\/li>\r\n<\/ol>",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -136,5 +136,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1575930101
+    "modified": 1576608422
 }

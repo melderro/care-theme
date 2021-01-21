@@ -22,8 +22,6 @@
     }
 
     @media(max-width: 900px) {
-      margin-right: 2rem;
-    }
 
     @media(max-width: 453px) {
       margin-left: 2rem;
@@ -31,7 +29,6 @@
   }
 
   .slick-prev {
-    left: 2%;
     position: absolute;
     top: 48%;
     z-index: 5;
