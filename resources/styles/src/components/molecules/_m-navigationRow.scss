@@ -19,12 +19,17 @@
       letter-spacing: .08rem;
       line-height: 1rem;
       padding: 1rem;
+      text-align: center;
       text-decoration: none;
       text-transform: uppercase;
       -webkit-transition: all 0.2s ease-in;
       -moz-transition: all 0.2s ease-in;
       -o-transition: all 0.2s ease-in;
       transition: all 0.2s ease-in;
+
+      @media(max-width: 880px) {
+        padding: 1rem .5rem;
+      }
 
       &:hover {
         color: $color-yellow;
@@ -75,7 +80,7 @@
       padding: 0 .5rem;
 
       @media(max-width: 500px) {
-        padding: 0 .25rem;
+        padding: 0 .65rem;
       }
 
       a {
@@ -119,10 +124,15 @@
       transition: all 0.2s ease-in;
 
       img {
+        margin-right: 0.5em;
         max-width: 15px;
 
-        @media(max-width: 940px) {
+        @media(max-width: 1050px) {
           margin-right: 0;
+        }
+
+        @media(max-width: 768px) {
+          margin-right: 0.5em;
         }
 
         @media(max-width: 500px) {
@@ -282,8 +292,20 @@
           flex: 0 1 14%;
           padding: 0 .5%;
 
+          @media(max-width: 950px) {
+            flex: 0 1 10%;
+          }
+
+          @media(max-width: 900px) {
+            padding: 0 .5%;
+          }
+
           a {
             justify-content: center;
+
+            @media(max-width: 950px) {
+              padding: .6rem .25rem;
+            }
           }
 
           &#menu-item-1332 {
@@ -307,7 +329,13 @@
           li {
 
             a {
-              justify-content: flex-start;
+              justify-content: center;
+              text-align: center;
+
+              @media(max-width: 950px) {
+                font-size: .9rem;
+                padding: .5rem 0;
+              }
             }
           }
         }
@@ -339,6 +367,7 @@
           font-size: 1.15rem;
           line-height: 1.3rem;
           padding: .7rem 1rem;
+          text-align: left;
           text-transform: capitalize;
           width: 100%;
 
@@ -387,6 +416,25 @@
 
     ul {
       top: 49px;
+    }
+
+    &.m-navigationRow__link {
+
+      a {
+        font-size: .85rem;
+      }
+
+      li {
+        a {
+          font-size: 1.15rem;
+        }
+
+        li {
+          a {
+            font-size: .95rem;
+          }
+        }
+      }
     }
 
     a {
@@ -442,6 +490,22 @@
         -moz-transition: all 0.2s ease-in;
         -o-transition: all 0.2s ease-in;
         transition: all 0.2s ease-in;
+
+        img {
+          margin-right: .5em;
+
+          @media(max-width: 800px) {
+            margin-right: 0;
+          }
+
+          @media(max-width: 768px) {
+            margin-right: .5em;
+          }
+
+          @media(max-width: 500px) {
+            margin-right: 0;
+          }
+        }
       }
 
       .search-form {

@@ -80,7 +80,7 @@
         input[type="submit"] {
           background-color: #fff;
           border-radius: 3rem;
-          color: $color-bodycopy;
+          color: $color-bodycopy !important;
         }
       }
     }
@@ -106,7 +106,10 @@
 #tribe-events-header {
   @extend %container-shared;
   padding-top: 2rem;
-
+  &:after,
+  &:before {
+    background-color: inherit;
+  }
   .tribe-events-sub-nav {
     display: flex;
     justify-content: space-between;
@@ -533,7 +536,10 @@ input {
 }
 
 #tribe-bar-views-toggle {
-  border: 1px solid $white !important;
+
+  @media(max-width: 820px) {
+    border: 1px solid $white !important;
+  }
 }
 
 #tribe-bar-form {
@@ -553,4 +559,18 @@ input {
 #tribe-bar-views .tribe-bar-views-option.tribe-bar-active,
 #tribe-bar-views .tribe-bar-views-option:hover {
   background: $color-light-yellow !important;
+}
+
+#tribe-bar-collapse-toggle span.tribe-bar-toggle-arrow:after {
+  border-top-color: $white;
+}
+
+.tribe-events-list {
+
+  .tribe-events-loop {
+
+    .tribe-event-featured {
+      background: transparent !important;
+    }
+  }
 }

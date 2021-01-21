@@ -168,6 +168,7 @@
 @import './components/pages/programLanding';
 @import './components/pages/search';
 @import './components/pages/single';
+@import './components/pages/mainTestimonial';
 @import './components/pages/single-testimonial';
 @import './components/pages/sitemap';
 
@@ -185,6 +186,9 @@
 @import './vendor/wp-core';
 @import './vendor/pushbar';
 @import './vendor/mmenu';
+
+
+@import './vendor/hustle-modal';
 
 .preload{
   position: absolute;

@@ -50,6 +50,10 @@
   .gf_progressbar {
     background-color: $color-yellow;
   }
+
+  select {
+    height: 2.6rem;
+  }
 }
 
 // Form Footer
@@ -120,3 +124,18 @@ body.admin-bar {
     margin-top: 0;
   }
 }
+<<<<<<< HEAD
+=======
+
+.gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type="checkbox"],
+.gform_wrapper.gf_browser_chrome .gfield_radio li input[type="radio"],
+input[type="checkbox"],
+input[type="radio"] {
+  margin-top: 0 !important;
+  -webkit-appearance: checkbox;
+}
+
+#gform_submit_button_1 {
+  border: 1px solid white !important;
+}
+>>>>>>> 7f21f232386df526fc8181f4279399f31a58062e

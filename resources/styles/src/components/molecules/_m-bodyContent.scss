@@ -105,6 +105,10 @@
       margin-bottom: 2rem;
       order: 1;
     }
+
+    img {
+      width: auto;
+    }
   }
 }
 
@@ -195,6 +199,11 @@
     font-size: 1.3rem;
     font-style: italic;
     line-height: 2rem;
+
+    @media(max-width: 600px) {
+      font-size: 1.1rem;
+      line-height: 1.6rem;
+    }
   }
 
   .m-bodyContent__calloutauthor {
@@ -221,8 +230,10 @@
   color: $color-bodycopy;
   font-family: $link-font-family;
   font-size: 1.2rem;
+  font-style: normal;
   letter-spacing: .1rem;
   line-height: 1.45rem;
+  margin-right: 10px;
   position: relative;
   text-transform: uppercase;
 
@@ -231,6 +242,7 @@
     flex: 0 1 100%;
     justify-content: center;
     margin-bottom: .25rem;
+    margin-right: 0;
   }
 
   &:after {
@@ -255,10 +267,15 @@
   line-height: 1.45rem;
   padding-left: 5px;
 
+  @media(max-width: 900px) {
+    margin-top: .75rem;
+  }
+
   @media(max-width: 700px) {
     display: flex;
     flex: 0 1 100%;
     justify-content: center;
+    margin-top: 0;
     text-align: center;
   }
 }

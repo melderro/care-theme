@@ -24,6 +24,11 @@
     .o-pageBanner__title {
       color: $color-white;
       font-weight: $font-semibold;
+
+      @media(max-width: 500px) {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+      }
     }
 
     .o-pageBanner__link {
